@@ -1,5 +1,5 @@
 """
-This script will perform optical music recognition on a pdf using audiveris, then
+This class will perform optical music recognition on a pdf using Audiveris, then
 Output to MusicXML 
 """
 # ./audiveris-cli.sh -batch -export -output data data/Pachelbels-Canon.pdf
@@ -7,18 +7,18 @@ Output to MusicXML
 import subprocess
 
 class OMR:
-    def __init__(self, input_pdf_path: str, output_dir: str):
-        self.input_pdf_path = input_pdf_path
+    def __init__(self, output_dir: str):
         self.output_dir = output_dir
 
-    def run_audiveris(self) -> None:
+    def run_audiveris(self, input_pdf_path: str = None) -> None:
         script_path = "../audiveris-cli.sh"
+        # cmd_test = [ script_path, "-help" ]
         cmd = [
             script_path, 
             "-batch", 
             "-export", 
             "-output", self.output_dir,
-            self.input_pdf_path
+            input_pdf_path
         ]
 
         try:
