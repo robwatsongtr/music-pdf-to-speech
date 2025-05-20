@@ -45,16 +45,21 @@ class OMR:
                 print(f"{mxl_file} unzipped successfully")
             except subprocess.CalledProcessError as e:
                 print(f"unzip failed with exit code {e.returncode}")
+    
+    def check_for_xml_file(self) -> bool:
+        directory = Path(self.output_dir)
+
+        return any(directory.glob("*.xml"))
 
     def delete_files_metafolder(self) -> None:
         """
-        Delete non .xml files and 'META-INF' folder 
+        Delete non .xml files and 'META-INF' folder, keep log file  
         (Produced by Audioveris and The unzipping of the .mxl file(s))
         """
         directory = Path(self.output_dir)
-        extensions = {'.log', '.mxl', '.omr'}
+        extensions = {'.mxl', '.omr'}
 
-        print("--- Delete non .xml files and folders --- ")
+        print("--- Delete non .xml files and folders, keep log --- ")
 
         for file_path in directory.iterdir():
             if file_path.is_file() and file_path.suffix in extensions:
@@ -66,3 +71,8 @@ class OMR:
             print("Deleting META-INF directory")
             shutil.rmtree(dir_to_delete)
 
+        if not self.check_for_xml_file():
+            print("OMR FAILED: No .xml file produced. Check Logs.")
+        else:
+            print("OMR Succeeded!")
+            

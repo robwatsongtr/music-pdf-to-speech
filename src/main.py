@@ -3,6 +3,7 @@ from omr import OMR
 if __name__ == "__main__":
     espanoleta_score = '../score_processing/pdf/Espanoleta.pdf'
     sor_b_min_study_score = '../score_processing/pdf/SorBminStudyOp35no22.pdf'
+    bad_carulli_score = "../score_processing/pdf/Giuliani-op50-no4-ClassicalGuitarShed.pdf"
 
     output_path = '../score_processing/MusicXML'
 
