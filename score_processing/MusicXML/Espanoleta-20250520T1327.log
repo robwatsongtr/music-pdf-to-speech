@@ -1,0 +1,134 @@
+2025-05-20 13:27:14,062 INFO [Espanoleta]                 Book.java:562  | 2 sheets in /Users/robertwatson/Code/talking-music-score/src/../score_processing/pdf/Espanoleta.pdf
+2025-05-20 13:27:14,150 INFO []                 Book.java:2531 | Stored /book.xml
+2025-05-20 13:27:14,150 INFO []                 Book.java:2491 | Book stored as ../score_processing/MusicXML/Espanoleta.omr
+2025-05-20 13:27:14,154 INFO []                 Book.java:1933 | Book reaching PAGE on sheets:[#1#2]
+2025-05-20 13:27:14,155 INFO [Espanoleta#1]       StepMonitoring.java:98   | LOAD
+2025-05-20 13:27:14,569 INFO [Espanoleta#1]            SheetStub.java:1268 | Loaded image #1 2481x3343 from /Users/robertwatson/Code/talking-music-score/src/../score_processing/pdf/Espanoleta.pdf
+2025-05-20 13:27:14,571 INFO [Espanoleta#1]       StepMonitoring.java:98   | BINARY
+2025-05-20 13:27:14,827 INFO [Espanoleta#1]       StepMonitoring.java:98   | SCALE
+2025-05-20 13:27:14,841 INFO [Espanoleta#1]         ScaleBuilder.java:241  | Beam  guessed height: 10 -- 0.50 of 19 interline
+2025-05-20 13:27:14,842 INFO [Espanoleta#1]         ScaleBuilder.java:264  | Beam measured height: 13 -- 0.57 of [5..19] range at 208% of needed quorum
+2025-05-20 13:27:14,842 INFO [Espanoleta#1]            ScaleStep.java:65   | Scale{ interline(19,19,21) line(3,3,5) beam(13)}
+2025-05-20 13:27:14,843 INFO [Espanoleta#1]       StepMonitoring.java:98   | GRID
+2025-05-20 13:27:15,206 INFO [Espanoleta#1]       LinesRetriever.java:1500 | Global slope: -0.00456
+2025-05-20 13:27:15,220 INFO [Espanoleta#1]    ClustersRetriever.java:328  | Retrieved raw line clusters: 5 of sizes [5] with interline(19,19,21)
+2025-05-20 13:27:15,323 INFO [Espanoleta#1]            PeakGraph.java:310  | Systems: #1[1] #2[2] #3[3] #4[4] #5[5]
+2025-05-20 13:27:15,557 INFO [Espanoleta#1]        SystemManager.java:134  | Indentation detected for system #1
+2025-05-20 13:27:15,558 INFO [Espanoleta#1]        SystemManager.java:779  | 1 part along 5 systems
+2025-05-20 13:27:15,558 INFO [Espanoleta#1]                 Book.java:545  | Created scores: [{Score 1}]
+2025-05-20 13:27:15,558 INFO [Espanoleta#1]       StepMonitoring.java:98   | HEADERS
+2025-05-20 13:27:15,689 INFO [Espanoleta#1]      BasicClassifier.java:277  | Classifier loaded XML norms.
+2025-05-20 13:27:15,693 INFO [Espanoleta#1]   AbstractClassifier.java:396  | Classifier data loaded from default uri jar:file:/Users/robertwatson/Code/talking-music-score/audiveris/app/build/distributions/app-5.6.0/lib/audiveris.jar!/res/basic-classifier.zip
+2025-05-20 13:27:16,013 INFO [Espanoleta#1]       StepMonitoring.java:98   | STEM_SEEDS
+2025-05-20 13:27:16,057 INFO [Espanoleta#1]        StemSeedsStep.java:86   | stem(4 max:6)
+2025-05-20 13:27:16,088 INFO [Espanoleta#1]       StepMonitoring.java:98   | BEAMS
+2025-05-20 13:27:18,807 INFO [Espanoleta#1]       StepMonitoring.java:98   | LEDGERS
+2025-05-20 13:27:19,007 INFO [Espanoleta#1]       StepMonitoring.java:98   | HEADS
+2025-05-20 13:27:21,071 INFO [Espanoleta#1]        HeadSeedTally.java:235  | Scale information: HeadSeeds{NOTEHEAD_VOID[L:-0.3,R:-0.6] NOTEHEAD_BLACK[L:-0.4,R:-0.5]}
+2025-05-20 13:27:21,071 INFO [Espanoleta#1]       StepMonitoring.java:98   | STEMS
+2025-05-20 13:27:21,464 INFO [Espanoleta#1]       StepMonitoring.java:98   | REDUCTION
+2025-05-20 13:27:21,498 INFO [Espanoleta#1]        ReductionStep.java:105  | Stems free length median value: 56 pixels, 2.9 interlines
+2025-05-20 13:27:21,501 INFO [Espanoleta#1]       StepMonitoring.java:98   | CUE_BEAMS
+2025-05-20 13:27:21,501 INFO [Espanoleta#1]         CueBeamsStep.java:81   | Step CUE_BEAMS is skipped because small heads switch is off
+2025-05-20 13:27:21,502 INFO [Espanoleta#1]       StepMonitoring.java:98   | TEXTS
+2025-05-20 13:27:22,891 INFO [Espanoleta#1]       StepMonitoring.java:98   | MEASURES
+2025-05-20 13:27:22,897 INFO [Espanoleta#1]                 Page.java:307  | 37 raw measures: [7 in system#1, 8 in system#2, 8 in system#3, 7 in system#4, 7 in system#5]
+2025-05-20 13:27:22,898 INFO [Espanoleta#1]       StepMonitoring.java:98   | CHORDS
+2025-05-20 13:27:22,905 INFO [Espanoleta#1]       StepMonitoring.java:98   | CURVES
+2025-05-20 13:27:24,093 INFO [Espanoleta#1]         SlursBuilder.java:240  | Slurs: 1
+2025-05-20 13:27:24,101 INFO [Espanoleta#1]      SegmentsBuilder.java:155  | Segments: 12
+2025-05-20 13:27:24,104 INFO [Espanoleta#1]       StepMonitoring.java:98   | SYMBOLS
+2025-05-20 13:27:24,690 INFO [Espanoleta#1]       StepMonitoring.java:98   | LINKS
+2025-05-20 13:27:24,703 INFO [Espanoleta#1]        SentenceInter.java:461  | No chord near SentenceInter#4312{(0.679) staff:3 mFont:B-84 Direction} m 4i
+2025-05-20 13:27:24,716 INFO [Espanoleta#1]       StepMonitoring.java:98   | RHYTHMS
+2025-05-20 13:27:24,740 INFO [Espanoleta#1]        MeasureRhythm.java:1045 | Measure{#32} No timeOffset for HeadChordInter#4888{(0.943/0.943) staff:5 slot#3 dur:1/8}
+2025-05-20 13:27:24,740 INFO [Espanoleta#1]                Voice.java:257  | Measure{#32} Voice{#1 excess:1/4} too long
+2025-05-20 13:27:24,740 INFO [Espanoleta#1]                Voice.java:257  | Measure{#32} Voice{#2 excess:1/4} too long
+2025-05-20 13:27:24,741 INFO [Espanoleta#1]          StackRhythm.java:224  | S5 MeasureStack#32 no correct rhythm
+2025-05-20 13:27:24,743 INFO [Espanoleta#1]       StepMonitoring.java:98   | PAGE
+2025-05-20 13:27:24,747 INFO [Espanoleta#1]                Voice.java:257  | Measure{#32} Voice{#1 excess:1/4} too long
+2025-05-20 13:27:24,748 INFO [Espanoleta#1]                Voice.java:257  | Measure{#32} Voice{#2 excess:1/4} too long
+2025-05-20 13:27:24,748 INFO [Espanoleta#1]                 Book.java:2550 | Book{Espanoleta} storing
+2025-05-20 13:27:24,789 INFO [Espanoleta#1]                 Book.java:2531 | Stored /book.xml
+2025-05-20 13:27:24,886 INFO [Espanoleta#1]           DataHolder.java:348  | Stored /sheet#1/BINARY.png
+2025-05-20 13:27:25,539 INFO [Espanoleta#1]                Sheet.java:1562 | Stored /sheet#1/sheet#1.xml
+2025-05-20 13:27:25,539 INFO [Espanoleta#1]                 Book.java:2491 | Book stored as ../score_processing/MusicXML/Espanoleta.omr
+2025-05-20 13:27:25,540 INFO [Espanoleta#1]            SheetStub.java:1644 | Disposed sheet#1
+2025-05-20 13:27:25,576 INFO [Espanoleta#1]                 Book.java:2018 | End of Stub#1 memory: 38,333,648
+2025-05-20 13:27:25,577 INFO [Espanoleta#2]       StepMonitoring.java:98   | LOAD
+2025-05-20 13:27:25,700 INFO [Espanoleta#2]            SheetStub.java:1268 | Loaded image #2 2481x3315 from /Users/robertwatson/Code/talking-music-score/src/../score_processing/pdf/Espanoleta.pdf
+2025-05-20 13:27:25,701 INFO [Espanoleta#2]       StepMonitoring.java:98   | BINARY
+2025-05-20 13:27:25,893 INFO [Espanoleta#2]       StepMonitoring.java:98   | SCALE
+2025-05-20 13:27:25,897 INFO [Espanoleta#2]         ScaleBuilder.java:241  | Beam  guessed height: 10 -- 0.50 of 19 interline
+2025-05-20 13:27:25,897 INFO [Espanoleta#2]         ScaleBuilder.java:264  | Beam measured height: 13 -- 0.57 of [5..19] range at 369% of needed quorum
+2025-05-20 13:27:25,897 INFO [Espanoleta#2]            ScaleStep.java:65   | Scale{ interline(19,19,21) line(2,4,5) beam(13)}
+2025-05-20 13:27:25,897 INFO [Espanoleta#2]       StepMonitoring.java:98   | GRID
+2025-05-20 13:27:26,084 INFO [Espanoleta#2]       LinesRetriever.java:1500 | Global slope: -0.00539
+2025-05-20 13:27:26,094 INFO [Espanoleta#2]    ClustersRetriever.java:328  | Retrieved raw line clusters: 7 of sizes [5] with interline(19,19,21)
+2025-05-20 13:27:26,189 INFO [Espanoleta#2]            PeakGraph.java:310  | Systems: #1[1] #2[2] #3[3] #4[4] #5[5] #6[6] #7[7]
+2025-05-20 13:27:26,341 INFO [Espanoleta#2]        SystemManager.java:779  | 1 part along 7 systems
+2025-05-20 13:27:26,341 INFO [Espanoleta#2]       StepMonitoring.java:98   | HEADERS
+2025-05-20 13:27:26,468 INFO [Espanoleta#2]       StepMonitoring.java:98   | STEM_SEEDS
+2025-05-20 13:27:26,488 INFO [Espanoleta#2]        StemSeedsStep.java:86   | stem(4 max:5)
+2025-05-20 13:27:26,502 INFO [Espanoleta#2]       StepMonitoring.java:98   | BEAMS
+2025-05-20 13:27:29,201 INFO [Espanoleta#2]       StepMonitoring.java:98   | LEDGERS
+2025-05-20 13:27:29,336 INFO [Espanoleta#2]       StepMonitoring.java:98   | HEADS
+2025-05-20 13:27:32,137 INFO [Espanoleta#2]        HeadSeedTally.java:235  | Scale information: HeadSeeds{NOTEHEAD_VOID[L:-0.4,R:-0.5] NOTEHEAD_BLACK[L:-0.3,R:-0.6]}
+2025-05-20 13:27:32,138 INFO [Espanoleta#2]       StepMonitoring.java:98   | STEMS
+2025-05-20 13:27:32,405 INFO [Espanoleta#2]       StepMonitoring.java:98   | REDUCTION
+2025-05-20 13:27:32,433 INFO [Espanoleta#2]        ReductionStep.java:105  | Stems free length median value: 55 pixels, 2.9 interlines
+2025-05-20 13:27:32,435 INFO [Espanoleta#2]       StepMonitoring.java:98   | CUE_BEAMS
+2025-05-20 13:27:32,438 INFO [Espanoleta#2]         CueBeamsStep.java:81   | Step CUE_BEAMS is skipped because small heads switch is off
+2025-05-20 13:27:32,438 INFO [Espanoleta#2]       StepMonitoring.java:98   | TEXTS
+2025-05-20 13:27:33,112 INFO [Espanoleta#2]       StepMonitoring.java:98   | MEASURES
+2025-05-20 13:27:33,112 INFO [Espanoleta#2]                 Page.java:307  | 37 raw measures: [6 in system#1, 5 in system#2, 6 in system#3, 5 in system#4, 4 in system#5, 6 in system#6, 5 in system#7]
+2025-05-20 13:27:33,113 INFO [Espanoleta#2]       StepMonitoring.java:98   | CHORDS
+2025-05-20 13:27:33,116 INFO [Espanoleta#2]       StepMonitoring.java:98   | CURVES
+2025-05-20 13:27:33,915 INFO [Espanoleta#2]         SlursBuilder.java:240  | Slurs: 14
+2025-05-20 13:27:33,938 INFO [Espanoleta#2]      SegmentsBuilder.java:155  | Segments: 23
+2025-05-20 13:27:33,951 INFO [Espanoleta#2]       StepMonitoring.java:98   | SYMBOLS
+2025-05-20 13:27:34,369 INFO [Espanoleta#2]       StepMonitoring.java:98   | LINKS
+2025-05-20 13:27:34,386 INFO [Espanoleta#2]        SymbolsLinker.java:257  | No chord linked to OctaveShiftInter#7480{(0.205) staff:7 QUINDICESIMA BASSA}
+2025-05-20 13:27:34,390 INFO [Espanoleta#2]       StepMonitoring.java:98   | RHYTHMS
+2025-05-20 13:27:34,390 INFO [Espanoleta#2]           PageRhythm.java:199  | {Page#2.1} Time value reused from sheet#1
+2025-05-20 13:27:34,392 INFO [Espanoleta#2]        MeasureRhythm.java:1045 | Measure{#3} No timeOffset for HeadChordInter#5170{(0.956/0.956) staff:1 slot#4 dur:1/8}
+2025-05-20 13:27:34,393 INFO [Espanoleta#2]                Voice.java:257  | Measure{#3} Voice{#2 excess:1/4} too long
+2025-05-20 13:27:34,393 INFO [Espanoleta#2]          StackRhythm.java:224  | S1 MeasureStack#3 no correct rhythm
+2025-05-20 13:27:34,394 INFO [Espanoleta#2]        MeasureRhythm.java:1045 | Measure{#5} No timeOffset for HeadChordInter#5181{(0.936/0.936) staff:1 slot#7 dur:1/4}
+2025-05-20 13:27:34,394 INFO [Espanoleta#2]        MeasureRhythm.java:1045 | Measure{#5} No timeOffset for HeadChordInter#5182{(0.929/0.929) staff:1 slot#7 dur:1/4}
+2025-05-20 13:27:34,394 INFO [Espanoleta#2]   AbstractChordInter.java:627  | Measure{#5} No timeOffset for HeadChordInter#5181{(0.936/0.936) staff:1 slot#7 dur:1/4}
+2025-05-20 13:27:34,394 INFO [Espanoleta#2]   AbstractChordInter.java:627  | Measure{#5} No timeOffset for HeadChordInter#5182{(0.929/0.929) staff:1 slot#7 dur:1/4}
+2025-05-20 13:27:34,394 INFO [Espanoleta#2]                Voice.java:257  | Measure{#5} Voice{#1 excess:1/4} too long
+2025-05-20 13:27:34,394 INFO [Espanoleta#2]          StackRhythm.java:224  | S1 MeasureStack#5 no correct rhythm
+2025-05-20 13:27:34,402 INFO [Espanoleta#2]                Voice.java:257  | Measure{#22} Voice{#1 excess:1/4} too long
+2025-05-20 13:27:34,402 INFO [Espanoleta#2]                Voice.java:257  | Measure{#22} Voice{#4 excess:11/48} too long
+2025-05-20 13:27:34,402 INFO [Espanoleta#2]          StackRhythm.java:224  | S4 MeasureStack#22 no correct rhythm
+2025-05-20 13:27:34,405 INFO [Espanoleta#2]                Voice.java:257  | Measure{#31} Voice{#3 excess:1/4} too long
+2025-05-20 13:27:34,406 INFO [Espanoleta#2]          StackRhythm.java:224  | S6 MeasureStack#31 no correct rhythm
+2025-05-20 13:27:34,408 INFO [Espanoleta#2]        MeasureRhythm.java:1045 | Measure{#35} No timeOffset for HeadChordInter#5362{(0.827/0.827) staff:7 slot#8 dur:3/4}
+2025-05-20 13:27:34,408 INFO [Espanoleta#2]                Voice.java:257  | Measure{#35} Voice{#1 excess:1/2} too long
+2025-05-20 13:27:34,408 INFO [Espanoleta#2]                Voice.java:257  | Measure{#35} Voice{#2 excess:1/4} too long
+2025-05-20 13:27:34,408 INFO [Espanoleta#2]          StackRhythm.java:224  | S7 MeasureStack#35 no correct rhythm
+2025-05-20 13:27:34,409 INFO [Espanoleta#2]       StepMonitoring.java:98   | PAGE
+2025-05-20 13:27:34,410 INFO [Espanoleta#2]       SheetReduction.java:154  | Gutter. Different glyphs 4/5 RestInter#7220{(0.526/0.526) staff:4 ONE_16TH_REST p:21.3} vs BeamInter#1171{(0.702/0.979) BEAM}
+2025-05-20 13:27:34,410 INFO [Espanoleta#2]       SheetReduction.java:154  | Gutter. Different glyphs 4/5 RestInter#7220{(0.526/0.526) staff:4 ONE_16TH_REST p:21.3} vs ArticulationInter#7286{(0.800/0.899) STACCATO}
+2025-05-20 13:27:34,410 INFO [Espanoleta#2]                Voice.java:257  | Measure{#3} Voice{#2 excess:1/4} too long
+2025-05-20 13:27:34,411 INFO [Espanoleta#2]                Voice.java:257  | Measure{#5} Voice{#1 excess:1/4} too long
+2025-05-20 13:27:34,411 INFO [Espanoleta#2]                Voice.java:257  | Measure{#22} Voice{#1 excess:1/4} too long
+2025-05-20 13:27:34,411 INFO [Espanoleta#2]                Voice.java:257  | Measure{#22} Voice{#4 excess:11/48} too long
+2025-05-20 13:27:34,411 INFO [Espanoleta#2]                Voice.java:257  | Measure{#31} Voice{#3 excess:1/4} too long
+2025-05-20 13:27:34,411 INFO [Espanoleta#2]                Voice.java:257  | Measure{#35} Voice{#1 excess:1/2} too long
+2025-05-20 13:27:34,411 INFO [Espanoleta#2]                Voice.java:257  | Measure{#35} Voice{#2 excess:1/4} too long
+2025-05-20 13:27:34,411 INFO [Espanoleta#2]                 Book.java:2550 | Book{Espanoleta} storing
+2025-05-20 13:27:34,453 INFO [Espanoleta#2]                 Book.java:2531 | Stored /book.xml
+2025-05-20 13:27:34,505 INFO [Espanoleta#2]           DataHolder.java:348  | Stored /sheet#2/BINARY.png
+2025-05-20 13:27:35,070 INFO [Espanoleta#2]                Sheet.java:1562 | Stored /sheet#2/sheet#2.xml
+2025-05-20 13:27:35,070 INFO [Espanoleta#2]                 Book.java:2491 | Book stored as ../score_processing/MusicXML/Espanoleta.omr
+2025-05-20 13:27:35,073 INFO [Espanoleta#2]            SheetStub.java:1644 | Disposed sheet#2
+2025-05-20 13:27:35,104 INFO [Espanoleta#2]                 Book.java:2018 | End of Stub#2 memory: 38,401,544
+2025-05-20 13:27:35,105 INFO [Espanoleta]                 Book.java:2025 | Book processed.
+2025-05-20 13:27:35,390 INFO [Espanoleta]            SheetStub.java:995  | Loaded /sheet#1/sheet#1.xml
+2025-05-20 13:27:35,623 INFO [Espanoleta]            SheetStub.java:995  | Loaded /sheet#2/sheet#2.xml
+2025-05-20 13:27:35,780 INFO [Espanoleta]      PartwiseBuilder.java:2661 | Exporting sheet(s): [#1#2]
+2025-05-20 13:27:35,843 INFO [Espanoleta]        ScoreExporter.java:164  | Score Espanoleta exported to ../score_processing/MusicXML/Espanoleta.mxl
+2025-05-20 13:27:35,873 INFO [Espanoleta]                Score.java:181  | Closing {Score 1}

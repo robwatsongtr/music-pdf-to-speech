@@ -1,13 +1,16 @@
 from omr import OMR
+import sys 
 
 if __name__ == "__main__":
-    espanoleta_score = '../score_processing/pdf/Espanoleta.pdf'
-    sor_b_min_study_score = '../score_processing/pdf/SorBminStudyOp35no22.pdf'
-    bad_carulli_score = "../score_processing/pdf/Giuliani-op50-no4-ClassicalGuitarShed.pdf"
+    if len(sys.argv) < 2:
+        print("Usage: python3 main.py path/to/file.pdf")
+        sys.exit(1)
 
+    path_to_pdf = sys.argv[1]
+    
+    # run just OMR 
     output_path = '../score_processing/MusicXML'
-
-    pdf_to_xml1 = OMR(output_path)
-    pdf_to_xml1.run_audiveris(espanoleta_score)
-    pdf_to_xml1.unzip_mxls()
-    pdf_to_xml1.delete_files_metafolder()
+    pdf_to_xml = OMR(path_to_pdf, output_path)
+    pdf_to_xml.run_audiveris()
+    pdf_to_xml.unzip_mxls()
+    pdf_to_xml.delete_files_metafolder()

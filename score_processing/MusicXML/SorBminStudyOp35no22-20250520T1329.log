@@ -1,0 +1,128 @@
+2025-05-20 13:29:58,263 INFO [SorBminStudyOp35no22]                 Book.java:562  | 2 sheets in /Users/robertwatson/Code/talking-music-score/src/../score_processing/pdf/SorBminStudyOp35no22.pdf
+2025-05-20 13:29:58,342 INFO []                 Book.java:2531 | Stored /book.xml
+2025-05-20 13:29:58,342 INFO []                 Book.java:2491 | Book stored as ../score_processing/MusicXML/SorBminStudyOp35no22.omr
+2025-05-20 13:29:58,345 INFO []                 Book.java:1933 | Book reaching PAGE on sheets:[#1#2]
+2025-05-20 13:29:58,346 INFO [SorBminStudyOp35no22#1]       StepMonitoring.java:98   | LOAD
+2025-05-20 13:29:58,696 INFO [SorBminStudyOp35no22#1]            SheetStub.java:1268 | Loaded image #1 2481x3374 from /Users/robertwatson/Code/talking-music-score/src/../score_processing/pdf/SorBminStudyOp35no22.pdf
+2025-05-20 13:29:58,698 INFO [SorBminStudyOp35no22#1]       StepMonitoring.java:98   | BINARY
+2025-05-20 13:29:58,926 INFO [SorBminStudyOp35no22#1]       StepMonitoring.java:98   | SCALE
+2025-05-20 13:29:58,941 INFO [SorBminStudyOp35no22#1]         ScaleBuilder.java:241  | Beam  guessed height: 10 -- 0.50 of 20 interline
+2025-05-20 13:29:58,942 INFO [SorBminStudyOp35no22#1]         ScaleBuilder.java:264  | Beam measured height: 12 -- 0.43 of [6..20] range at 343% of needed quorum
+2025-05-20 13:29:58,942 INFO [SorBminStudyOp35no22#1]            ScaleStep.java:65   | Scale{ interline(18,20,20) line(3,4,6) beam(12)}
+2025-05-20 13:29:58,943 INFO [SorBminStudyOp35no22#1]       StepMonitoring.java:98   | GRID
+2025-05-20 13:29:59,257 INFO [SorBminStudyOp35no22#1]       LinesRetriever.java:1500 | Global slope: -0.00098
+2025-05-20 13:29:59,271 INFO [SorBminStudyOp35no22#1]    ClustersRetriever.java:328  | Retrieved raw line clusters: 6 of sizes [5] with interline(18,20,20)
+2025-05-20 13:29:59,353 INFO [SorBminStudyOp35no22#1]            PeakGraph.java:310  | Systems: #1[1] #2[2] #3[3] #4[4] #5[5] #6[6]
+2025-05-20 13:29:59,557 INFO [SorBminStudyOp35no22#1]        SystemManager.java:134  | Indentation detected for system #1
+2025-05-20 13:29:59,559 INFO [SorBminStudyOp35no22#1]        SystemManager.java:779  | 1 part along 6 systems
+2025-05-20 13:29:59,559 INFO [SorBminStudyOp35no22#1]                 Book.java:545  | Created scores: [{Score 1}]
+2025-05-20 13:29:59,559 INFO [SorBminStudyOp35no22#1]       StepMonitoring.java:98   | HEADERS
+2025-05-20 13:29:59,694 INFO [SorBminStudyOp35no22#1]      BasicClassifier.java:277  | Classifier loaded XML norms.
+2025-05-20 13:29:59,696 INFO [SorBminStudyOp35no22#1]   AbstractClassifier.java:396  | Classifier data loaded from default uri jar:file:/Users/robertwatson/Code/talking-music-score/audiveris/app/build/distributions/app-5.6.0/lib/audiveris.jar!/res/basic-classifier.zip
+2025-05-20 13:30:00,135 INFO [SorBminStudyOp35no22#1]       StepMonitoring.java:98   | STEM_SEEDS
+2025-05-20 13:30:00,165 INFO [SorBminStudyOp35no22#1]        StemSeedsStep.java:86   | stem(4 max:6)
+2025-05-20 13:30:00,207 INFO [SorBminStudyOp35no22#1]       StepMonitoring.java:98   | BEAMS
+2025-05-20 13:30:02,748 INFO [SorBminStudyOp35no22#1]       StepMonitoring.java:98   | LEDGERS
+2025-05-20 13:30:02,872 INFO [SorBminStudyOp35no22#1]       StepMonitoring.java:98   | HEADS
+2025-05-20 13:30:05,073 INFO [SorBminStudyOp35no22#1]        HeadSeedTally.java:235  | Scale information: HeadSeeds{NOTEHEAD_VOID[L:0.2,R:-0.6] NOTEHEAD_BLACK[L:-0.3,R:-0.9]}
+2025-05-20 13:30:05,078 INFO [SorBminStudyOp35no22#1]       StepMonitoring.java:98   | STEMS
+2025-05-20 13:30:05,262 INFO [SorBminStudyOp35no22#1]           BeamLinker.java:1729 | Not linking shorter BeamHookInter#1172{(0.199/0.378) BEAM_HOOK}
+2025-05-20 13:30:05,378 INFO [SorBminStudyOp35no22#1]       StepMonitoring.java:98   | REDUCTION
+2025-05-20 13:30:05,442 INFO [SorBminStudyOp35no22#1]        ReductionStep.java:105  | Stems free length median value: 59 pixels, 3.0 interlines
+2025-05-20 13:30:05,445 INFO [SorBminStudyOp35no22#1]       StepMonitoring.java:98   | CUE_BEAMS
+2025-05-20 13:30:05,445 INFO [SorBminStudyOp35no22#1]         CueBeamsStep.java:81   | Step CUE_BEAMS is skipped because small heads switch is off
+2025-05-20 13:30:05,445 INFO [SorBminStudyOp35no22#1]       StepMonitoring.java:98   | TEXTS
+2025-05-20 13:30:06,136 INFO [SorBminStudyOp35no22#1]       StepMonitoring.java:98   | MEASURES
+2025-05-20 13:30:06,143 INFO [SorBminStudyOp35no22#1]                 Page.java:307  | 23 raw measures: [3 in system#1, 4 in system#2, 4 in system#3, 4 in system#4, 3 in system#5, 5 in system#6]
+2025-05-20 13:30:06,144 INFO [SorBminStudyOp35no22#1]       StepMonitoring.java:98   | CHORDS
+2025-05-20 13:30:06,153 INFO [SorBminStudyOp35no22#1]       StepMonitoring.java:98   | CURVES
+2025-05-20 13:30:06,909 INFO [SorBminStudyOp35no22#1]         SlursBuilder.java:240  | Slurs: 3
+2025-05-20 13:30:06,917 INFO [SorBminStudyOp35no22#1]      SegmentsBuilder.java:155  | Segments: 20
+2025-05-20 13:30:06,923 INFO [SorBminStudyOp35no22#1]       StepMonitoring.java:98   | SYMBOLS
+2025-05-20 13:30:07,353 INFO [SorBminStudyOp35no22#1]       StepMonitoring.java:98   | LINKS
+2025-05-20 13:30:07,403 INFO [SorBminStudyOp35no22#1]       StepMonitoring.java:98   | RHYTHMS
+2025-05-20 13:30:07,450 INFO [SorBminStudyOp35no22#1]       StepMonitoring.java:98   | PAGE
+2025-05-20 13:30:07,454 INFO [SorBminStudyOp35no22#1]                 Book.java:2550 | Book{SorBminStudyOp35no22} storing
+2025-05-20 13:30:07,496 INFO [SorBminStudyOp35no22#1]                 Book.java:2531 | Stored /book.xml
+2025-05-20 13:30:07,590 INFO [SorBminStudyOp35no22#1]           DataHolder.java:348  | Stored /sheet#1/BINARY.png
+2025-05-20 13:30:08,123 INFO [SorBminStudyOp35no22#1]                Sheet.java:1562 | Stored /sheet#1/sheet#1.xml
+2025-05-20 13:30:08,123 INFO [SorBminStudyOp35no22#1]                 Book.java:2491 | Book stored as ../score_processing/MusicXML/SorBminStudyOp35no22.omr
+2025-05-20 13:30:08,124 INFO [SorBminStudyOp35no22#1]            SheetStub.java:1644 | Disposed sheet#1
+2025-05-20 13:30:08,157 INFO [SorBminStudyOp35no22#1]                 Book.java:2018 | End of Stub#1 memory: 38,307,192
+2025-05-20 13:30:08,157 INFO [SorBminStudyOp35no22#2]       StepMonitoring.java:98   | LOAD
+2025-05-20 13:30:08,288 INFO [SorBminStudyOp35no22#2]            SheetStub.java:1268 | Loaded image #2 2481x3356 from /Users/robertwatson/Code/talking-music-score/src/../score_processing/pdf/SorBminStudyOp35no22.pdf
+2025-05-20 13:30:08,288 INFO [SorBminStudyOp35no22#2]       StepMonitoring.java:98   | BINARY
+2025-05-20 13:30:08,469 INFO [SorBminStudyOp35no22#2]       StepMonitoring.java:98   | SCALE
+2025-05-20 13:30:08,472 INFO [SorBminStudyOp35no22#2]         ScaleBuilder.java:241  | Beam  guessed height: 10 -- 0.50 of 19 interline
+2025-05-20 13:30:08,472 INFO [SorBminStudyOp35no22#2]         ScaleBuilder.java:264  | Beam measured height: 11 -- 0.38 of [6..19] range at 310% of needed quorum
+2025-05-20 13:30:08,472 INFO [SorBminStudyOp35no22#2]            ScaleStep.java:65   | Scale{ interline(18,19,21) line(3,4,6) beam(11)}
+2025-05-20 13:30:08,473 INFO [SorBminStudyOp35no22#2]       StepMonitoring.java:98   | GRID
+2025-05-20 13:30:08,620 INFO [SorBminStudyOp35no22#2]       LinesRetriever.java:1500 | Global slope: 0.00195
+2025-05-20 13:30:08,629 INFO [SorBminStudyOp35no22#2]    ClustersRetriever.java:328  | Retrieved raw line clusters: 6 of sizes [5] with interline(18,19,21)
+2025-05-20 13:30:08,698 INFO [SorBminStudyOp35no22#2]            PeakGraph.java:310  | Systems: #1[1] #2[2] #3[3] #4[4] #5[5] #6[6]
+2025-05-20 13:30:08,801 INFO [SorBminStudyOp35no22#2]        SystemManager.java:134  | Indentation detected for system #6
+2025-05-20 13:30:08,802 INFO [SorBminStudyOp35no22#2]        SystemManager.java:723  | 2 pages found in sheet
+2025-05-20 13:30:08,802 INFO [SorBminStudyOp35no22#2]        SystemManager.java:779  | Page #1: 1 part along 5 systems
+2025-05-20 13:30:08,802 INFO [SorBminStudyOp35no22#2]        SystemManager.java:779  | Page #2: 1 part along 1 system
+2025-05-20 13:30:08,802 INFO [SorBminStudyOp35no22#2]       StepMonitoring.java:98   | HEADERS
+2025-05-20 13:30:08,892 WARN [SorBminStudyOp35no22#2]          ClefBuilder.java:658  | Staff#6 no recognized header clef.
+2025-05-20 13:30:08,892 INFO [SorBminStudyOp35no22#2]       StepMonitoring.java:98   | STEM_SEEDS
+2025-05-20 13:30:08,913 INFO [SorBminStudyOp35no22#2]        StemSeedsStep.java:86   | stem(4 max:6)
+2025-05-20 13:30:08,923 INFO [SorBminStudyOp35no22#2]       StepMonitoring.java:98   | BEAMS
+2025-05-20 13:30:10,801 INFO [SorBminStudyOp35no22#2]       StepMonitoring.java:98   | LEDGERS
+2025-05-20 13:30:10,866 INFO [SorBminStudyOp35no22#2]       StepMonitoring.java:98   | HEADS
+2025-05-20 13:30:12,943 INFO [SorBminStudyOp35no22#2]        HeadSeedTally.java:235  | Scale information: HeadSeeds{NOTEHEAD_VOID[L:-0.4,R:-1.1] NOTEHEAD_BLACK[L:-0.7,R:-1.2]}
+2025-05-20 13:30:12,943 INFO [SorBminStudyOp35no22#2]       StepMonitoring.java:98   | STEMS
+2025-05-20 13:30:13,089 INFO [SorBminStudyOp35no22#2]       StepMonitoring.java:98   | REDUCTION
+2025-05-20 13:30:13,120 INFO [SorBminStudyOp35no22#2]        ReductionStep.java:105  | Stems free length median value: 58 pixels, 3.1 interlines
+2025-05-20 13:30:13,122 INFO [SorBminStudyOp35no22#2]       StepMonitoring.java:98   | CUE_BEAMS
+2025-05-20 13:30:13,122 INFO [SorBminStudyOp35no22#2]         CueBeamsStep.java:81   | Step CUE_BEAMS is skipped because small heads switch is off
+2025-05-20 13:30:13,122 INFO [SorBminStudyOp35no22#2]       StepMonitoring.java:98   | TEXTS
+2025-05-20 13:30:13,432 INFO [SorBminStudyOp35no22#2]       StepMonitoring.java:98   | MEASURES
+2025-05-20 13:30:13,433 INFO [SorBminStudyOp35no22#2]                 Page.java:307  | 19 raw measures: [3 in system#1, 4 in system#2, 4 in system#3, 4 in system#4, 4 in system#5]
+2025-05-20 13:30:13,433 INFO [SorBminStudyOp35no22#2]                 Page.java:307  | 4 raw measures: [4 in system#6]
+2025-05-20 13:30:13,433 INFO [SorBminStudyOp35no22#2]       StepMonitoring.java:98   | CHORDS
+2025-05-20 13:30:13,436 INFO [SorBminStudyOp35no22#2]       StepMonitoring.java:98   | CURVES
+2025-05-20 13:30:14,059 INFO [SorBminStudyOp35no22#2]         SlursBuilder.java:240  | Slurs: 3
+2025-05-20 13:30:14,065 INFO [SorBminStudyOp35no22#2]      SegmentsBuilder.java:155  | Segments: 18
+2025-05-20 13:30:14,067 INFO [SorBminStudyOp35no22#2]       StepMonitoring.java:98   | SYMBOLS
+2025-05-20 13:30:14,345 INFO [SorBminStudyOp35no22#2]       StepMonitoring.java:98   | LINKS
+2025-05-20 13:30:14,352 INFO [SorBminStudyOp35no22#2]        SymbolsLinker.java:257  | No chord linked to OctaveShiftInter#4667{(0.272) staff:2 QUINDICESIMA BASSA}
+2025-05-20 13:30:14,352 INFO [SorBminStudyOp35no22#2]        SymbolsLinker.java:257  | No chord linked to OctaveShiftInter#4670{(0.160) staff:2 QUINDICESIMA BASSA}
+2025-05-20 13:30:14,356 INFO [SorBminStudyOp35no22#2]        SymbolsLinker.java:257  | No chord linked to OctaveShiftInter#4720{(0.272) staff:3 QUINDICESIMA ALTA}
+2025-05-20 13:30:14,356 INFO [SorBminStudyOp35no22#2]        SymbolsLinker.java:257  | No chord linked to OctaveShiftInter#4721{(0.160) staff:3 QUINDICESIMA ALTA}
+2025-05-20 13:30:14,368 INFO [SorBminStudyOp35no22#2]       StepMonitoring.java:98   | RHYTHMS
+2025-05-20 13:30:14,368 INFO [SorBminStudyOp35no22#2]           PageRhythm.java:199  | {Page#2.1} Time value reused from sheet#1
+2025-05-20 13:30:14,370 INFO [SorBminStudyOp35no22#2]        MeasureRhythm.java:1045 | Measure{#1} No timeOffset for HeadChordInter#3718{(0.512/0.512) staff:1 slot#8 dur:1/8}
+2025-05-20 13:30:14,371 INFO [SorBminStudyOp35no22#2]        MeasureRhythm.java:1045 | Measure{#1} No timeOffset for HeadChordInter#3716{(0.908/0.908) staff:1 slot#8 dur:3/4}
+2025-05-20 13:30:14,371 INFO [SorBminStudyOp35no22#2]   AbstractChordInter.java:627  | Measure{#1} No timeOffset for HeadChordInter#3719{(0.942/0.942) staff:1 slot#9 dur:1/8}
+2025-05-20 13:30:14,371 INFO [SorBminStudyOp35no22#2]   AbstractChordInter.java:627  | Measure{#1} No timeOffset for HeadChordInter#3716{(0.908/0.908) staff:1 slot#8 dur:3/4}
+2025-05-20 13:30:14,371 INFO [SorBminStudyOp35no22#2]   AbstractChordInter.java:627  | Measure{#1} No timeOffset for HeadChordInter#3721{(0.945/0.945) staff:1 slot#11 dur:1/8}
+2025-05-20 13:30:14,371 INFO [SorBminStudyOp35no22#2]   AbstractChordInter.java:627  | Measure{#1} No timeOffset for HeadChordInter#3716{(0.908/0.908) staff:1 slot#8 dur:3/4}
+2025-05-20 13:30:14,371 INFO [SorBminStudyOp35no22#2]                Voice.java:257  | Measure{#1} Voice{#1 excess:1/4} too long
+2025-05-20 13:30:14,371 INFO [SorBminStudyOp35no22#2]                Voice.java:257  | Measure{#1} Voice{#3 excess:1/4} too long
+2025-05-20 13:30:14,371 INFO [SorBminStudyOp35no22#2]          StackRhythm.java:224  | S1 MeasureStack#1 no correct rhythm
+2025-05-20 13:30:14,387 INFO [SorBminStudyOp35no22#2]       StepMonitoring.java:98   | PAGE
+2025-05-20 13:30:14,388 INFO [SorBminStudyOp35no22#2]                Voice.java:257  | Measure{#1} Voice{#1 excess:1/4} too long
+2025-05-20 13:30:14,388 INFO [SorBminStudyOp35no22#2]                Voice.java:257  | Measure{#1} Voice{#3 excess:1/4} too long
+2025-05-20 13:30:14,389 WARN [SorBminStudyOp35no22#2]         MeasureFixer.java:343  | System#6 No target duration for measures local IDs [1, 2, 3, 4], please check time signatures
+2025-05-20 13:30:14,389 INFO [SorBminStudyOp35no22#2]                 Book.java:2550 | Book{SorBminStudyOp35no22} storing
+2025-05-20 13:30:14,421 INFO [SorBminStudyOp35no22#2]                 Book.java:2531 | Stored /book.xml
+2025-05-20 13:30:14,472 INFO [SorBminStudyOp35no22#2]           DataHolder.java:348  | Stored /sheet#2/BINARY.png
+2025-05-20 13:30:14,898 INFO [SorBminStudyOp35no22#2]                Sheet.java:1562 | Stored /sheet#2/sheet#2.xml
+2025-05-20 13:30:14,898 INFO [SorBminStudyOp35no22#2]                 Book.java:2491 | Book stored as ../score_processing/MusicXML/SorBminStudyOp35no22.omr
+2025-05-20 13:30:14,901 INFO [SorBminStudyOp35no22#2]            SheetStub.java:1644 | Disposed sheet#2
+2025-05-20 13:30:14,933 INFO [SorBminStudyOp35no22#2]                 Book.java:2018 | End of Stub#2 memory: 38,483,360
+2025-05-20 13:30:14,933 INFO [SorBminStudyOp35no22]                 Book.java:2025 | Book processed.
+2025-05-20 13:30:15,148 INFO [SorBminStudyOp35no22]            SheetStub.java:995  | Loaded /sheet#1/sheet#1.xml
+2025-05-20 13:30:15,322 INFO [SorBminStudyOp35no22]            SheetStub.java:995  | Loaded /sheet#2/sheet#2.xml
+2025-05-20 13:30:15,323 INFO [SorBminStudyOp35no22]                Score.java:866  | PartCollation needed in {Score 2}
+2025-05-20 13:30:15,323 INFO [SorBminStudyOp35no22]                 Book.java:2075 | Scores built: 2
+2025-05-20 13:30:15,477 INFO [SorBminStudyOp35no22]      PartwiseBuilder.java:2661 | Exporting sheet(s): [#1#2]
+2025-05-20 13:30:15,529 INFO [SorBminStudyOp35no22]        ScoreExporter.java:164  | Score SorBminStudyOp35no22.mvt1 exported to ../score_processing/MusicXML/SorBminStudyOp35no22.mvt1.mxl
+2025-05-20 13:30:15,529 INFO [SorBminStudyOp35no22]      PartwiseBuilder.java:2661 | Exporting sheet(s): [#2]
+2025-05-20 13:30:15,533 INFO [SorBminStudyOp35no22]        ScoreExporter.java:164  | Score SorBminStudyOp35no22.mvt2 exported to ../score_processing/MusicXML/SorBminStudyOp35no22.mvt2.mxl
+2025-05-20 13:30:15,557 INFO [SorBminStudyOp35no22]                 Book.java:2531 | Stored /book.xml
+2025-05-20 13:30:15,557 INFO [SorBminStudyOp35no22]                 Book.java:2491 | Book stored as ../score_processing/MusicXML/SorBminStudyOp35no22.omr
+2025-05-20 13:30:15,559 INFO [SorBminStudyOp35no22]                Score.java:181  | Closing {Score 1}
+2025-05-20 13:30:15,559 INFO [SorBminStudyOp35no22]                Score.java:181  | Closing {Score 2}

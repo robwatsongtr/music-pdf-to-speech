@@ -8,10 +8,11 @@ class OMR:
     This class will perform Optical Music Recognition on a PDF using Audiveris, then
     output to MusicXML file, while cleaning up extraneous files and folders. 
     """
-    def __init__(self, output_dir: str):
+    def __init__(self, input_pdf_path: str, output_dir: str):
         self.output_dir = output_dir
+        self.input_pdf_path = input_pdf_path
 
-    def run_audiveris(self, input_pdf_path: str = None) -> None:
+    def run_audiveris(self) -> None:
         """
         Run Audiveris CLI to convert a PDF into a MusicXML file.
         """
@@ -21,7 +22,7 @@ class OMR:
             "-batch", 
             "-export", 
             "-output", self.output_dir,
-            input_pdf_path
+            self.input_pdf_path
         ]
 
         try:
