@@ -8,5 +8,5 @@ if __name__ == "__main__":
 
     pdf_to_xml1 = OMR(output_path)
     pdf_to_xml1.run_audiveris(espanoleta_score)
-    pdf_to_xml1.unzip_mxl()
-
+    pdf_to_xml1.unzip_mxls()
+    pdf_to_xml1.delete_files_metafolder()
