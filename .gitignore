@@ -4,7 +4,7 @@ __pycache__/
 *$py.class
 
 # Virtual environment
-guitar-omr-venv/
+talking-music-score-venv/
 
 # VS Code settings
 .vscode/
@@ -16,3 +16,5 @@ dist/
 
 # Environment variables
 .env
+
+.DS_Store
