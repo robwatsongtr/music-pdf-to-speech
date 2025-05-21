@@ -1,4 +1,6 @@
 from omr import OMR
+from playback import Playback
+
 import sys 
 
 if __name__ == "__main__":

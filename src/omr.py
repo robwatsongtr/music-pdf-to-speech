@@ -8,9 +8,9 @@ class OMR:
     This class will perform Optical Music Recognition on a PDF using Audiveris, then
     output to MusicXML file, while cleaning up extraneous files and folders. 
     """
-    def __init__(self, input_pdf_path: str, output_dir: str):
+    def __init__(self, input_pdf_path: str, output_path: str):
         self.input_pdf_path = input_pdf_path
-        self.output_dir = output_dir
+        self.output_path = output_path
         
     def run_audiveris(self) -> None:
         """
@@ -21,7 +21,7 @@ class OMR:
             script_path, 
             "-batch", 
             "-export", 
-            "-output", self.output_dir,
+            "-output", self.output_path,
             self.input_pdf_path
         ]
 
@@ -35,7 +35,7 @@ class OMR:
         """
         Unzip the resulting .mxl file(s)
         """
-        output_path = Path(self.output_dir)
+        output_path = Path(self.output_path)
         mxl_files = output_path.glob("*.mxl")
 
         print("--- Unzip .mxl file(s) --- ")
@@ -48,7 +48,7 @@ class OMR:
                 print(f"unzip failed with exit code {e.returncode}")
     
     def check_for_xml_file(self) -> bool:
-        directory = Path(self.output_dir)
+        directory = Path(self.output_path)
 
         return any(directory.glob("*.xml"))
 
@@ -57,7 +57,7 @@ class OMR:
         Delete non .xml files and 'META-INF' folder, keep log file  
         (Produced by Audioveris and The unzipping of the .mxl file(s))
         """
-        directory = Path(self.output_dir)
+        directory = Path(self.output_path)
         extensions = {'.mxl', '.omr'}
 
         print("--- Delete non .xml files and folders, keep log --- ")
