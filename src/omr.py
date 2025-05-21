@@ -9,9 +9,9 @@ class OMR:
     output to MusicXML file, while cleaning up extraneous files and folders. 
     """
     def __init__(self, input_pdf_path: str, output_dir: str):
-        self.output_dir = output_dir
         self.input_pdf_path = input_pdf_path
-
+        self.output_dir = output_dir
+        
     def run_audiveris(self) -> None:
         """
         Run Audiveris CLI to convert a PDF into a MusicXML file.
