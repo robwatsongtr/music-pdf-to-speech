@@ -2,7 +2,7 @@ from music21 import converter
 import subprocess
 from pathlib import Path
 from music21.exceptions21 import Music21Exception
-
+import sys
 
 class Playback:
     """
@@ -28,5 +28,22 @@ class Playback:
             print("music21 failed to parse or write:", e)
 
     
+if __name__ == "__main__":
+    if len(sys.argv) < 2:
+        print("Usage: python3 playback.py path/to/file.xml")
+        sys.exit(1)
+
+    path_to_xml = sys.argv[1]
+    
+    # run just MusicXML to MIDI converter 
+    # ../score_processing/MusicXML/Espanoleta.xml
+    print("Running just musicxml to midi converter...")
+    output_path = '../score_processing/MIDI'
+    xml_to_midi = Playback(path_to_xml, output_path)
+    xml_to_midi.convert_mxml_to_MIDI()
+
+    
+   
+
 
     
