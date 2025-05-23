@@ -76,4 +76,10 @@ class OMR:
             print("OMR FAILED: No .xml file produced. Check Logs.")
         else:
             print("OMR Succeeded!")
+
+    def strip_chords(self) -> None:
+        original_file = Path(self.input_pdf_path)
+        base_name = original_file.stem
+        xml_to_open = Path(self.output_path) / f"{base_name}.xml"
+
             
