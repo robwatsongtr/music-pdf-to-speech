@@ -2,6 +2,7 @@ import subprocess
 import os 
 from pathlib import Path
 import shutil
+from lxml import etree
 
 class OMR:
     """
@@ -24,7 +25,6 @@ class OMR:
             "-output", self.output_path,
             self.input_pdf_path
         ]
-
         try:
             subprocess.run(cmd, check=True)
             print("Audiveris processing completed successfully")
@@ -78,8 +78,41 @@ class OMR:
             print("OMR Succeeded!")
 
     def strip_chords(self) -> None:
+        """
+        If MusicXML file has chords above staff, remove them
+        ie, it strips <harmony> tags. These get played in playback. 
+        """
         original_file = Path(self.input_pdf_path)
         base_name = original_file.stem
-        xml_to_open = Path(self.output_path) / f"{base_name}.xml"
+        xml_to_process = Path(self.output_path) / f"{base_name}.xml"
+
+        if not xml_to_process.exists(): 
+            print(f'File not found: {xml_to_process}') 
+            return 
+
+        try:
+            tree = etree.parse(xml_to_process)
+        except etree.XMLSyntaxError as e:
+            print(f"Failed to parse XML: {e}")
+            return
+
+        root = tree.getroot()
+        tag_to_remove = 'harmony'
+        for elem in root.xpath('.//' + tag_to_remove):
+            parent = elem.getparent()
+            if parent is not None:
+                parent.remove(elem)
+
+        tree.write(
+            xml_to_process,
+            pretty_print=True,
+            xml_declaration=True,
+            encoding='UTF-8'
+        )
+
+        print('Chords Stripped.')
+
+
+
 
             

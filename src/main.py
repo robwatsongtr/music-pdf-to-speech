@@ -16,3 +16,4 @@ if __name__ == "__main__":
     pdf_to_xml.run_audiveris()
     pdf_to_xml.unzip_mxls()
     pdf_to_xml.delete_files_metafolder()
+    pdf_to_xml.strip_chords()

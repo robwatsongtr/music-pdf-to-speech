@@ -1,15 +1,15 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version='1.0' encoding='UTF-8'?>
 <!DOCTYPE score-partwise PUBLIC "-//Recordare//DTD MusicXML 4.0.3 Partwise//EN" "http://www.musicxml.org/dtds/partwise.dtd">
 <score-partwise version="4.0.3">
   <movement-title>Ode to Joy</movement-title>
   <identification>
     <encoding>
       <software>Audiveris 5.6.0</software>
-      <supports type="yes" element="print" attribute="new-system" value="yes"></supports>
-      <supports type="yes" element="print" attribute="new-page" value="yes"></supports>
-      <supports type="yes" element="accidental"></supports>
-      <supports type="yes" element="beam"></supports>
-      <supports type="yes" element="stem"></supports>
+      <supports type="yes" element="print" attribute="new-system" value="yes"/>
+      <supports type="yes" element="print" attribute="new-page" value="yes"/>
+      <supports type="yes" element="accidental"/>
+      <supports type="yes" element="beam"/>
+      <supports type="yes" element="stem"/>
       <software>ProxyMusic 4.0.3</software>
       <encoding-date>2025-05-23</encoding-date>
     </encoding>
@@ -34,7 +34,7 @@
         <bottom-margin>80</bottom-margin>
       </page-margins>
     </page-layout>
-    <lyric-font font-family="Sans Serif" font-size="10"></lyric-font>
+    <lyric-font font-family="Sans Serif" font-size="10"/>
   </defaults>
   <credit page="1">
     <credit-words default-x="369" default-y="927" font-family="sans-serif" font-size="20" font-weight="bold">Ode to Joy</credit-words>
@@ -83,7 +83,7 @@
           <sign>G</sign>
           <line>2</line>
         </clef>
-        <staff-details print-object="yes"></staff-details>
+        <staff-details print-object="yes"/>
       </attributes>
       <note default-x="64">
         <pitch>
@@ -128,12 +128,6 @@
     </measure>
     <!--=======================================================-->
     <measure number="2" width="147">
-      <harmony default-y="18" relative-x="3" font-size="18.24" placement="above">
-        <root>
-          <root-step>G</root-step>
-        </root>
-        <kind text="">major</kind>
-      </harmony>
       <note default-x="11">
         <pitch>
           <step>G</step>
@@ -220,12 +214,6 @@
     </measure>
     <!--=======================================================-->
     <measure number="4" width="146">
-      <harmony default-y="11" relative-x="2" font-size="10.8" placement="above">
-        <root>
-          <root-step>E</root-step>
-        </root>
-        <kind text="m">minor</kind>
-      </harmony>
       <note default-x="11">
         <pitch>
           <step>E</step>
@@ -236,7 +224,7 @@
         <type>quarter</type>
         <stem default-y="-41">down</stem>
         <notations>
-          <slur type="start" number="1" placement="below" default-x="2" default-y="-29" bezier-x="15" bezier-y="-1"></slur>
+          <slur type="start" number="1" placement="below" default-x="2" default-y="-29" bezier-x="15" bezier-y="-1"/>
         </notations>
       </note>
       <note default-x="48">
@@ -249,7 +237,7 @@
         <type>quarter</type>
         <stem default-y="-46">down</stem>
         <notations>
-          <slur type="stop" number="1" default-x="12" default-y="-29" bezier-x="-15" bezier-y="-1"></slur>
+          <slur type="stop" number="1" default-x="12" default-y="-29" bezier-x="-15" bezier-y="-1"/>
         </notations>
       </note>
       <note default-x="84">
@@ -275,7 +263,7 @@
         </system-layout>
       </print>
       <attributes>
-        <staff-details print-object="yes"></staff-details>
+        <staff-details print-object="yes"/>
       </attributes>
       <note default-x="41">
         <pitch>
@@ -320,12 +308,6 @@
     </measure>
     <!--=======================================================-->
     <measure number="6" width="147">
-      <harmony default-y="23" relative-x="5" font-size="18.24" placement="above">
-        <root>
-          <root-step>F</root-step>
-        </root>
-        <kind text="">major</kind>
-      </harmony>
       <note default-x="11">
         <pitch>
           <step>G</step>
@@ -455,7 +437,7 @@
         </system-layout>
       </print>
       <attributes>
-        <staff-details print-object="yes"></staff-details>
+        <staff-details print-object="yes"/>
       </attributes>
       <note default-x="41">
         <pitch>
@@ -591,12 +573,6 @@
     </measure>
     <!--=======================================================-->
     <measure number="12" width="143">
-      <harmony default-y="14" relative-x="1" font-size="10.08" placement="above">
-        <root>
-          <root-step>A</root-step>
-        </root>
-        <kind text="m">minor</kind>
-      </harmony>
       <note default-x="11">
         <pitch>
           <step>C</step>
@@ -640,7 +616,7 @@
         </system-layout>
       </print>
       <attributes>
-        <staff-details print-object="yes"></staff-details>
+        <staff-details print-object="yes"/>
       </attributes>
       <note default-x="41">
         <pitch>
@@ -691,7 +667,7 @@
             <p/>
           </dynamics>
         </direction-type>
-        <sound dynamics="56"></sound>
+        <sound dynamics="56"/>
       </direction>
       <note default-x="11">
         <pitch>
@@ -822,14 +798,8 @@
         </system-layout>
       </print>
       <attributes>
-        <staff-details print-object="yes"></staff-details>
+        <staff-details print-object="yes"/>
       </attributes>
-      <harmony default-y="14" relative-x="1" font-size="10.08" placement="above">
-        <root>
-          <root-step>D</root-step>
-        </root>
-        <kind text="m">minor</kind>
-      </harmony>
       <note default-x="41">
         <pitch>
           <step>D</step>
@@ -850,12 +820,6 @@
         <type>quarter</type>
         <stem default-y="-45">down</stem>
       </note>
-      <harmony default-y="15" relative-x="1" font-size="10.8" placement="above">
-        <root>
-          <root-step>E</root-step>
-        </root>
-        <kind text="m">minor</kind>
-      </harmony>
       <note default-x="111">
         <pitch>
           <step>E</step>
@@ -879,12 +843,6 @@
     </measure>
     <!--=======================================================-->
     <measure number="18" width="152">
-      <harmony default-y="15" relative-x="1" font-size="9.84" placement="above">
-        <root>
-          <root-step>D</root-step>
-        </root>
-        <kind text="m">minor</kind>
-      </harmony>
       <note default-x="11">
         <pitch>
           <step>D</step>
@@ -959,7 +917,7 @@
         <stem default-y="-42">down</stem>
         <notations>
           <articulations>
-            <strong-accent type="up" placement="above" default-y="20"></strong-accent>
+            <strong-accent type="up" placement="above" default-y="20"/>
           </articulations>
         </notations>
       </note>
@@ -987,7 +945,7 @@
         <stem default-y="-51">down</stem>
         <notations>
           <articulations>
-            <strong-accent type="up" placement="above" default-y="20"></strong-accent>
+            <strong-accent type="up" placement="above" default-y="20"/>
           </articulations>
         </notations>
       </note>
@@ -1034,7 +992,7 @@
         </system-layout>
       </print>
       <attributes>
-        <staff-details print-object="yes"></staff-details>
+        <staff-details print-object="yes"/>
       </attributes>
       <note default-x="41">
         <pitch>
@@ -1079,12 +1037,6 @@
     </measure>
     <!--=======================================================-->
     <measure number="22" width="151">
-      <harmony default-y="18" relative-x="6" font-size="18.24" placement="above">
-        <root>
-          <root-step>F</root-step>
-        </root>
-        <kind text="">major</kind>
-      </harmony>
       <note default-x="11">
         <pitch>
           <step>G</step>
@@ -1148,12 +1100,6 @@
         <type>quarter</type>
         <stem default-y="-50">down</stem>
       </note>
-      <harmony default-y="18" relative-x="1" font-size="10.08" placement="above">
-        <root>
-          <root-step>D</root-step>
-        </root>
-        <kind text="m">minor</kind>
-      </harmony>
       <note default-x="79">
         <pitch>
           <step>D</step>
