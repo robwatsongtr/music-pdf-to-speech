@@ -40,7 +40,6 @@ if __name__ == "__main__":
     path_to_xml = sys.argv[1]
     
     # run just MusicXML to MIDI converter 
-    # ../score_processing/MusicXML/Espanoleta.xml
     output_path = '../score_processing/MIDI'
     xml_to_midi = Playback(path_to_xml, output_path)
     xml_to_midi.convert_mxml_to_MIDI()

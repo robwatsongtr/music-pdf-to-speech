@@ -11,11 +11,11 @@
       <supports type="yes" element="beam"/>
       <supports type="yes" element="stem"/>
       <software>ProxyMusic 4.0.3</software>
-      <encoding-date>2025-05-23</encoding-date>
+      <encoding-date>2025-05-26</encoding-date>
     </encoding>
-    <source>/Users/robertwatson/Code/talking-music-score/src/../score_processing/pdf/OdeToJoy.pdf</source>
+    <source>/Users/robertwatson/Code/talking-music-score/score_processing/pdf/OdeToJoy.pdf</source>
     <miscellaneous>
-      <miscellaneous-field name="source-file">/Users/robertwatson/Code/talking-music-score/src/../score_processing/pdf/OdeToJoy.pdf</miscellaneous-field>
+      <miscellaneous-field name="source-file">/Users/robertwatson/Code/talking-music-score/score_processing/pdf/OdeToJoy.pdf</miscellaneous-field>
       <miscellaneous-field name="source-sheet-1">1 2 3 4 5 6</miscellaneous-field>
     </miscellaneous>
   </identification>
@@ -47,14 +47,14 @@
   </credit>
   <part-list>
     <score-part id="P1">
-      <part-name>Voice</part-name>
-      <part-abbreviation>Voice</part-abbreviation>
+      <part-name>Guitar</part-name>
+      <part-abbreviation>Guitar</part-abbreviation>
       <score-instrument id="P1-I1">
-        <instrument-name>Voice Oohs</instrument-name>
+        <instrument-name>Acoustic Guitar Steel</instrument-name>
       </score-instrument>
       <midi-instrument id="P1-I1">
         <midi-channel>1</midi-channel>
-        <midi-program>54</midi-program>
+        <midi-program>25</midi-program>
         <volume>78</volume>
       </midi-instrument>
     </score-part>

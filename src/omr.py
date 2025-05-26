@@ -9,10 +9,16 @@ class OMR:
     This class will perform Optical Music Recognition on a PDF using Audiveris, then
     output to MusicXML file, while cleaning up extraneous files and folders. 
     """
-    def __init__(self, input_pdf_path: str, output_path: str):
+    def __init__(self, output_path: str, input_pdf_path: str, midi_sound: str):
         self.input_pdf_path = input_pdf_path
         self.output_path = output_path
-        
+        self.midi_sound = midi_sound
+        self.midi_sound_map = {
+            "Piano" : "0",
+            "Guitar" : "25",
+            "Marimba" : "12"
+        }
+
     def run_audiveris(self) -> None:
         """
         Run Audiveris CLI to convert a PDF into a MusicXML file.
@@ -77,14 +83,19 @@ class OMR:
         else:
             print("OMR Succeeded!")
 
+    def get_xml_file(self) -> str:
+        original_file = Path(self.input_pdf_path)
+        base_name = original_file.stem
+        xml_file = Path(self.output_path) / f"{base_name}.xml"
+
+        return xml_file
+
     def strip_chords(self) -> None:
         """
         If MusicXML file has chords above staff, remove them
         ie, it strips <harmony> tags. These get played in playback. 
         """
-        original_file = Path(self.input_pdf_path)
-        base_name = original_file.stem
-        xml_to_process = Path(self.output_path) / f"{base_name}.xml"
+        xml_to_process = self.get_xml_file()
 
         if not xml_to_process.exists(): 
             print(f'File not found: {xml_to_process}') 
@@ -112,7 +123,55 @@ class OMR:
 
         print('Chords Stripped.')
 
+    def change_part_1_sound(self) -> None:
+        """
+        In MusicXML file: 
+        Changes Part 1 part name, part abbreviation, score instrument name,
+        midi instrument program to what is stored in self.midi_sound
+        """
+        xml_to_process = self.get_xml_file()
 
+        if not xml_to_process.exists(): 
+            print(f'File not found: {xml_to_process}') 
+            return 
 
+        try:
+            tree = etree.parse(xml_to_process)
+        except etree.XMLSyntaxError as e:
+            print(f"Failed to parse XML: {e}")
+            return
+        
+        root = tree.getroot()
+        score_part_1 = root.xpath('.//score-part[@id="P1"]')[0]
 
+        part_name_element = score_part_1.find('part-name')
+        part_abbrev_element = score_part_1.find('part-abbreviation')
+        instrument_name_element = score_part_1.find('.//instrument-name')
+        midi_program_element = score_part_1.find('.//midi-program')
+
+        if part_name_element is not None:
+            part_name_element.text = self.midi_sound
+
+        if part_abbrev_element is not None:
+            part_abbrev_element.text = self.midi_sound 
+            
+        if instrument_name_element is not None:
+            if self.midi_sound == 'Piano':
+                instrument_name_element.text = "Acoustic Grand Piano"
+            elif self.midi_sound == 'Guitar':
+                instrument_name_element.text = "Acoustic Guitar Steel"
+            elif self.midi_sound == 'Marimba':
+                instrument_name_element.text = "Marimba"
+
+        if midi_program_element is not None:
+            midi_program_element.text = self.midi_sound_map.get(self.midi_sound)
+
+        tree.write(
+            xml_to_process,
+            pretty_print=True,
+            xml_declaration=True,
+            encoding='UTF-8'
+        )
+
+        print(f'Part 1 Sound changed to {self.midi_sound}')
             
