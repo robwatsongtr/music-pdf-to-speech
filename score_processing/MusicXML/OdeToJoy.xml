@@ -47,14 +47,14 @@
   </credit>
   <part-list>
     <score-part id="P1">
-      <part-name>Guitar</part-name>
-      <part-abbreviation>Guitar</part-abbreviation>
+      <part-name>Marimba</part-name>
+      <part-abbreviation>Marimba</part-abbreviation>
       <score-instrument id="P1-I1">
-        <instrument-name>Acoustic Guitar Steel</instrument-name>
+        <instrument-name>Marimba</instrument-name>
       </score-instrument>
       <midi-instrument id="P1-I1">
         <midi-channel>1</midi-channel>
-        <midi-program>25</midi-program>
+        <midi-program>12</midi-program>
         <volume>78</volume>
       </midi-instrument>
     </score-part>

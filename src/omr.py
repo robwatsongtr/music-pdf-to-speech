@@ -114,12 +114,15 @@ class OMR:
             if parent is not None:
                 parent.remove(elem)
 
-        tree.write(
-            xml_to_process,
-            pretty_print=True,
-            xml_declaration=True,
-            encoding='UTF-8'
-        )
+        try:
+            tree.write(
+                xml_to_process,
+                pretty_print=True,
+                xml_declaration=True,
+                encoding='UTF-8'
+            )
+        except Exception as e:
+            print(f'Error writing xml file: {e}')
 
         print('Chords Stripped.')
 
@@ -165,13 +168,16 @@ class OMR:
 
         if midi_program_element is not None:
             midi_program_element.text = self.midi_sound_map.get(self.midi_sound)
-
-        tree.write(
-            xml_to_process,
-            pretty_print=True,
-            xml_declaration=True,
-            encoding='UTF-8'
-        )
+    
+        try:
+            tree.write(
+                xml_to_process,
+                pretty_print=True,
+                xml_declaration=True,
+                encoding='UTF-8'
+            )
+        except Exception as e:
+            print(f'Error writing xml file: {e}')
 
         print(f'Part 1 Sound changed to {self.midi_sound}')
             
