@@ -44,8 +44,6 @@ class OMR:
         output_path = Path(self.output_path)
         mxl_files = output_path.glob("*.mxl")
 
-        print("--- Unzip .mxl file(s) --- ")
-        
         for mxl_file in mxl_files:
             try:
                 subprocess.run(["unzip", "-o", mxl_file, "-d", str(output_path)], check=True)
@@ -65,8 +63,6 @@ class OMR:
         """
         directory = Path(self.output_path)
         extensions = {'.mxl', '.omr'}
-
-        print("--- Delete non .xml files and folders, keep log --- ")
 
         for file_path in directory.iterdir():
             if file_path.is_file() and file_path.suffix in extensions:

@@ -1,14 +1,13 @@
 from omr import OMR
-from playback import Playback
 from analyzer import Analyzer
+# from playback import Playback
 
 import sys 
 
 if __name__ == "__main__":
 
     valid_sounds = ['Piano', 'Guitar', 'Marimba']
-    output_path_xml = '../score_processing/MusicXML'
-
+    
     if len(sys.argv) < 3:
         print("Usage: python3 main.py path/to/file.pdf sound")
         print(f"Sound options: {', '.join(valid_sounds)}")
@@ -23,6 +22,7 @@ if __name__ == "__main__":
         sys.exit(1)
 
     # OMR (Optical Music Recognition)
+    output_path_xml = '../score_processing/MusicXML'
     pdf_to_xml = OMR(output_path_xml, path_to_pdf, midi_sound)
     pdf_to_xml.run_audiveris()
     pdf_to_xml.unzip_mxls()
@@ -35,3 +35,5 @@ if __name__ == "__main__":
     # Analyze Music XML file and output a text file 
     output_path_txt = '../score_processing/txt_output'
     xml_to_txt = Analyzer(output_path_txt, pdf_to_xml_file)
+    xml_to_txt.extract_staff_attr_start()
+    xml_to_txt.write_to_txt()

@@ -1,0 +1,5 @@
+OdeToJoy
+
+Clef: treble
+Key: C major as inferred.
+Time Signature: 4/4
