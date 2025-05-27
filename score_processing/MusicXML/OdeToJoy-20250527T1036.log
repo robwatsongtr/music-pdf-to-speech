@@ -1,0 +1,55 @@
+2025-05-27 10:36:04,281 INFO [OdeToJoy]                 Book.java:562  | 1 sheet in /Users/robertwatson/Code/talking-music-score/score_processing/pdf/OdeToJoy.pdf
+2025-05-27 10:36:04,369 INFO []                 Book.java:2531 | Stored /book.xml
+2025-05-27 10:36:04,369 INFO []                 Book.java:2491 | Book stored as ../score_processing/MusicXML/OdeToJoy.omr
+2025-05-27 10:36:04,373 INFO []                 Book.java:1933 | Book reaching PAGE on sheets:[#1]
+2025-05-27 10:36:04,374 INFO [OdeToJoy]       StepMonitoring.java:98   | LOAD
+2025-05-27 10:36:04,698 INFO [OdeToJoy]            SheetStub.java:1268 | Loaded image #1 2481x3207 from /Users/robertwatson/Code/talking-music-score/score_processing/pdf/OdeToJoy.pdf
+2025-05-27 10:36:04,701 INFO [OdeToJoy]       StepMonitoring.java:98   | BINARY
+2025-05-27 10:36:04,928 INFO [OdeToJoy]       StepMonitoring.java:98   | SCALE
+2025-05-27 10:36:04,942 INFO [OdeToJoy]         ScaleBuilder.java:241  | Beam  guessed height: 18 -- 0.50 of 35 interline
+2025-05-27 10:36:04,942 INFO [OdeToJoy]         ScaleBuilder.java:264  | Beam measured height: 33 -- 0.92 of [10..35] range at 61% of needed quorum
+2025-05-27 10:36:04,943 WARN [OdeToJoy]         ScaleBuilder.java:293  | No reliable beam height found, guessed value: 18
+2025-05-27 10:36:04,943 INFO [OdeToJoy]            ScaleStep.java:65   | Scale{ interline(34,35,37) line(6,7,8) beam(18 extra)}
+2025-05-27 10:36:04,943 INFO [OdeToJoy]       StepMonitoring.java:98   | GRID
+2025-05-27 10:36:05,249 INFO [OdeToJoy]       LinesRetriever.java:1500 | Global slope: 0.00398
+2025-05-27 10:36:05,258 INFO [OdeToJoy]    ClustersRetriever.java:328  | Retrieved raw line clusters: 6 of sizes [5] with interline(34,35,37)
+2025-05-27 10:36:05,330 INFO [OdeToJoy]            PeakGraph.java:310  | Systems: #1[1] #2[2] #3[3] #4[4] #5[5] #6[6]
+2025-05-27 10:36:05,520 INFO [OdeToJoy]        SystemManager.java:779  | 1 part along 6 systems
+2025-05-27 10:36:05,521 INFO [OdeToJoy]                 Book.java:545  | Created scores: [{Score 1}]
+2025-05-27 10:36:05,521 INFO [OdeToJoy]       StepMonitoring.java:98   | HEADERS
+2025-05-27 10:36:05,668 INFO [OdeToJoy]      BasicClassifier.java:277  | Classifier loaded XML norms.
+2025-05-27 10:36:05,670 INFO [OdeToJoy]   AbstractClassifier.java:396  | Classifier data loaded from default uri jar:file:/Users/robertwatson/Code/talking-music-score/audiveris/app/build/distributions/app-5.6.0/lib/audiveris.jar!/res/basic-classifier.zip
+2025-05-27 10:36:06,150 INFO [OdeToJoy]       StepMonitoring.java:98   | STEM_SEEDS
+2025-05-27 10:36:06,181 INFO [OdeToJoy]        StemSeedsStep.java:86   | stem(6 max:7)
+2025-05-27 10:36:06,208 INFO [OdeToJoy]       StepMonitoring.java:98   | BEAMS
+2025-05-27 10:36:11,215 INFO [OdeToJoy]       StepMonitoring.java:98   | LEDGERS
+2025-05-27 10:36:11,305 INFO [OdeToJoy]       StepMonitoring.java:98   | HEADS
+2025-05-27 10:36:17,043 INFO [OdeToJoy]        HeadSeedTally.java:235  | Scale information: HeadSeeds{NOTEHEAD_BLACK[L:-0.6]}
+2025-05-27 10:36:17,044 INFO [OdeToJoy]       StepMonitoring.java:98   | STEMS
+2025-05-27 10:36:17,132 INFO [OdeToJoy]       StepMonitoring.java:98   | REDUCTION
+2025-05-27 10:36:17,152 INFO [OdeToJoy]        ReductionStep.java:105  | Stems free length median value: 125 pixels, 3.6 interlines
+2025-05-27 10:36:17,153 INFO [OdeToJoy]       StepMonitoring.java:98   | CUE_BEAMS
+2025-05-27 10:36:17,153 INFO [OdeToJoy]         CueBeamsStep.java:81   | Step CUE_BEAMS is skipped because small heads switch is off
+2025-05-27 10:36:17,153 INFO [OdeToJoy]       StepMonitoring.java:98   | TEXTS
+2025-05-27 10:36:17,585 INFO [OdeToJoy]       StepMonitoring.java:98   | MEASURES
+2025-05-27 10:36:17,591 INFO [OdeToJoy]                 Page.java:307  | 24 raw measures: [4 in system#1, 4 in system#2, 4 in system#3, 4 in system#4, 4 in system#5, 4 in system#6]
+2025-05-27 10:36:17,591 INFO [OdeToJoy]       StepMonitoring.java:98   | CHORDS
+2025-05-27 10:36:17,596 INFO [OdeToJoy]       StepMonitoring.java:98   | CURVES
+2025-05-27 10:36:18,409 INFO [OdeToJoy]         SlursBuilder.java:240  | Slurs: 1
+2025-05-27 10:36:18,412 INFO [OdeToJoy]      SegmentsBuilder.java:155  | Segments: 2
+2025-05-27 10:36:18,414 INFO [OdeToJoy]       StepMonitoring.java:98   | SYMBOLS
+2025-05-27 10:36:18,701 INFO [OdeToJoy]       StepMonitoring.java:98   | LINKS
+2025-05-27 10:36:18,713 INFO [OdeToJoy]       StepMonitoring.java:98   | RHYTHMS
+2025-05-27 10:36:18,730 INFO [OdeToJoy]       StepMonitoring.java:98   | PAGE
+2025-05-27 10:36:18,734 INFO [OdeToJoy]                 Book.java:2550 | Book{OdeToJoy} storing
+2025-05-27 10:36:18,758 INFO [OdeToJoy]                 Book.java:2531 | Stored /book.xml
+2025-05-27 10:36:18,826 INFO [OdeToJoy]           DataHolder.java:348  | Stored /sheet#1/BINARY.png
+2025-05-27 10:36:19,107 INFO [OdeToJoy]                Sheet.java:1562 | Stored /sheet#1/sheet#1.xml
+2025-05-27 10:36:19,107 INFO [OdeToJoy]                 Book.java:2491 | Book stored as ../score_processing/MusicXML/OdeToJoy.omr
+2025-05-27 10:36:19,109 INFO [OdeToJoy]            SheetStub.java:1644 | Disposed sheet
+2025-05-27 10:36:19,139 INFO [OdeToJoy]                 Book.java:2018 | End of Stub#1 memory: 38,315,568
+2025-05-27 10:36:19,139 INFO [OdeToJoy]                 Book.java:2025 | Book processed.
+2025-05-27 10:36:19,283 INFO [OdeToJoy]            SheetStub.java:995  | Loaded /sheet#1/sheet#1.xml
+2025-05-27 10:36:19,439 INFO [OdeToJoy]      PartwiseBuilder.java:2661 | Exporting sheet(s): [#1]
+2025-05-27 10:36:19,466 INFO [OdeToJoy]        ScoreExporter.java:164  | Score OdeToJoy exported to ../score_processing/MusicXML/OdeToJoy.mxl
+2025-05-27 10:36:19,487 INFO [OdeToJoy]                Score.java:181  | Closing {Score 1}

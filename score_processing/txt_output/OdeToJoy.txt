@@ -3,3 +3,119 @@ OdeToJoy
 Clef: treble
 Key: C major as inferred.
 Time Signature: 4/4
+
+Measure: 1
+  Note: E5, Duration: Quarter
+  Note: E5, Duration: Quarter
+  Note: F5, Duration: Quarter
+  Note: G5, Duration: Quarter
+Measure: 2
+  Note: G5, Duration: Quarter
+  Note: F5, Duration: Quarter
+  Note: E5, Duration: Quarter
+  Note: D5, Duration: Quarter
+Measure: 3
+  Note: C5, Duration: Quarter
+  Note: C5, Duration: Quarter
+  Note: D5, Duration: Quarter
+  Note: E5, Duration: Quarter
+Measure: 4
+  Note: E5, Duration: Quarter
+  Note: D5, Duration: Quarter
+  Note: D5, Duration: Half
+Measure: 5
+  Note: E5, Duration: Quarter
+  Note: E5, Duration: Quarter
+  Note: F5, Duration: Quarter
+  Note: G5, Duration: Quarter
+Measure: 6
+  Note: G5, Duration: Quarter
+  Note: F5, Duration: Quarter
+  Note: E5, Duration: Quarter
+  Note: D5, Duration: Quarter
+Measure: 7
+  Note: C5, Duration: Quarter
+  Note: C5, Duration: Quarter
+  Note: D5, Duration: Quarter
+  Note: E5, Duration: Quarter
+Measure: 8
+  Note: D5, Duration: Quarter
+  Note: C5, Duration: Quarter
+  Note: C5, Duration: Half
+Measure: 9
+  Note: D5, Duration: Quarter
+  Note: D5, Duration: Quarter
+  Note: E5, Duration: Quarter
+  Note: C5, Duration: Quarter
+Measure: 10
+  Note: D5, Duration: Quarter
+  Note: F5, Duration: Quarter
+  Note: E5, Duration: Quarter
+  Note: C5, Duration: Quarter
+Measure: 11
+  Note: D5, Duration: Quarter
+  Note: F5, Duration: Quarter
+  Note: E5, Duration: Quarter
+  Note: D5, Duration: Quarter
+Measure: 12
+  Note: C5, Duration: Quarter
+  Note: D5, Duration: Quarter
+  Note: G5, Duration: Half
+Measure: 13
+  Note: E5, Duration: Quarter
+  Note: E5, Duration: Quarter
+  Note: F5, Duration: Quarter
+  Note: G5, Duration: Quarter
+Measure: 14
+  Note: G5, Duration: Quarter
+  Note: F5, Duration: Quarter
+  Note: E5, Duration: Quarter
+  Note: D5, Duration: Quarter
+Measure: 15
+  Note: C5, Duration: Quarter
+  Note: C5, Duration: Quarter
+  Note: D5, Duration: Quarter
+  Note: E5, Duration: Quarter
+Measure: 16
+  Note: D5, Duration: Quarter
+  Note: C5, Duration: Quarter
+  Note: C5, Duration: Half
+Measure: 17
+  Note: D5, Duration: Quarter
+  Note: D5, Duration: Quarter
+  Note: E5, Duration: Quarter
+  Note: C5, Duration: Quarter
+Measure: 18
+  Note: D5, Duration: Quarter
+  Note: F5, Duration: Quarter
+  Note: E5, Duration: Quarter
+  Note: C5, Duration: Quarter
+Measure: 19
+  Note: D5, Duration: Quarter
+  Note: F5, Duration: Quarter
+  Note: E5, Duration: Quarter
+  Note: D5, Duration: Quarter
+Measure: 20
+  Note: C5, Duration: Quarter
+  Note: D5, Duration: Quarter
+  Note: G5, Duration: Quarter
+  Note: F5, Duration: Quarter
+Measure: 21
+  Note: E5, Duration: Quarter
+  Note: E5, Duration: Quarter
+  Note: F5, Duration: Quarter
+  Note: G5, Duration: Quarter
+Measure: 22
+  Note: G5, Duration: Quarter
+  Note: F5, Duration: Quarter
+  Note: E5, Duration: Quarter
+  Note: D5, Duration: Quarter
+Measure: 23
+  Note: C5, Duration: Quarter
+  Note: C5, Duration: Quarter
+  Note: D5, Duration: Quarter
+  Note: E5, Duration: Quarter
+Measure: 24
+  Note: D5, Duration: Quarter
+  Note: G5, Duration: Quarter
+  Note: C5, Duration: Half

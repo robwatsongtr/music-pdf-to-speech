@@ -35,5 +35,6 @@ if __name__ == "__main__":
     # Analyze Music XML file and output a text file 
     output_path_txt = '../score_processing/txt_output'
     xml_to_txt = Analyzer(output_path_txt, pdf_to_xml_file)
-    xml_to_txt.extract_staff_attr_start()
+    xml_to_txt.extract_staff_attr_start_p1()
+    xml_to_txt.extract_measure_note_duration_p1()
     xml_to_txt.write_to_txt()

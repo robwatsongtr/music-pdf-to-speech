@@ -1,4 +1,4 @@
-from music21 import converter, note, chord, converter
+from music21 import converter, note, chord, converter, stream
 from pathlib import Path
 
 class Analyzer:
@@ -9,12 +9,12 @@ class Analyzer:
     def __init__(self, output_path: str, input_xml_path: str):
         self.input_xml_path = input_xml_path
         self.output_path = output_path
+        self.score = converter.parse(self.input_xml_path)
         self.staff_attr = []
         self.measure_data = []
-
-    def extract_staff_attr_start(self) -> None:
-        score = converter.parse(self.input_xml_path)
-        part = score.parts[0]
+        
+    def extract_staff_attr_start_p1(self) -> None:
+        part = self.score.parts[0]
 
         clef = part.recurse().getElementsByClass('Clef')
         initial_clef = clef[0] if clef else None
@@ -40,6 +40,22 @@ class Analyzer:
 
         print("Staff attributes extracted.")
 
+    def extract_measure_note_duration_p1(self) -> None:
+        part = self.score.parts[0]
+
+        for measure in part.getElementsByClass('Measure'):
+            self.measure_data.append(f"Measure: {measure.number}\n")
+            for element in measure.notesAndRests:
+                if element.isNote:
+                    note = element.nameWithOctave
+                    note_duration = element.duration.fullName
+                    self.measure_data.append(f"  Note: {note}, Duration: {note_duration}\n")
+                elif element.isRest:
+                    rest_duration = element.duration.fullName
+                    self.measure_data.append(f"  Rest: Duration: {rest_duration}\n\n")
+        
+        print("Measure, note and rest data extracted")
+
     def write_to_txt(self) -> None:
         base_name = Path(self.input_xml_path).stem
         output_file_path = Path(self.output_path) / f"{base_name}.txt"
@@ -48,6 +64,8 @@ class Analyzer:
             with open(output_file_path, "w", encoding="utf-8") as file:
                 file.write(base_name + '\n\n')
                 file.writelines(self.staff_attr)
+                file.write('\n')
+                file.writelines(self.measure_data)
         except Exception as e:
             print(f'Error writing file: {e}')
     
