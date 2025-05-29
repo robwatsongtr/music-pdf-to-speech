@@ -1,10 +1,10 @@
-from music21 import converter, note, chord, converter, stream
+from music21 import note, chord, converter, stream
 from pathlib import Path
 
 class Analyzer:
     """
-    This class takes a MusicXML file and extracts / parses out human readable information
-    And will output a text file 
+    This class takes a MusicXML file and extracts human readable information
+    Outputs a text file 
     """
     def __init__(self, output_path: str, input_xml_path: str):
         self.input_xml_path = input_xml_path
@@ -14,6 +14,10 @@ class Analyzer:
         self.measure_data = []
         
     def extract_staff_attr_start_p1(self) -> None:
+        """
+        This method uses Music 21 to extract the Clef, Key Signature, and 
+        Time signature from the beginning of the score.
+        """
         part = self.score.parts[0]
 
         clef = part.recurse().getElementsByClass('Clef')
@@ -41,6 +45,10 @@ class Analyzer:
         print("Staff attributes extracted.")
 
     def extract_measure_note_duration_p1(self) -> None:
+        """
+        Extracts the notes and rests from every measure of the score.
+        (Part 1) 
+        """
         part = self.score.parts[0]
 
         for measure in part.getElementsByClass('Measure'):
@@ -49,7 +57,14 @@ class Analyzer:
                 if element.isNote:
                     note = element.nameWithOctave
                     note_duration = element.duration.fullName
-                    self.measure_data.append(f"  Note: {note}, Duration: {note_duration}\n")
+                    if element.tie:
+                        tie_type = element.tie.type
+                        tie_info = f", Tie: {tie_type}"
+                    else:
+                        tie_info = ""
+                    self.measure_data.append(
+                        f"  Note: {note}, Duration: {note_duration}{tie_info}\n"
+                    )
                 elif element.isRest:
                     rest_duration = element.duration.fullName
                     self.measure_data.append(f"  Rest: Duration: {rest_duration}\n\n")
@@ -57,6 +72,9 @@ class Analyzer:
         print("Measure, note and rest data extracted")
 
     def write_to_txt(self) -> None:
+        """
+        Writes the staff attribe and measure contents into a text file. 
+        """
         base_name = Path(self.input_xml_path).stem
         output_file_path = Path(self.output_path) / f"{base_name}.txt"
 
