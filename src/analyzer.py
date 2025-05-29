@@ -9,10 +9,13 @@ class Analyzer:
     def __init__(self, output_path: str, input_xml_path: str):
         self.input_xml_path = input_xml_path
         self.output_path = output_path
-        self.score = converter.parse(self.input_xml_path)
         self.staff_attr = []
         self.measure_data = []
-        
+        try:
+            self.score = converter.parse(self.input_xml_path)
+        except Exception as e:
+            print(f"Failed to parse '{input_xml_path}' with error: {e}")
+
     def extract_staff_attr_start_p1(self) -> None:
         """
         This method uses Music 21 to extract the Clef, Key Signature, and 
@@ -44,16 +47,17 @@ class Analyzer:
 
         print("Staff attributes extracted.")
 
-    def extract_measure_note_duration_p1(self) -> None:
+    def extract_measure_data_single_voice_p1(self) -> None:
         """
         Extracts the notes and rests from every measure of the score.
-        (Part 1) 
+        Basic: one voice and one part. 
         """
         part = self.score.parts[0]
 
         for measure in part.getElementsByClass('Measure'):
             self.measure_data.append(f"Measure: {measure.number}\n")
             for element in measure.notesAndRests:
+                beat = element.beat
                 if element.isNote:
                     note = element.nameWithOctave
                     note_duration = element.duration.fullName
@@ -63,7 +67,7 @@ class Analyzer:
                     else:
                         tie_info = ""
                     self.measure_data.append(
-                        f"  Note: {note}, Duration: {note_duration}{tie_info}\n"
+                    f"  Beat: {beat}, Note: {note}, Duration: {note_duration}{tie_info}\n"
                     )
                 elif element.isRest:
                     rest_duration = element.duration.fullName

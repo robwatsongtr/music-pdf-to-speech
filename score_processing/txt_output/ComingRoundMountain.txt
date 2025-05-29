@@ -5,139 +5,139 @@ Key: A minor as inferred.
 Time Signature: 2/4
 
 Measure: 0
-  Note: G4, Duration: Eighth
-  Note: A4, Duration: Eighth
+  Beat: 2.0, Note: G4, Duration: Eighth
+  Beat: 2.5, Note: A4, Duration: Eighth
 Measure: 1
-  Note: C5, Duration: Eighth
-  Note: C5, Duration: Eighth
-  Note: C5, Duration: Eighth
-  Note: C5, Duration: Eighth
+  Beat: 1.0, Note: C5, Duration: Eighth
+  Beat: 1.5, Note: C5, Duration: Eighth
+  Beat: 2.0, Note: C5, Duration: Eighth
+  Beat: 2.5, Note: C5, Duration: Eighth
 Measure: 2
-  Note: A4, Duration: Eighth
-  Note: G4, Duration: Eighth
-  Note: E4, Duration: Eighth
-  Note: G4, Duration: Eighth
+  Beat: 1.0, Note: A4, Duration: Eighth
+  Beat: 1.5, Note: G4, Duration: Eighth
+  Beat: 2.0, Note: E4, Duration: Eighth
+  Beat: 2.5, Note: G4, Duration: Eighth
 Measure: 3
-  Note: C5, Duration: Half, Tie: start
+  Beat: 1.0, Note: C5, Duration: Half, Tie: start
 Measure: 4
-  Note: C5, Duration: Quarter, Tie: stop
-  Note: C5, Duration: Eighth
-  Note: D5, Duration: Eighth
+  Beat: 1.0, Note: C5, Duration: Quarter, Tie: stop
+  Beat: 2.0, Note: C5, Duration: Eighth
+  Beat: 2.5, Note: D5, Duration: Eighth
 Measure: 5
-  Note: E5, Duration: Eighth
-  Note: E5, Duration: Eighth
-  Note: E5, Duration: Eighth
-  Note: E5, Duration: Eighth
+  Beat: 1.0, Note: E5, Duration: Eighth
+  Beat: 1.5, Note: E5, Duration: Eighth
+  Beat: 2.0, Note: E5, Duration: Eighth
+  Beat: 2.5, Note: E5, Duration: Eighth
 Measure: 6
-  Note: G5, Duration: Eighth
-  Note: E5, Duration: Eighth
-  Note: D5, Duration: Eighth
-  Note: C5, Duration: Eighth
+  Beat: 1.0, Note: G5, Duration: Eighth
+  Beat: 1.5, Note: E5, Duration: Eighth
+  Beat: 2.0, Note: D5, Duration: Eighth
+  Beat: 2.5, Note: C5, Duration: Eighth
 Measure: 7
-  Note: D5, Duration: Half, Tie: start
+  Beat: 1.0, Note: D5, Duration: Half, Tie: start
 Measure: 8
-  Note: D5, Duration: Quarter, Tie: stop
-  Note: G5, Duration: Eighth
-  Note: F5, Duration: Eighth
+  Beat: 1.0, Note: D5, Duration: Quarter, Tie: stop
+  Beat: 2.0, Note: G5, Duration: Eighth
+  Beat: 2.5, Note: F5, Duration: Eighth
 Measure: 9
-  Note: E5, Duration: Eighth
-  Note: E5, Duration: Eighth
-  Note: E5, Duration: Eighth
-  Note: E5, Duration: Eighth
+  Beat: 1.0, Note: E5, Duration: Eighth
+  Beat: 1.5, Note: E5, Duration: Eighth
+  Beat: 2.0, Note: E5, Duration: Eighth
+  Beat: 2.5, Note: E5, Duration: Eighth
 Measure: 10
-  Note: D5, Duration: Eighth
-  Note: C5, Duration: Eighth
-  Note: C5, Duration: Eighth
-  Note: C5, Duration: Eighth
+  Beat: 1.0, Note: D5, Duration: Eighth
+  Beat: 1.5, Note: C5, Duration: Eighth
+  Beat: 2.0, Note: C5, Duration: Eighth
+  Beat: 2.5, Note: C5, Duration: Eighth
 Measure: 11
-  Note: A4, Duration: Eighth
-  Note: A4, Duration: Eighth
-  Note: A4, Duration: Eighth
-  Note: A4, Duration: Eighth
+  Beat: 1.0, Note: A4, Duration: Eighth
+  Beat: 1.5, Note: A4, Duration: Eighth
+  Beat: 2.0, Note: A4, Duration: Eighth
+  Beat: 2.5, Note: A4, Duration: Eighth
 Measure: 12
-  Note: D5, Duration: Eighth
-  Note: C5, Duration: Eighth
-  Note: B4, Duration: Eighth
-  Note: A4, Duration: Eighth
+  Beat: 1.0, Note: D5, Duration: Eighth
+  Beat: 1.5, Note: C5, Duration: Eighth
+  Beat: 2.0, Note: B4, Duration: Eighth
+  Beat: 2.5, Note: A4, Duration: Eighth
 Measure: 13
-  Note: G4, Duration: Eighth
-  Note: G4, Duration: Eighth
-  Note: G4, Duration: Eighth
-  Note: G4, Duration: Eighth
+  Beat: 1.0, Note: G4, Duration: Eighth
+  Beat: 1.5, Note: G4, Duration: Eighth
+  Beat: 2.0, Note: G4, Duration: Eighth
+  Beat: 2.5, Note: G4, Duration: Eighth
 Measure: 14
-  Note: E5, Duration: Eighth
-  Note: D5, Duration: Eighth
-  Note: A4, Duration: Eighth
-  Note: B4, Duration: Eighth
+  Beat: 1.0, Note: E5, Duration: Eighth
+  Beat: 1.5, Note: D5, Duration: Eighth
+  Beat: 2.0, Note: A4, Duration: Eighth
+  Beat: 2.5, Note: B4, Duration: Eighth
 Measure: 15
-  Note: C5, Duration: Half, Tie: start
+  Beat: 1.0, Note: C5, Duration: Half, Tie: start
 Measure: 16
-  Note: C5, Duration: Quarter, Tie: stop
-  Note: G3, Duration: Eighth
-  Note: A3, Duration: Eighth
+  Beat: 1.0, Note: C5, Duration: Quarter, Tie: stop
+  Beat: 2.0, Note: G3, Duration: Eighth
+  Beat: 2.5, Note: A3, Duration: Eighth
 Measure: 17
-  Note: C4, Duration: Eighth
-  Note: C4, Duration: Eighth
-  Note: C4, Duration: Eighth
-  Note: C4, Duration: Eighth
+  Beat: 1.0, Note: C4, Duration: Eighth
+  Beat: 1.5, Note: C4, Duration: Eighth
+  Beat: 2.0, Note: C4, Duration: Eighth
+  Beat: 2.5, Note: C4, Duration: Eighth
 Measure: 18
-  Note: A3, Duration: Eighth
-  Note: G3, Duration: Eighth
-  Note: E3, Duration: Eighth
-  Note: B3, Duration: Eighth
+  Beat: 1.0, Note: A3, Duration: Eighth
+  Beat: 1.5, Note: G3, Duration: Eighth
+  Beat: 2.0, Note: E3, Duration: Eighth
+  Beat: 2.5, Note: B3, Duration: Eighth
 Measure: 19
-  Note: C4, Duration: Half, Tie: start
+  Beat: 1.0, Note: C4, Duration: Half, Tie: start
 Measure: 20
-  Note: C4, Duration: Quarter, Tie: stop
-  Note: C4, Duration: Eighth
-  Note: D4, Duration: Eighth
+  Beat: 1.0, Note: C4, Duration: Quarter, Tie: stop
+  Beat: 2.0, Note: C4, Duration: Eighth
+  Beat: 2.5, Note: D4, Duration: Eighth
 Measure: 21
-  Note: E4, Duration: Eighth
-  Note: E4, Duration: Eighth
-  Note: E4, Duration: Eighth
-  Note: E4, Duration: Eighth
+  Beat: 1.0, Note: E4, Duration: Eighth
+  Beat: 1.5, Note: E4, Duration: Eighth
+  Beat: 2.0, Note: E4, Duration: Eighth
+  Beat: 2.5, Note: E4, Duration: Eighth
 Measure: 22
-  Note: G4, Duration: Eighth
-  Note: E4, Duration: Eighth
-  Note: D4, Duration: Eighth
-  Note: C4, Duration: Eighth
+  Beat: 1.0, Note: G4, Duration: Eighth
+  Beat: 1.5, Note: E4, Duration: Eighth
+  Beat: 2.0, Note: D4, Duration: Eighth
+  Beat: 2.5, Note: C4, Duration: Eighth
 Measure: 23
-  Note: D4, Duration: Half, Tie: start
+  Beat: 1.0, Note: D4, Duration: Half, Tie: start
 Measure: 24
-  Note: D4, Duration: Quarter, Tie: stop
-  Note: G4, Duration: Eighth
-  Note: F4, Duration: Eighth
+  Beat: 1.0, Note: D4, Duration: Quarter, Tie: stop
+  Beat: 2.0, Note: G4, Duration: Eighth
+  Beat: 2.5, Note: F4, Duration: Eighth
 Measure: 25
-  Note: E4, Duration: Eighth
-  Note: E4, Duration: Eighth
-  Note: E4, Duration: Eighth
-  Note: E4, Duration: Eighth
+  Beat: 1.0, Note: E4, Duration: Eighth
+  Beat: 1.5, Note: E4, Duration: Eighth
+  Beat: 2.0, Note: E4, Duration: Eighth
+  Beat: 2.5, Note: E4, Duration: Eighth
 Measure: 26
-  Note: D4, Duration: Eighth
-  Note: C4, Duration: Eighth
-  Note: C4, Duration: Eighth
-  Note: C4, Duration: Eighth
+  Beat: 1.0, Note: D4, Duration: Eighth
+  Beat: 1.5, Note: C4, Duration: Eighth
+  Beat: 2.0, Note: C4, Duration: Eighth
+  Beat: 2.5, Note: C4, Duration: Eighth
 Measure: 27
-  Note: A3, Duration: Eighth
-  Note: A3, Duration: Eighth
-  Note: A3, Duration: Eighth
-  Note: A3, Duration: Eighth
+  Beat: 1.0, Note: A3, Duration: Eighth
+  Beat: 1.5, Note: A3, Duration: Eighth
+  Beat: 2.0, Note: A3, Duration: Eighth
+  Beat: 2.5, Note: A3, Duration: Eighth
 Measure: 28
-  Note: D4, Duration: Eighth
-  Note: C4, Duration: Eighth
-  Note: B3, Duration: Eighth
-  Note: A3, Duration: Eighth
+  Beat: 1.0, Note: D4, Duration: Eighth
+  Beat: 1.5, Note: C4, Duration: Eighth
+  Beat: 2.0, Note: B3, Duration: Eighth
+  Beat: 2.5, Note: A3, Duration: Eighth
 Measure: 29
-  Note: G3, Duration: Eighth
-  Note: G3, Duration: Eighth
-  Note: B3, Duration: Eighth
-  Note: D4, Duration: Eighth
+  Beat: 1.0, Note: G3, Duration: Eighth
+  Beat: 1.5, Note: G3, Duration: Eighth
+  Beat: 2.0, Note: B3, Duration: Eighth
+  Beat: 2.5, Note: D4, Duration: Eighth
 Measure: 30
-  Note: E4, Duration: Eighth
-  Note: D4, Duration: Eighth
-  Note: A3, Duration: Eighth
-  Note: B3, Duration: Eighth
+  Beat: 1.0, Note: E4, Duration: Eighth
+  Beat: 1.5, Note: D4, Duration: Eighth
+  Beat: 2.0, Note: A3, Duration: Eighth
+  Beat: 2.5, Note: B3, Duration: Eighth
 Measure: 31
-  Note: C4, Duration: Half, Tie: start
+  Beat: 1.0, Note: C4, Duration: Half, Tie: start
 Measure: 32
-  Note: C4, Duration: Quarter, Tie: stop
+  Beat: 1.0, Note: C4, Duration: Quarter, Tie: stop
