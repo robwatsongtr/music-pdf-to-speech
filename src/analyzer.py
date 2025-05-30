@@ -18,8 +18,8 @@ class Analyzer:
 
     def extract_staff_attr_start_p1(self) -> None:
         """
-        This method uses Music 21 to extract the Clef, Key Signature, and 
-        Time signature from the beginning of the score.
+        This method extracts the Clef, Key Signature, and Time signature
+        from the beginning of the score.
         """
         part = self.score.parts[0]
 
@@ -92,3 +92,13 @@ class Analyzer:
             print(f'Error writing file: {e}')
     
         print(f'Text File written to {output_file_path}')
+
+    def get_txt_file(self) -> str:
+        """
+        Returns full path to written text file.
+        """
+        xml_file = Path(self.input_xml_path)
+        base_name = xml_file.stem
+        txt_file = Path(self.output_path) / f"{base_name}.txt"
+
+        return txt_file 

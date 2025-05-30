@@ -30,7 +30,7 @@ if __name__ == "__main__":
     pdf_to_xml.strip_chords()
     pdf_to_xml.change_part_1_sound()
     pdf_to_xml_file = pdf_to_xml.get_xml_file()
-    print(f"OMR'ed pdf file path: {pdf_to_xml_file}")
+    print(f"OMR to pdf file path: {pdf_to_xml_file}")
 
     # Analyze Music XML file and output a text file 
     output_path_txt = '../score_processing/txt_output'
@@ -38,3 +38,8 @@ if __name__ == "__main__":
     xml_to_txt.extract_staff_attr_start_p1()
     xml_to_txt.extract_measure_data_single_voice_p1()
     xml_to_txt.write_to_txt()
+    xml_to_txt_file = xml_to_txt.get_txt_file()
+    print(f"XML to text analysis file path: {xml_to_txt_file}")
+
+    # TTS (Text to speech) on text file and output wav or mp3
+    output_path_audio = "../score_processing/tts_audio"

@@ -80,6 +80,9 @@ class OMR:
             print("OMR Succeeded!")
 
     def get_xml_file(self) -> str:
+        """
+        Returns full path to MusicXML file after OMR.
+        """
         original_file = Path(self.input_pdf_path)
         base_name = original_file.stem
         xml_file = Path(self.output_path) / f"{base_name}.xml"
