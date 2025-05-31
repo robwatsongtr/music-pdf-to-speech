@@ -1,5 +1,6 @@
 from omr import OMR
 from analyzer import Analyzer
+from tts import TTS
 # from playback import Playback
 
 import sys 
@@ -18,10 +19,10 @@ if __name__ == "__main__":
 
     if midi_sound not in valid_sounds:
         print(f'Error: {midi_sound} not a valid sound.')
-        print(f'Valid sounds are: {', '.join(valid_sounds)}')
+        print(f"Valid sounds are: {', '.join(valid_sounds)}")
         sys.exit(1)
 
-    # OMR (Optical Music Recognition)
+    # 1) OMR (Optical Music Recognition)
     output_path_xml = '../score_processing/MusicXML'
     pdf_to_xml = OMR(output_path_xml, path_to_pdf, midi_sound)
     pdf_to_xml.run_audiveris()
@@ -32,7 +33,7 @@ if __name__ == "__main__":
     pdf_to_xml_file = pdf_to_xml.get_xml_file()
     print(f"OMR to pdf file path: {pdf_to_xml_file}")
 
-    # Analyze Music XML file and output a text file 
+    # 2) Analyze Music XML file and output a text file 
     output_path_txt = '../score_processing/txt_output'
     xml_to_txt = Analyzer(output_path_txt, pdf_to_xml_file)
     xml_to_txt.extract_staff_attr_start_p1()
@@ -41,5 +42,8 @@ if __name__ == "__main__":
     xml_to_txt_file = xml_to_txt.get_txt_file()
     print(f"XML to text analysis file path: {xml_to_txt_file}")
 
-    # TTS (Text to speech) on text file and output wav or mp3
-    output_path_audio = "../score_processing/tts_audio"
+    # 3) TTS on text file and output to audio 
+    # output_path_audio = "../score_processing/tts_audio"
+    # txt_to_tts = TTS(output_path_audio, xml_to_txt_file)
+    
+

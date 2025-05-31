@@ -1,6 +1,8 @@
 # Talking Music Score
 
-Converts a PDF of a musical score into an audio file that narrates the musical elements, by way of OMR, MusicXML, and text-to-speech.
+Converts a PDF of a musical score into an audio file that narrates the musical elements, by way of OMR, Music21 analysis of MusicXML, and text-to-speech.
+
+*Requires Python 3.11.x* for Coqui TTS. 
 
 May 2025: Begin v1, CLI only 
 
