@@ -19,12 +19,12 @@ class Analyzer:
 
         self.spoken_notes = {
             "C": "see",
-            "D": "dee",
-            "E": "ee",
+            "D": "deee",
+            "E": "eee",
             "F": "eff",
             "G": "gee",
             "A": "ayy",
-            "B": "bee"
+            "B": "beee"
         }
 
     def extract_staff_attr_start_p1(self) -> None:
@@ -83,10 +83,10 @@ class Analyzer:
                 if element.isNote:
                     note = element.nameWithOctave
                     n_spl = self.spoken_notes.get(note[0]) + " " + note[1] 
-                    note_dur = element.duration.fullName
+                    note_dur = element.duration.fullName + '.'
                     if element.tie:
                         tie_type = element.tie.type
-                        tie_info = f",  T-eye: {tie_type}"
+                        tie_info = f",  Tie: {tie_type}."
                     else:
                         tie_info = ""
                     self.measure_data.append(
@@ -94,7 +94,9 @@ class Analyzer:
                     )
                 elif element.isRest:
                     rest_dur = element.duration.fullName
-                    self.measure_data.append(f"  Rest:  {rest_dur}\n\n")
+                    self.measure_data.append(f"  Rest:  {rest_dur}\n")
+
+            self.measure_data.append('\n')
         
         print("Measure, note and rest data extracted")
 

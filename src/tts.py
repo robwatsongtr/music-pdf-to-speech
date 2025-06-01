@@ -11,7 +11,7 @@ class TextToSpeech:
         self.output_path = output_path
 
     def output_tts(self) -> None:
-        tts = TTS(model_name="tts_models/en/ljspeech/tacotron2-DDC")
+        tts = TTS(model_name="tts_models/en/ljspeech/glow-tts")
         input_file = Path(self.input_txt_path)
 
         try:
@@ -29,7 +29,7 @@ class TextToSpeech:
         output_file_path = Path(self.output_path) / f"{base_name}.wav"
 
         try:
-            tts.tts_to_file(text=text, file_path=output_file_path)
+            tts.tts_to_file(text=text, speed=0.7, file_path=output_file_path)
 
             print(f'Text-to-speech WAV file saved at {output_file_path}')
         except Exception as e:
