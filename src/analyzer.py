@@ -1,4 +1,4 @@
-from music21 import note, chord, converter, stream
+from music21 import converter
 from pathlib import Path
 
 class Analyzer:
@@ -15,6 +15,17 @@ class Analyzer:
             self.score = converter.parse(self.input_xml_path)
         except Exception as e:
             print(f"Failed to parse '{input_xml_path}' with error: {e}")
+            exit(1)
+
+        self.spoken_notes = {
+            "C": "see",
+            "D": "dee",
+            "E": "ee",
+            "F": "eff",
+            "G": "gee",
+            "A": "ayy",
+            "B": "bee"
+        }
 
     def extract_staff_attr_start_p1(self) -> None:
         """
@@ -37,10 +48,15 @@ class Analyzer:
         if initial_key_sig:
             key_sig = initial_key_sig[0]
             key_name = key_sig.asKey().name
-            self.staff_attr.append(f"Key: {key_name}\n")
+            spoken_key_name = self.spoken_notes.get(key_name[0]) + ' ' + key_name[2:]
+            self.staff_attr.append(f"Key: {spoken_key_name}\n")
         else:
             inferred_key = part.analyze('key')
-            self.staff_attr.append(f"Key: {inferred_key.name} as inferred.\n")
+            inferred_key_name = inferred_key.name
+            spoken_inferred_key_name = (
+                self.spoken_notes.get(inferred_key_name[0]) + ' ' + inferred_key_name[2:]
+            )
+            self.staff_attr.append(f"Key: {spoken_inferred_key_name} as inferred.\n")
 
         if initial_time:
             self.staff_attr.append(f"Time Signature: {initial_time.ratioString}\n")
@@ -55,23 +71,30 @@ class Analyzer:
         part = self.score.parts[0]
 
         for measure in part.getElementsByClass('Measure'):
-            self.measure_data.append(f"Measure: {measure.number}\n")
+            measure_num = measure.number
+            if measure_num == 0:
+                measure_label = str('Pickup')
+            else:
+                measure_label = str(measure_num)
+            self.measure_data.append(f"Measure: {measure_label}\n")
+
             for element in measure.notesAndRests:
                 beat = element.beat
                 if element.isNote:
                     note = element.nameWithOctave
-                    note_duration = element.duration.fullName
+                    n_spl = self.spoken_notes.get(note[0]) + " " + note[1] 
+                    note_dur = element.duration.fullName
                     if element.tie:
                         tie_type = element.tie.type
-                        tie_info = f", Tie: {tie_type}"
+                        tie_info = f",  T-eye: {tie_type}"
                     else:
                         tie_info = ""
                     self.measure_data.append(
-                    f"  Beat: {beat}, Note: {note}, Duration: {note_duration}{tie_info}\n"
+                        f"  Beat: {beat},  {n_spl},  {note_dur}{tie_info}\n"
                     )
                 elif element.isRest:
-                    rest_duration = element.duration.fullName
-                    self.measure_data.append(f"  Rest: Duration: {rest_duration}\n\n")
+                    rest_dur = element.duration.fullName
+                    self.measure_data.append(f"  Rest:  {rest_dur}\n\n")
         
         print("Measure, note and rest data extracted")
 
@@ -84,15 +107,14 @@ class Analyzer:
 
         try:
             with open(output_file_path, "w", encoding="utf-8") as file:
-                file.write(base_name + '\n\n')
                 file.writelines(self.staff_attr)
                 file.write('\n')
                 file.writelines(self.measure_data)
+
+            print(f'Text File written to {output_file_path}')
         except Exception as e:
             print(f'Error writing file: {e}')
     
-        print(f'Text File written to {output_file_path}')
-
     def get_txt_file(self) -> str:
         """
         Returns full path to written text file.

@@ -6,8 +6,9 @@ from lxml import etree
 
 class OMR:
     """
-    This class will perform Optical Music Recognition on a PDF using Audiveris, then
-    output to MusicXML file, while cleaning up extraneous files and folders. 
+    This class will perform Optical Music Recognition on a PDF score 
+    using Audiveris, Then output to MusicXML file, while cleaning
+    up extraneous files and folders. 
     """
     def __init__(self, output_path: str, input_pdf_path: str, midi_sound: str):
         self.input_pdf_path = input_pdf_path
@@ -21,7 +22,7 @@ class OMR:
 
     def run_audiveris(self) -> None:
         """
-        Run Audiveris CLI to convert a PDF into a MusicXML file.
+        Run Audiveris CLI to convert a PDF score into a MusicXML file.
         """
         script_path = "../audiveris-cli.sh"
         cmd = [
@@ -36,6 +37,7 @@ class OMR:
             print("Audiveris processing completed successfully")
         except subprocess.CalledProcessError as e:
             print(f"Audiveris failed with exit code {e.returncode}")
+            exit(1)
 
     def unzip_mxls(self) -> None:
         """
@@ -46,7 +48,9 @@ class OMR:
 
         for mxl_file in mxl_files:
             try:
-                subprocess.run(["unzip", "-o", mxl_file, "-d", str(output_path)], check=True)
+                subprocess.run(
+                    ["unzip", "-o", mxl_file, "-d", str(output_path)], check=True
+                )
                 print(f"{mxl_file} unzipped successfully")
             except subprocess.CalledProcessError as e:
                 print(f"unzip failed with exit code {e.returncode}")
@@ -76,6 +80,7 @@ class OMR:
 
         if not self.check_for_xml_file():
             print("OMR FAILED: No .xml file produced. Check Logs.")
+            exit(1)
         else:
             print("OMR Succeeded!")
 
@@ -120,10 +125,12 @@ class OMR:
                 xml_declaration=True,
                 encoding='UTF-8'
             )
+
+            print('Chords Stripped.')
         except Exception as e:
             print(f'Error writing xml file: {e}')
 
-        print('Chords Stripped.')
+        
 
     def change_part_1_sound(self) -> None:
         """
@@ -175,8 +182,10 @@ class OMR:
                 xml_declaration=True,
                 encoding='UTF-8'
             )
+
+            print(f'Part 1 Sound changed to {self.midi_sound}')
         except Exception as e:
             print(f'Error writing xml file: {e}')
 
-        print(f'Part 1 Sound changed to {self.midi_sound}')
+        
             

@@ -1,6 +1,6 @@
 from omr import OMR
 from analyzer import Analyzer
-from tts import TTS
+from tts import TextToSpeech
 # from playback import Playback
 
 import sys 
@@ -43,7 +43,8 @@ if __name__ == "__main__":
     print(f"XML to text analysis file path: {xml_to_txt_file}")
 
     # 3) TTS on text file and output to audio 
-    # output_path_audio = "../score_processing/tts_audio"
-    # txt_to_tts = TTS(output_path_audio, xml_to_txt_file)
+    output_path_audio = "../score_processing/tts_audio"
+    txt_to_tts = TextToSpeech(output_path_audio, xml_to_txt_file)
+    txt_to_tts.output_tts()
     
 
