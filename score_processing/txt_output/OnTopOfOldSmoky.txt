@@ -1,127 +1,127 @@
-Clef: treble
+treble Clef.
 Key: gee major
 Time Signature: 3  4
 
 Measure: Pickup
-Beat 3.0, gee  4, Quarter note.
+Beat 3. gee 4, Quarter note.
 
 Measure: 1
-Beat 1.0, gee  4, Quarter note.
-Beat 2.0, bee  4, Quarter note.
-Beat 3.0, dee  5, Quarter note.
+Beat 1. gee 4, Quarter note.
+Beat 2. bee 4, Quarter note.
+Beat 3. dee 5, Quarter note.
 
 Measure: 2
-Beat 1.0, gee  5, Dotted Half note.
+Beat 1. gee 5, Dotted Half note.
 
 Measure: 3
-Beat 1.0, Eee  5, Dotted Half note.,  Tie: start.
+Beat 1. Eee 5, Dotted Half note. Tie: start.
 
 Measure: 4
-Beat 1.0, Eee  5, Half note.,  Tie: stop.
-Beat 3.0, see  5, Quarter note.
+Beat 1. Eee 5, Half note. Tie: stop.
+Beat 3. see 5, Quarter note.
 
 Measure: 5
-Beat 1.0, see  5, Quarter note.
-Beat 2.0, dee  5, Quarter note.
-Beat 3.0, Eee  5, Quarter note.
+Beat 1. see 5, Quarter note.
+Beat 2. dee 5, Quarter note.
+Beat 3. Eee 5, Quarter note.
 
 Measure: 6
-Beat 1.0, dee  5, Dotted Half note.,  Tie: start.
+Beat 1. dee 5, Dotted Half note. Tie: start.
 
 Measure: 7
-Beat 1.0, dee  5, Dotted Half note.,  Tie: stop.
+Beat 1. dee 5, Dotted Half note. Tie: stop.
 
 Measure: 8
-  Rest:  Quarter
-  Rest:  Quarter
-Beat 3.0, gee  4, Quarter note.
+ Rest: Quarter
+ Rest: Quarter
+Beat 3. gee 4, Quarter note.
 
 Measure: 9
-Beat 1.0, gee  4, Quarter note.
-Beat 2.0, bee  4, Quarter note.
-Beat 3.0, dee  5, Quarter note.
+Beat 1. gee 4, Quarter note.
+Beat 2. bee 4, Quarter note.
+Beat 3. dee 5, Quarter note.
 
 Measure: 10
-Beat 1.0, dee  5, Dotted Half note.
+Beat 1. dee 5, Dotted Half note.
 
 Measure: 11
-Beat 1.0, ayy  4, Dotted Half note.,  Tie: start.
+Beat 1. ayy 4, Dotted Half note. Tie: start.
 
 Measure: 12
-Beat 1.0, ayy  4, Half note.,  Tie: stop.
-Beat 3.0, bee  4, Quarter note.
+Beat 1. ayy 4, Half note. Tie: stop.
+Beat 3. bee 4, Quarter note.
 
 Measure: 13
-Beat 1.0, see  5, Quarter note.
-Beat 2.0, bee  4, Quarter note.
-Beat 3.0, ayy  4, Quarter note.
+Beat 1. see 5, Quarter note.
+Beat 2. bee 4, Quarter note.
+Beat 3. ayy 4, Quarter note.
 
 Measure: 14
-Beat 1.0, gee  4, Dotted Half note.,  Tie: start.
+Beat 1. gee 4, Dotted Half note. Tie: start.
 
 Measure: 15
-Beat 1.0, gee  4, Dotted Half note.,  Tie: stop.
+Beat 1. gee 4, Dotted Half note. Tie: stop.
 
 Measure: 16
-  Rest:  Quarter
-  Rest:  Quarter
-Beat 3.0, bee  3, Quarter note.
+ Rest: Quarter
+ Rest: Quarter
+Beat 3. bee 3, Quarter note.
 
 Measure: 17
-Beat 1.0, bee  3, Quarter note.
-Beat 2.0, dee  4, Quarter note.
-Beat 3.0, gee  4, Quarter note.
+Beat 1. bee 3, Quarter note.
+Beat 2. dee 4, Quarter note.
+Beat 3. gee 4, Quarter note.
 
 Measure: 18
-Beat 1.0, gee  4, Dotted Half note.
+Beat 1. gee 4, Dotted Half note.
 
 Measure: 19
-Beat 1.0, Eee  4, Dotted Half note.,  Tie: start.
+Beat 1. Eee 4, Dotted Half note. Tie: start.
 
 Measure: 20
-Beat 1.0, Eee  4, Half note.,  Tie: stop.
-Beat 3.0, see  4, Quarter note.
+Beat 1. Eee 4, Half note. Tie: stop.
+Beat 3. see 4, Quarter note.
 
 Measure: 21
-Beat 1.0, see  4, Quarter note.
-Beat 2.0, dee  4, Quarter note.
-Beat 3.0, Eee  4, Quarter note.
+Beat 1. see 4, Quarter note.
+Beat 2. dee 4, Quarter note.
+Beat 3. Eee 4, Quarter note.
 
 Measure: 22
-Beat 1.0, dee  4, Dotted Half note.,  Tie: start.
+Beat 1. dee 4, Dotted Half note. Tie: start.
 
 Measure: 23
-Beat 1.0, dee  4, Dotted Half note.,  Tie: stop.
+Beat 1. dee 4, Dotted Half note. Tie: stop.
 
 Measure: 24
-  Rest:  Half
-Beat 3.0, bee  3, Quarter note.
+ Rest: Half
+Beat 3. bee 3, Quarter note.
 
 Measure: 25
-Beat 1.0, bee  3, Quarter note.
-Beat 2.0, dee  4, Quarter note.
-Beat 3.0, dee  4, Quarter note.
+Beat 1. bee 3, Quarter note.
+Beat 2. dee 4, Quarter note.
+Beat 3. dee 4, Quarter note.
 
 Measure: 26
-Beat 1.0, dee  4, Dotted Half note.
+Beat 1. dee 4, Dotted Half note.
 
 Measure: 27
-Beat 1.0, ayy  3, Dotted Half note.,  Tie: start.
+Beat 1. ayy 3, Dotted Half note. Tie: start.
 
 Measure: 28
-Beat 1.0, ayy  3, Half note.,  Tie: stop.
-Beat 3.0, ayy  3, Quarter note.
+Beat 1. ayy 3, Half note. Tie: stop.
+Beat 3. ayy 3, Quarter note.
 
 Measure: 29
-Beat 1.0, gee  3, Quarter note.
-Beat 2.0, eFF  SHARP  3, Quarter note.
+Beat 1. gee 3, Quarter note.
+Beat 2. eFF  SHARP  3, Quarter note.
 
 Measure: 30
-Beat 1.0, gee  3, Dotted Half note.,  Tie: start.
+Beat 1. gee 3, Dotted Half note. Tie: start.
 
 Measure: 31
-Beat 1.0, gee  3, Dotted Half note.,  Tie: continue.
+Beat 1. gee 3, Dotted Half note. Tie: continue.
 
 Measure: 32
-Beat 2.0, gee  3, Half note.,  Tie: stop.
+Beat 2. gee 3, Half note. Tie: stop.
 

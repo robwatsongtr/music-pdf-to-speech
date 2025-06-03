@@ -1,5 +1,6 @@
 from music21 import converter
 from pathlib import Path
+import math
 
 class Analyzer:
     """
@@ -28,10 +29,19 @@ class Analyzer:
             "B": "bee"
         }
 
+        # todo: add spoken subdivisions for triplets 
+        self.spoken_subdiv = {
+            0.25 : "eee",
+            0.5 : "and",
+            0.75 : "uh"
+        }
+
     def spoken_key(self, key: str) -> str:
         """
+        Spells letters of a key phonetically and writes out sharp or flat for speaking.
+
         Keys without sharps or flats will be len 7, else with accidental len 8
-        *Input must be music21 key.name for this to be valid.*
+        Input must be music21 key.name for this to be valid.
         """
         if not key or len(key) < 7 or len(key) > 8:
             return "unknown key"
@@ -50,15 +60,17 @@ class Analyzer:
             
     def spoken_note(self, note: str) -> str:
         """
+        Spells note names phonetically and writes out sharp or flat for speaking.
+
         Notes without sharps or flats will be len 2, else with accidental len 3
-        *Input must be music21 note.nameWithOctave for this to be valid*
+        *nput must be music21 note.nameWithOctave for this to be valid
         """
         if not note or len(note) < 2 or len(note) > 3:
             return "unknown note"
-
+ 
         spoken_note = ''
         if len(note) == 2:
-            spoken_note = self.spoken_letters.get(note[0], note[0]) + '  ' + note[1] 
+            spoken_note = self.spoken_letters.get(note[0], note[0]) + ' ' + note[1] 
             return spoken_note
         elif len(note) == 3:
             if note[1] == "#":
@@ -67,6 +79,23 @@ class Analyzer:
             elif note[1] == "b":
                 spoken_note = self.spoken_letters.get(note[0], note[0]) + '  FLAT  ' + note[2] 
                 return spoken_note
+            
+    def spoken_beat(self, beat: float) -> str:
+        """"
+        Converts floating point beat numbers to spoken beat number and subdivision.
+
+        todo: logic to handle triplet (0.33333, etc) subdivisions 
+        Complication is, need to work with pure fractions not floats 
+        """
+        fractional, integer = math.modf(beat)
+        fractional = round(fractional, 2)  # mitigate float precision issues
+
+        if fractional == 0.0:
+            return str(int(integer))
+        else:
+            curr_beat = str(int(integer))
+            subdiv = self.spoken_subdiv.get(fractional, "?")
+            return f'{curr_beat} {subdiv}'
 
     def extract_staff_attr_start_p1(self) -> None:
         """
@@ -84,7 +113,7 @@ class Analyzer:
         initial_time = time[0] if time else None 
 
         if initial_clef:
-            self.staff_attr.append(f"Clef: {initial_clef.name}\n")
+            self.staff_attr.append(f"{initial_clef.name} Clef.\n")
         
         if initial_key_sig:
             key_sig = initial_key_sig[0]
@@ -104,14 +133,15 @@ class Analyzer:
 
         print("Staff attributes extracted.")
 
-    def extract_measure_data_single_voice_p1(self) -> None:
+    def extract_measure_data_1v_p1(self) -> None:
         """
         Extracts the notes and rests from every measure of the score.
-        Basic: one voice and one part. 
+        One voice and one part. 
         """
         part = self.score.parts[0]
 
         for measure in part.getElementsByClass('Measure'):
+
             measure_num = measure.number
             if measure_num == 0:
                 measure_label = str('Pickup')
@@ -120,22 +150,23 @@ class Analyzer:
             self.measure_data.append(f"Measure: {measure_label}\n")
 
             for element in measure.notesAndRests:
-                beat = element.beat
+                beat = element.beat # returns a float like 1.0, 2.5, etc 
+                spoken_beat = self.spoken_beat(beat)
                 if element.isNote:
                     note = element.nameWithOctave
                     spoken_note = self.spoken_note(note)
                     note_dur = element.duration.fullName + ' note.'
                     if element.tie:
                         tie_type = element.tie.type
-                        tie_info = f",  Tie: {tie_type}."
+                        tie_info = f" Tie: {tie_type}."
                     else:
                         tie_info = ""
                     self.measure_data.append(
-                        f"Beat {beat}, {spoken_note}, {note_dur}{tie_info}\n"
+                        f"Beat {spoken_beat}. {spoken_note}, {note_dur}{tie_info}\n"
                     )
                 elif element.isRest:
                     rest_dur = element.duration.fullName
-                    self.measure_data.append(f"  Rest:  {rest_dur}\n")
+                    self.measure_data.append(f" Rest: {rest_dur}\n")
 
             self.measure_data.append('\n')
         

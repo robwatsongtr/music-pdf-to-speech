@@ -10,7 +10,7 @@
       <supports type="yes" element="beam"/>
       <supports type="yes" element="stem"/>
       <software>ProxyMusic 4.0.3</software>
-      <encoding-date>2025-06-02</encoding-date>
+      <encoding-date>2025-06-03</encoding-date>
     </encoding>
     <source>/Users/robertwatson/Code/talking-music-score/src/../score_processing/pdf/OnTopOfOldSmoky.pdf</source>
     <miscellaneous>

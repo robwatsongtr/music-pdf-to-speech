@@ -37,7 +37,7 @@ if __name__ == "__main__":
     output_path_txt = '../score_processing/txt_output'
     xml_to_txt = Analyzer(output_path_txt, pdf_to_xml_file)
     xml_to_txt.extract_staff_attr_start_p1()
-    xml_to_txt.extract_measure_data_single_voice_p1()
+    xml_to_txt.extract_measure_data_1v_p1()
     xml_to_txt.write_to_txt()
     xml_to_txt_file = xml_to_txt.get_txt_file()
     print(f"XML to text analysis file path: {xml_to_txt_file}")

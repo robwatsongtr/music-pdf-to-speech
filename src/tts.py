@@ -36,7 +36,7 @@ class TextToSpeech:
             )
             print(f'Text-to-speech WAV file saved at {output_file_path}')
         except Exception as e:
-            print(f'Unexpected error in tts: {e}')
+            print(f'Error in text-to-speech: {e}')
             exit(1)
 
 
