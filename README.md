@@ -1,6 +1,6 @@
-# Talking Music Score
+## Talking Music Score
 
-Converts a PDF of a musical score into an audio file that narrates the musical elements, by way of OMR, Music21 analysis of MusicXML, and text-to-speech.
+Converts a PDF of a musical score into an audio file that narrates the musical elements, by way of OMR (Optical Music Recognition), Music21 analysis of MusicXML, and text-to-speech.
 
 Requires Python 3.11.x for Coqui TTS. 
 
@@ -38,6 +38,8 @@ This project includes **Audiveris**, an open-source Optical Music Recognition (O
 - Audiveris Author: Hervé Bitteur and contributors
 
 We thank the Audiveris team for their outstanding work and for making the project available under the GNU GPL v3 license.
+
+Thanks to MIT for the fantastic Music21 library for analysis.
 
 ---
 
