@@ -4,6 +4,30 @@ Converts a PDF of a musical score into an audio file that narrates the musical e
 
 Requires Python 3.11.x for Coqui TTS. 
 
+# Installation:
+
+Make sure Python 3.11x is installed. 
+
+Clone repo.
+
+Create a virtual environment in the project directory:  % python3 -m venv venv 
+
+Activate environment:  % source venv/bin/activate  or Windows:  venv\Scripts\activate
+
+Install Dependencies:  % pip install -r requirements.txt
+
+# Running the Pipeline:
+
+cd to src 
+
+Syntax:
+
+python3 main.py path/to/pdf midi_instrument   (Piano, Marimba, Guitar for midi_instrument)
+
+Example:
+
+python3 main.py ../score_processing/pdf/OnTopOfOldSmoky.pdf Marimba
+
 ---
 
 ## Credits
