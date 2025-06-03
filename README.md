@@ -2,9 +2,13 @@
 
 Converts a PDF of a musical score into an audio file that narrates the musical elements, by way of OMR, Music21 analysis of MusicXML, and text-to-speech.
 
-*Requires Python 3.11.x* for Coqui TTS. 
+Requires Python 3.11.x for Coqui TTS. 
 
-May 2025: Begin v1, CLI only 
+After cloning this repo, from your project root directory you must run:
+
+./setup.sh 
+
+That will install the Audiveris git submodule, then build Audiveris.
 
 ---
 
