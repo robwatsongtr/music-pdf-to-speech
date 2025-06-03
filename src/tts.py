@@ -29,8 +29,11 @@ class TextToSpeech:
         output_file_path = Path(self.output_path) / f"{base_name}.wav"
 
         try:
-            tts.tts_to_file(text=text, speed=0.7, file_path=output_file_path)
-
+            tts.tts_to_file(
+                text=text, 
+                speed=0.7, 
+                file_path=output_file_path
+            )
             print(f'Text-to-speech WAV file saved at {output_file_path}')
         except Exception as e:
             print(f'Unexpected error in tts: {e}')

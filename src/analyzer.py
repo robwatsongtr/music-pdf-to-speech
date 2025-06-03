@@ -11,21 +11,62 @@ class Analyzer:
         self.output_path = output_path
         self.staff_attr = []
         self.measure_data = []
+
         try:
             self.score = converter.parse(self.input_xml_path)
         except Exception as e:
             print(f"Failed to parse '{input_xml_path}' with error: {e}")
             exit(1)
 
-        self.spoken_notes = {
+        self.spoken_letters = {
             "C": "see",
-            "D": "deee",
-            "E": "eee",
-            "F": "eff",
+            "D": "dee",
+            "E": "Eee",
+            "F": "eFF",
             "G": "gee",
             "A": "ayy",
-            "B": "beee"
+            "B": "bee"
         }
+
+    def spoken_key(self, key: str) -> str:
+        """
+        Keys without sharps or flats will be len 7, else with accidental len 8
+        *Input must be music21 key.name for this to be valid.*
+        """
+        if not key or len(key) < 7 or len(key) > 8:
+            return "unknown key"
+
+        spoken_key_name = ''
+        if len(key) == 7:  
+            spoken_key_name = self.spoken_letters.get(key[0], key[0]) + ' ' + key[2:]
+            return spoken_key_name
+        elif len(key) == 8:
+            if key[1] == "#":
+                spoken_key_name = self.spoken_letters.get(key[0], key[0]) + ' sharp ' + key[3:]
+                return spoken_key_name
+            elif key[1] == "b":
+                spoken_key_name = self.spoken_letters.get(key[0], key[0]) + ' flat ' + key[3:]
+                return spoken_key_name
+            
+    def spoken_note(self, note: str) -> str:
+        """
+        Notes without sharps or flats will be len 2, else with accidental len 3
+        *Input must be music21 note.nameWithOctave for this to be valid*
+        """
+        if not note or len(note) < 2 or len(note) > 3:
+            return "unknown note"
+
+        spoken_note = ''
+        if len(note) == 2:
+            spoken_note = self.spoken_letters.get(note[0], note[0]) + '  ' + note[1] 
+            return spoken_note
+        elif len(note) == 3:
+            if note[1] == "#":
+                spoken_note = self.spoken_letters.get(note[0], note[0]) + '  SHARP  ' + note[2] 
+                return spoken_note
+            elif note[1] == "b":
+                spoken_note = self.spoken_letters.get(note[0], note[0]) + '  FLAT  ' + note[2] 
+                return spoken_note
 
     def extract_staff_attr_start_p1(self) -> None:
         """
@@ -48,18 +89,18 @@ class Analyzer:
         if initial_key_sig:
             key_sig = initial_key_sig[0]
             key_name = key_sig.asKey().name
-            spoken_key_name = self.spoken_notes.get(key_name[0]) + ' ' + key_name[2:]
+            spoken_key_name = self.spoken_key(key_name)
             self.staff_attr.append(f"Key: {spoken_key_name}\n")
         else:
             inferred_key = part.analyze('key')
             inferred_key_name = inferred_key.name
-            spoken_inferred_key_name = (
-                self.spoken_notes.get(inferred_key_name[0]) + ' ' + inferred_key_name[2:]
-            )
+            spoken_inferred_key_name = self.spoken_key(inferred_key_name)
             self.staff_attr.append(f"Key: {spoken_inferred_key_name} as inferred.\n")
 
         if initial_time:
-            self.staff_attr.append(f"Time Signature: {initial_time.ratioString}\n")
+            self.staff_attr.append(
+                f"Time Signature: {initial_time.numerator}  {initial_time.denominator}\n"
+            )
 
         print("Staff attributes extracted.")
 
@@ -82,15 +123,15 @@ class Analyzer:
                 beat = element.beat
                 if element.isNote:
                     note = element.nameWithOctave
-                    n_spl = self.spoken_notes.get(note[0]) + " " + note[1] 
-                    note_dur = element.duration.fullName + '.'
+                    spoken_note = self.spoken_note(note)
+                    note_dur = element.duration.fullName + ' note.'
                     if element.tie:
                         tie_type = element.tie.type
                         tie_info = f",  Tie: {tie_type}."
                     else:
                         tie_info = ""
                     self.measure_data.append(
-                        f"  Beat: {beat},  {n_spl},  {note_dur}{tie_info}\n"
+                        f"Beat {beat}, {spoken_note}, {note_dur}{tie_info}\n"
                     )
                 elif element.isRest:
                     rest_dur = element.duration.fullName

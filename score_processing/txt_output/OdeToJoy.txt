@@ -1,121 +1,143 @@
-OdeToJoy
-
 Clef: treble
-Key: C major as inferred.
-Time Signature: 4/4
+Key: see major as inferred.
+Time Signature: 4  4
 
 Measure: 1
-  Note: E5, Duration: Quarter
-  Note: E5, Duration: Quarter
-  Note: F5, Duration: Quarter
-  Note: G5, Duration: Quarter
+Beat 1.0, Eee  5, Quarter note.
+Beat 2.0, Eee  5, Quarter note.
+Beat 3.0, eff  5, Quarter note.
+Beat 4.0, gee  5, Quarter note.
+
 Measure: 2
-  Note: G5, Duration: Quarter
-  Note: F5, Duration: Quarter
-  Note: E5, Duration: Quarter
-  Note: D5, Duration: Quarter
+Beat 1.0, gee  5, Quarter note.
+Beat 2.0, eff  5, Quarter note.
+Beat 3.0, Eee  5, Quarter note.
+Beat 4.0, dee  5, Quarter note.
+
 Measure: 3
-  Note: C5, Duration: Quarter
-  Note: C5, Duration: Quarter
-  Note: D5, Duration: Quarter
-  Note: E5, Duration: Quarter
+Beat 1.0, see  5, Quarter note.
+Beat 2.0, see  5, Quarter note.
+Beat 3.0, dee  5, Quarter note.
+Beat 4.0, Eee  5, Quarter note.
+
 Measure: 4
-  Note: E5, Duration: Quarter
-  Note: D5, Duration: Quarter
-  Note: D5, Duration: Half
+Beat 1.0, Eee  5, Quarter note.
+Beat 2.0, dee  5, Quarter note.
+Beat 3.0, dee  5, Half note.
+
 Measure: 5
-  Note: E5, Duration: Quarter
-  Note: E5, Duration: Quarter
-  Note: F5, Duration: Quarter
-  Note: G5, Duration: Quarter
+Beat 1.0, Eee  5, Quarter note.
+Beat 2.0, Eee  5, Quarter note.
+Beat 3.0, eff  5, Quarter note.
+Beat 4.0, gee  5, Quarter note.
+
 Measure: 6
-  Note: G5, Duration: Quarter
-  Note: F5, Duration: Quarter
-  Note: E5, Duration: Quarter
-  Note: D5, Duration: Quarter
+Beat 1.0, gee  5, Quarter note.
+Beat 2.0, eff  5, Quarter note.
+Beat 3.0, Eee  5, Quarter note.
+Beat 4.0, dee  5, Quarter note.
+
 Measure: 7
-  Note: C5, Duration: Quarter
-  Note: C5, Duration: Quarter
-  Note: D5, Duration: Quarter
-  Note: E5, Duration: Quarter
+Beat 1.0, see  5, Quarter note.
+Beat 2.0, see  5, Quarter note.
+Beat 3.0, dee  5, Quarter note.
+Beat 4.0, Eee  5, Quarter note.
+
 Measure: 8
-  Note: D5, Duration: Quarter
-  Note: C5, Duration: Quarter
-  Note: C5, Duration: Half
+Beat 1.0, dee  5, Quarter note.
+Beat 2.0, see  5, Quarter note.
+Beat 3.0, see  5, Half note.
+
 Measure: 9
-  Note: D5, Duration: Quarter
-  Note: D5, Duration: Quarter
-  Note: E5, Duration: Quarter
-  Note: C5, Duration: Quarter
+Beat 1.0, dee  5, Quarter note.
+Beat 2.0, dee  5, Quarter note.
+Beat 3.0, Eee  5, Quarter note.
+Beat 4.0, see  5, Quarter note.
+
 Measure: 10
-  Note: D5, Duration: Quarter
-  Note: F5, Duration: Quarter
-  Note: E5, Duration: Quarter
-  Note: C5, Duration: Quarter
+Beat 1.0, dee  5, Quarter note.
+Beat 2.0, eff  5, Quarter note.
+Beat 3.0, Eee  5, Quarter note.
+Beat 4.0, see  5, Quarter note.
+
 Measure: 11
-  Note: D5, Duration: Quarter
-  Note: F5, Duration: Quarter
-  Note: E5, Duration: Quarter
-  Note: D5, Duration: Quarter
+Beat 1.0, dee  5, Quarter note.
+Beat 2.0, eff  5, Quarter note.
+Beat 3.0, Eee  5, Quarter note.
+Beat 4.0, dee  5, Quarter note.
+
 Measure: 12
-  Note: C5, Duration: Quarter
-  Note: D5, Duration: Quarter
-  Note: G5, Duration: Half
+Beat 1.0, see  5, Quarter note.
+Beat 2.0, dee  5, Quarter note.
+Beat 3.0, gee  5, Half note.
+
 Measure: 13
-  Note: E5, Duration: Quarter
-  Note: E5, Duration: Quarter
-  Note: F5, Duration: Quarter
-  Note: G5, Duration: Quarter
+Beat 1.0, Eee  5, Quarter note.
+Beat 2.0, Eee  5, Quarter note.
+Beat 3.0, eff  5, Quarter note.
+Beat 4.0, gee  5, Quarter note.
+
 Measure: 14
-  Note: G5, Duration: Quarter
-  Note: F5, Duration: Quarter
-  Note: E5, Duration: Quarter
-  Note: D5, Duration: Quarter
+Beat 1.0, gee  5, Quarter note.
+Beat 2.0, eff  5, Quarter note.
+Beat 3.0, Eee  5, Quarter note.
+Beat 4.0, dee  5, Quarter note.
+
 Measure: 15
-  Note: C5, Duration: Quarter
-  Note: C5, Duration: Quarter
-  Note: D5, Duration: Quarter
-  Note: E5, Duration: Quarter
+Beat 1.0, see  5, Quarter note.
+Beat 2.0, see  5, Quarter note.
+Beat 3.0, dee  5, Quarter note.
+Beat 4.0, Eee  5, Quarter note.
+
 Measure: 16
-  Note: D5, Duration: Quarter
-  Note: C5, Duration: Quarter
-  Note: C5, Duration: Half
+Beat 1.0, dee  5, Quarter note.
+Beat 2.0, see  5, Quarter note.
+Beat 3.0, see  5, Half note.
+
 Measure: 17
-  Note: D5, Duration: Quarter
-  Note: D5, Duration: Quarter
-  Note: E5, Duration: Quarter
-  Note: C5, Duration: Quarter
+Beat 1.0, dee  5, Quarter note.
+Beat 2.0, dee  5, Quarter note.
+Beat 3.0, Eee  5, Quarter note.
+Beat 4.0, see  5, Quarter note.
+
 Measure: 18
-  Note: D5, Duration: Quarter
-  Note: F5, Duration: Quarter
-  Note: E5, Duration: Quarter
-  Note: C5, Duration: Quarter
+Beat 1.0, dee  5, Quarter note.
+Beat 2.0, eff  5, Quarter note.
+Beat 3.0, Eee  5, Quarter note.
+Beat 4.0, see  5, Quarter note.
+
 Measure: 19
-  Note: D5, Duration: Quarter
-  Note: F5, Duration: Quarter
-  Note: E5, Duration: Quarter
-  Note: D5, Duration: Quarter
+Beat 1.0, dee  5, Quarter note.
+Beat 2.0, eff  5, Quarter note.
+Beat 3.0, Eee  5, Quarter note.
+Beat 4.0, dee  5, Quarter note.
+
 Measure: 20
-  Note: C5, Duration: Quarter
-  Note: D5, Duration: Quarter
-  Note: G5, Duration: Quarter
-  Note: F5, Duration: Quarter
+Beat 1.0, see  5, Quarter note.
+Beat 2.0, dee  5, Quarter note.
+Beat 3.0, gee  5, Quarter note.
+Beat 4.0, eff  5, Quarter note.
+
 Measure: 21
-  Note: E5, Duration: Quarter
-  Note: E5, Duration: Quarter
-  Note: F5, Duration: Quarter
-  Note: G5, Duration: Quarter
+Beat 1.0, Eee  5, Quarter note.
+Beat 2.0, Eee  5, Quarter note.
+Beat 3.0, eff  5, Quarter note.
+Beat 4.0, gee  5, Quarter note.
+
 Measure: 22
-  Note: G5, Duration: Quarter
-  Note: F5, Duration: Quarter
-  Note: E5, Duration: Quarter
-  Note: D5, Duration: Quarter
+Beat 1.0, gee  5, Quarter note.
+Beat 2.0, eff  5, Quarter note.
+Beat 3.0, Eee  5, Quarter note.
+Beat 4.0, dee  5, Quarter note.
+
 Measure: 23
-  Note: C5, Duration: Quarter
-  Note: C5, Duration: Quarter
-  Note: D5, Duration: Quarter
-  Note: E5, Duration: Quarter
+Beat 1.0, see  5, Quarter note.
+Beat 2.0, see  5, Quarter note.
+Beat 3.0, dee  5, Quarter note.
+Beat 4.0, Eee  5, Quarter note.
+
 Measure: 24
-  Note: D5, Duration: Quarter
-  Note: G5, Duration: Quarter
-  Note: C5, Duration: Half
+Beat 1.0, dee  5, Quarter note.
+Beat 2.0, gee  5, Quarter note.
+Beat 3.0, see  5, Half note.
+

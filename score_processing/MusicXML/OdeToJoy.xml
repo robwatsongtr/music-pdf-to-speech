@@ -11,11 +11,11 @@
       <supports type="yes" element="beam"/>
       <supports type="yes" element="stem"/>
       <software>ProxyMusic 4.0.3</software>
-      <encoding-date>2025-05-27</encoding-date>
+      <encoding-date>2025-06-02</encoding-date>
     </encoding>
-    <source>/Users/robertwatson/Code/talking-music-score/score_processing/pdf/OdeToJoy.pdf</source>
+    <source>/Users/robertwatson/Code/talking-music-score/src/../score_processing/pdf/OdeToJoy.pdf</source>
     <miscellaneous>
-      <miscellaneous-field name="source-file">/Users/robertwatson/Code/talking-music-score/score_processing/pdf/OdeToJoy.pdf</miscellaneous-field>
+      <miscellaneous-field name="source-file">/Users/robertwatson/Code/talking-music-score/src/../score_processing/pdf/OdeToJoy.pdf</miscellaneous-field>
       <miscellaneous-field name="source-sheet-1">1 2 3 4 5 6</miscellaneous-field>
     </miscellaneous>
   </identification>

@@ -1,0 +1,55 @@
+2025-06-02 19:27:37,700 INFO [OnTopOfOldSmoky]                 Book.java:562  | 1 sheet in /Users/robertwatson/Code/talking-music-score/src/../score_processing/pdf/OnTopOfOldSmoky.pdf
+2025-06-02 19:27:37,805 INFO []                 Book.java:2531 | Stored /book.xml
+2025-06-02 19:27:37,805 INFO []                 Book.java:2491 | Book stored as ../score_processing/MusicXML/OnTopOfOldSmoky.omr
+2025-06-02 19:27:37,808 INFO []                 Book.java:1933 | Book reaching PAGE on sheets:[#1]
+2025-06-02 19:27:37,809 INFO [OnTopOfOldSmoky]       StepMonitoring.java:98   | LOAD
+2025-06-02 19:27:38,154 INFO [OnTopOfOldSmoky]            SheetStub.java:1268 | Loaded image #1 2481x3239 from /Users/robertwatson/Code/talking-music-score/src/../score_processing/pdf/OnTopOfOldSmoky.pdf
+2025-06-02 19:27:38,156 INFO [OnTopOfOldSmoky]       StepMonitoring.java:98   | BINARY
+2025-06-02 19:27:38,409 INFO [OnTopOfOldSmoky]       StepMonitoring.java:98   | SCALE
+2025-06-02 19:27:38,424 INFO [OnTopOfOldSmoky]         ScaleBuilder.java:241  | Beam  guessed height: 14 -- 0.50 of 29 interline
+2025-06-02 19:27:38,425 INFO [OnTopOfOldSmoky]         ScaleBuilder.java:264  | Beam measured height: 13 -- 0.24 of [8..29] range at 35% of needed quorum
+2025-06-02 19:27:38,425 INFO [OnTopOfOldSmoky]            ScaleStep.java:65   | Scale{ interline(28,29,31) line(5,6,8) beam(13)}
+2025-06-02 19:27:38,425 INFO [OnTopOfOldSmoky]       StepMonitoring.java:98   | GRID
+2025-06-02 19:27:38,792 INFO [OnTopOfOldSmoky]       LinesRetriever.java:1500 | Global slope: 0.00391
+2025-06-02 19:27:38,806 INFO [OnTopOfOldSmoky]    ClustersRetriever.java:328  | Retrieved raw line clusters: 8 of sizes [5] with interline(28,29,31)
+2025-06-02 19:27:38,878 INFO [OnTopOfOldSmoky]            PeakGraph.java:310  | Systems: #1[1] #2[2] #3[3] #4[4] #5[5] #6[6] #7[7] #8[8]
+2025-06-02 19:27:39,090 INFO [OnTopOfOldSmoky]        SystemManager.java:779  | 1 part along 8 systems
+2025-06-02 19:27:39,091 INFO [OnTopOfOldSmoky]                 Book.java:545  | Created scores: [{Score 1}]
+2025-06-02 19:27:39,091 INFO [OnTopOfOldSmoky]       StepMonitoring.java:98   | HEADERS
+2025-06-02 19:27:39,213 INFO [OnTopOfOldSmoky]      BasicClassifier.java:277  | Classifier loaded XML norms.
+2025-06-02 19:27:39,214 INFO [OnTopOfOldSmoky]   AbstractClassifier.java:396  | Classifier data loaded from default uri jar:file:/Users/robertwatson/Code/talking-music-score/audiveris/app/build/distributions/app-5.6.0/lib/audiveris.jar!/res/basic-classifier.zip
+2025-06-02 19:27:39,620 INFO [OnTopOfOldSmoky]       StepMonitoring.java:98   | STEM_SEEDS
+2025-06-02 19:27:39,651 INFO [OnTopOfOldSmoky]        StemSeedsStep.java:86   | stem(5 max:6)
+2025-06-02 19:27:39,679 INFO [OnTopOfOldSmoky]       StepMonitoring.java:98   | BEAMS
+2025-06-02 19:27:42,303 INFO [OnTopOfOldSmoky]       StepMonitoring.java:98   | LEDGERS
+2025-06-02 19:27:42,427 INFO [OnTopOfOldSmoky]       StepMonitoring.java:98   | HEADS
+2025-06-02 19:27:46,723 INFO [OnTopOfOldSmoky]        HeadSeedTally.java:235  | Scale information: HeadSeeds{NOTEHEAD_VOID[R:0.4] NOTEHEAD_BLACK[L:0.1,R:-0.6]}
+2025-06-02 19:27:46,724 INFO [OnTopOfOldSmoky]       StepMonitoring.java:98   | STEMS
+2025-06-02 19:27:46,802 INFO [OnTopOfOldSmoky]       StepMonitoring.java:98   | REDUCTION
+2025-06-02 19:27:46,816 INFO [OnTopOfOldSmoky]        ReductionStep.java:105  | Stems free length median value: 106 pixels, 3.7 interlines
+2025-06-02 19:27:46,817 INFO [OnTopOfOldSmoky]       StepMonitoring.java:98   | CUE_BEAMS
+2025-06-02 19:27:46,817 INFO [OnTopOfOldSmoky]         CueBeamsStep.java:81   | Step CUE_BEAMS is skipped because small heads switch is off
+2025-06-02 19:27:46,817 INFO [OnTopOfOldSmoky]       StepMonitoring.java:98   | TEXTS
+2025-06-02 19:27:47,218 INFO [OnTopOfOldSmoky]       StepMonitoring.java:98   | MEASURES
+2025-06-02 19:27:47,224 INFO [OnTopOfOldSmoky]                 Page.java:307  | 33 raw measures: [5 in system#1, 4 in system#2, 4 in system#3, 4 in system#4, 4 in system#5, 4 in system#6, 4 in system#7, 4 in system#8]
+2025-06-02 19:27:47,225 INFO [OnTopOfOldSmoky]       StepMonitoring.java:98   | CHORDS
+2025-06-02 19:27:47,228 INFO [OnTopOfOldSmoky]       StepMonitoring.java:98   | CURVES
+2025-06-02 19:27:47,971 INFO [OnTopOfOldSmoky]         SlursBuilder.java:240  | Slurs: 11
+2025-06-02 19:27:47,974 INFO [OnTopOfOldSmoky]      SegmentsBuilder.java:155  | Segments: 1
+2025-06-02 19:27:47,976 INFO [OnTopOfOldSmoky]       StepMonitoring.java:98   | SYMBOLS
+2025-06-02 19:27:48,165 INFO [OnTopOfOldSmoky]       StepMonitoring.java:98   | LINKS
+2025-06-02 19:27:48,175 INFO [OnTopOfOldSmoky]        SymbolsLinker.java:257  | No chord linked to OctaveShiftInter#1807{(0.143) staff:8 OTTAVA BASSA}
+2025-06-02 19:27:48,177 INFO [OnTopOfOldSmoky]       StepMonitoring.java:98   | RHYTHMS
+2025-06-02 19:27:48,192 INFO [OnTopOfOldSmoky]       StepMonitoring.java:98   | PAGE
+2025-06-02 19:27:48,195 INFO [OnTopOfOldSmoky]                 Book.java:2550 | Book{OnTopOfOldSmoky} storing
+2025-06-02 19:27:48,220 INFO [OnTopOfOldSmoky]                 Book.java:2531 | Stored /book.xml
+2025-06-02 19:27:48,295 INFO [OnTopOfOldSmoky]           DataHolder.java:348  | Stored /sheet#1/BINARY.png
+2025-06-02 19:27:48,606 INFO [OnTopOfOldSmoky]                Sheet.java:1562 | Stored /sheet#1/sheet#1.xml
+2025-06-02 19:27:48,607 INFO [OnTopOfOldSmoky]                 Book.java:2491 | Book stored as ../score_processing/MusicXML/OnTopOfOldSmoky.omr
+2025-06-02 19:27:48,608 INFO [OnTopOfOldSmoky]            SheetStub.java:1644 | Disposed sheet
+2025-06-02 19:27:48,636 INFO [OnTopOfOldSmoky]                 Book.java:2018 | End of Stub#1 memory: 38,402,880
+2025-06-02 19:27:48,636 INFO [OnTopOfOldSmoky]                 Book.java:2025 | Book processed.
+2025-06-02 19:27:48,791 INFO [OnTopOfOldSmoky]            SheetStub.java:995  | Loaded /sheet#1/sheet#1.xml
+2025-06-02 19:27:48,936 INFO [OnTopOfOldSmoky]      PartwiseBuilder.java:2661 | Exporting sheet(s): [#1]
+2025-06-02 19:27:48,960 INFO [OnTopOfOldSmoky]        ScoreExporter.java:164  | Score OnTopOfOldSmoky exported to ../score_processing/MusicXML/OnTopOfOldSmoky.mxl
+2025-06-02 19:27:48,980 INFO [OnTopOfOldSmoky]                Score.java:181  | Closing {Score 1}
