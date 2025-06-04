@@ -47,6 +47,7 @@ class Analyzer:
             return "unknown key"
 
         spoken_key_name = ''
+
         if len(key) == 7:  
             spoken_key_name = self.spoken_letters.get(key[0], key[0]) + ' ' + key[2:]
             return spoken_key_name
@@ -69,6 +70,7 @@ class Analyzer:
             return "unknown note"
  
         spoken_note = ''
+
         if len(note) == 2:
             spoken_note = self.spoken_letters.get(note[0], note[0]) + ' ' + note[1] 
             return spoken_note
@@ -141,14 +143,13 @@ class Analyzer:
         part = self.score.parts[0]
 
         for measure in part.getElementsByClass('Measure'):
-
             measure_num = measure.number
             if measure_num == 0:
                 measure_label = str('Pickup')
             else:
                 measure_label = str(measure_num)
             self.measure_data.append(f"Measure: {measure_label}\n")
-
+            
             for element in measure.notesAndRests:
                 beat = element.beat # returns a float like 1.0, 2.5, etc 
                 spoken_beat = self.spoken_beat(beat)

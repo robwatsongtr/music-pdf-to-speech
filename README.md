@@ -1,6 +1,7 @@
 # Talking Music Score
 
-Converts a PDF of a musical score into an audio file that narrates the musical elements, by way of OMR (Optical Music Recognition), Music21 analysis of MusicXML, and text-to-speech.
+Converts a PDF of a musical score into an audio file that narrates the musical elements, by 
+way of OMR (Optical Music Recognition), Music21 analysis of MusicXML, and text-to-speech.
 
 Requires Python 3.11.x for Coqui TTS. 
 
@@ -10,11 +11,14 @@ Make sure Python 3.11x is installed.
 
 Clone repo.
 
-Create a virtual environment in the project directory:  % python3 -m venv venv 
+Create a virtual environment in the project directory:  
+% python3 -m venv venv 
 
-Activate environment:  % source venv/bin/activate  or Windows:  venv\Scripts\activate
+Activate environment: 
+% source venv/bin/activate  or Windows:  venv\Scripts\activate
 
-Install Dependencies:  % pip install -r requirements.txt
+Install Dependencies:  
+% pip install -r requirements.txt
 
 ## Running the Pipeline:
 
@@ -24,9 +28,29 @@ Syntax:
 
 python3 main.py path/to/pdf midi_instrument   (Piano, Marimba, Guitar for midi_instrument)
 
+The purpose of choosing an instrument is that the output of Audiveris always seems to 
+default to Voice 'ooos' for Part 1 of the MusicXML, so my code changes that. For now I give a few 
+other General MIDI choices that have a more distinct attack, which I like. 
+
 Example:
 
 python3 main.py ../score_processing/pdf/OnTopOfOldSmoky.pdf Marimba
+
+## Technical Notes:
+
+The full source for Audiveris is included. I tried to include it as a git submodule,
+but that process was so painful I abandoned it. If you want, feel free to fork and try,
+it would enable tracking of the latest updates. As it stands, this project has Version 5.6.0
+
+Getting the CLI interface for Audiveris to work was quite challenging, even with the help
+of an LLM. Audiveris documentation only has flag instructions, not how to actually use it,
+which involves running a specific java class that as far as I can tell, isn't documented. 
+The GUI of Audiveris can still be built and run with Gradle.
+
+The fruit of that labor is in the shell script in the root of the project directory.
+Note that the code there that involves unarchiving isn't really necessary since that's already
+been done, but if you go the route of including Audiveris as a submodule, on first run you will
+need to unarchive the binary in order to run the shell script command.
 
 ---
 
@@ -37,7 +61,8 @@ This project includes **Audiveris**, an open-source Optical Music Recognition (O
 - Audiveris repository: [https://github.com/Audiveris/audiveris](https://github.com/Audiveris/audiveris)
 - Audiveris Author: Hervé Bitteur and contributors
 
-We thank the Audiveris team for their outstanding work and for making the project available under the GNU GPL v3 license.
+We thank the Audiveris team for their outstanding work and for making the project available 
+under the GNU GPL v3 license.
 
 Thanks to MIT for the fantastic Music21 library for analysis.
 
