@@ -1,0 +1,60 @@
+2025-06-04 22:48:23,405 INFO [violin2]                 Book.java:562  | 1 sheet in /Users/robertwatson/Code/talking-music-score/src/../score_processing/pdf/violin2.pdf
+2025-06-04 22:48:23,511 INFO []                 Book.java:2531 | Stored /book.xml
+2025-06-04 22:48:23,511 INFO []                 Book.java:2491 | Book stored as ../score_processing/MusicXML/violin2.omr
+2025-06-04 22:48:23,515 INFO []                 Book.java:1933 | Book reaching PAGE on sheets:[#1]
+2025-06-04 22:48:23,516 INFO [violin2]       StepMonitoring.java:98   | LOAD
+2025-06-04 22:48:23,836 INFO [violin2]            SheetStub.java:1268 | Loaded image #1 2481x3312 from /Users/robertwatson/Code/talking-music-score/src/../score_processing/pdf/violin2.pdf
+2025-06-04 22:48:23,838 INFO [violin2]       StepMonitoring.java:98   | BINARY
+2025-06-04 22:48:24,106 INFO [violin2]       StepMonitoring.java:98   | SCALE
+2025-06-04 22:48:24,123 INFO [violin2]         ScaleBuilder.java:241  | Beam  guessed height: 10 -- 0.50 of 20 interline
+2025-06-04 22:48:24,124 INFO [violin2]         ScaleBuilder.java:264  | Beam measured height: 13 -- 0.50 of [6..20] range at 542% of needed quorum
+2025-06-04 22:48:24,124 INFO [violin2]            ScaleStep.java:65   | Scale{ interline(19,20,21) line(3,4,6) beam(13)}
+2025-06-04 22:48:24,124 INFO [violin2]       StepMonitoring.java:98   | GRID
+2025-06-04 22:48:24,861 INFO [violin2]       LinesRetriever.java:1500 | Global slope: 0.00318
+2025-06-04 22:48:24,897 INFO [violin2]    ClustersRetriever.java:328  | Retrieved raw line clusters: 12 of sizes [5] with interline(19,20,21)
+2025-06-04 22:48:25,108 INFO [violin2]            PeakGraph.java:310  | Systems: #1[1] #2[2] #3[3] #4[4] #5[5] #6[6] #7[7] #8[8] #9[9] #10[10] #11[11] #12[12]
+2025-06-04 22:48:25,512 INFO [violin2]        SystemManager.java:779  | 1 part along 12 systems
+2025-06-04 22:48:25,512 INFO [violin2]                 Book.java:545  | Created scores: [{Score 1}]
+2025-06-04 22:48:25,512 INFO [violin2]       StepMonitoring.java:98   | HEADERS
+2025-06-04 22:48:25,645 INFO [violin2]      BasicClassifier.java:277  | Classifier loaded XML norms.
+2025-06-04 22:48:25,646 INFO [violin2]   AbstractClassifier.java:396  | Classifier data loaded from default uri jar:file:/Users/robertwatson/Code/talking-music-score/audiveris/app/build/distributions/app-5.6.0/lib/audiveris.jar!/res/basic-classifier.zip
+2025-06-04 22:48:25,952 INFO [violin2]           KeyBuilder.java:1038 | Staff#3 key slice#2 pitch adjusted from -0.5 to -1
+2025-06-04 22:48:25,989 INFO [violin2]           KeyBuilder.java:1038 | Staff#5 key slice#2 pitch adjusted from -0.5 to -1
+2025-06-04 22:48:26,451 INFO [violin2]       StepMonitoring.java:98   | STEM_SEEDS
+2025-06-04 22:48:26,504 INFO [violin2]        StemSeedsStep.java:86   | stem(3 max:5)
+2025-06-04 22:48:26,547 INFO [violin2]       StepMonitoring.java:98   | BEAMS
+2025-06-04 22:48:30,034 INFO [violin2]       StepMonitoring.java:98   | LEDGERS
+2025-06-04 22:48:30,414 INFO [violin2]       StepMonitoring.java:98   | HEADS
+2025-06-04 22:48:34,727 INFO [violin2]        HeadSeedTally.java:235  | Scale information: HeadSeeds{NOTEHEAD_BLACK[L:-0.4,R:-0.5]}
+2025-06-04 22:48:34,727 INFO [violin2]       StepMonitoring.java:98   | STEMS
+2025-06-04 22:48:35,325 INFO [violin2]       StepMonitoring.java:98   | REDUCTION
+2025-06-04 22:48:35,439 INFO [violin2]        ReductionStep.java:105  | Stems free length median value: 67 pixels, 3.4 interlines
+2025-06-04 22:48:35,444 INFO [violin2]       StepMonitoring.java:98   | CUE_BEAMS
+2025-06-04 22:48:35,444 INFO [violin2]         CueBeamsStep.java:81   | Step CUE_BEAMS is skipped because small heads switch is off
+2025-06-04 22:48:35,445 INFO [violin2]       StepMonitoring.java:98   | TEXTS
+2025-06-04 22:48:36,103 INFO [violin2]       StepMonitoring.java:98   | MEASURES
+2025-06-04 22:48:36,109 INFO [violin2]                 Page.java:307  | 47 raw measures: [4 in system#1, 4 in system#2, 4 in system#3, 4 in system#4, 4 in system#5, 4 in system#6, 4 in system#7, 4 in system#8, 4 in system#9, 4 in system#10, 3 in system#11, 4 in system#12]
+2025-06-04 22:48:36,109 INFO [violin2]       StepMonitoring.java:98   | CHORDS
+2025-06-04 22:48:36,120 INFO [violin2]       StepMonitoring.java:98   | CURVES
+2025-06-04 22:48:36,999 INFO [violin2]        CurvesBuilder.java:532  | Curve: SlurInfo{#969[475,2907][557,2907] dist:8.44} Too many rookies: 50, giving up!
+2025-06-04 22:48:37,190 INFO [violin2]         SlursBuilder.java:240  | Slurs: 148
+2025-06-04 22:48:37,219 INFO [violin2]      SegmentsBuilder.java:155  | Segments: 53
+2025-06-04 22:48:37,223 INFO [violin2]       StepMonitoring.java:98   | SYMBOLS
+2025-06-04 22:48:37,580 INFO [violin2]       StepMonitoring.java:98   | LINKS
+2025-06-04 22:48:37,630 INFO [violin2]       StepMonitoring.java:98   | RHYTHMS
+2025-06-04 22:48:37,661 INFO [violin2]        MeasureRhythm.java:1045 | Measure{#27} No timeOffset for HeadChordInter#10423{(0.954/0.954) staff:7 slot#6 dur:1/16}
+2025-06-04 22:48:37,661 INFO [violin2]          StackRhythm.java:224  | S7 MeasureStack#27 no correct rhythm
+2025-06-04 22:48:37,673 INFO [violin2]       StepMonitoring.java:98   | PAGE
+2025-06-04 22:48:37,675 INFO [violin2]       SheetReduction.java:154  | Gutter. Different glyphs 11/12 SlurInter#10715{(0.600/0.927) SLUR_BELOW} vs ArticulationInter#14799{(0.595/0.797) TENUTO}
+2025-06-04 22:48:37,679 INFO [violin2]                 Book.java:2550 | Book{violin2} storing
+2025-06-04 22:48:37,733 INFO [violin2]                 Book.java:2531 | Stored /book.xml
+2025-06-04 22:48:37,810 INFO [violin2]           DataHolder.java:348  | Stored /sheet#1/BINARY.png
+2025-06-04 22:48:39,188 INFO [violin2]                Sheet.java:1562 | Stored /sheet#1/sheet#1.xml
+2025-06-04 22:48:39,188 INFO [violin2]                 Book.java:2491 | Book stored as ../score_processing/MusicXML/violin2.omr
+2025-06-04 22:48:39,191 INFO [violin2]            SheetStub.java:1644 | Disposed sheet
+2025-06-04 22:48:39,224 INFO [violin2]                 Book.java:2018 | End of Stub#1 memory: 38,491,184
+2025-06-04 22:48:39,224 INFO [violin2]                 Book.java:2025 | Book processed.
+2025-06-04 22:48:39,680 INFO [violin2]            SheetStub.java:995  | Loaded /sheet#1/sheet#1.xml
+2025-06-04 22:48:39,833 INFO [violin2]      PartwiseBuilder.java:2661 | Exporting sheet(s): [#1]
+2025-06-04 22:48:39,890 INFO [violin2]        ScoreExporter.java:164  | Score violin2 exported to ../score_processing/MusicXML/violin2.mxl
+2025-06-04 22:48:39,929 INFO [violin2]                Score.java:181  | Closing {Score 1}

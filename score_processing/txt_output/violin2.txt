@@ -1,0 +1,502 @@
+treble Clef.
+Key: ayy major
+Time Signature: 3  4
+
+Measure: 1
+Beat 1. ayy 3, Quarter note. Tie: start.
+Beat 2. ayy 3, 16th note. Tie: stop.
+Beat 2. eee. see  SHARP  4, 16th note.
+Beat 2. and. Eee 4, 16th note.
+Beat 2. uh. ayy 4, 16th note.
+Beat 3. ayy 4, 16th note.
+Beat 3. eee. Eee 4, 16th note.
+Beat 3. and. see  SHARP  4, 16th note.
+Beat 3. uh. ayy 3, 16th note.
+
+Measure: 2
+Beat 1. see  SHARP  4, Quarter note. Tie: start.
+Beat 2. see  SHARP  4, 16th note. Tie: stop.
+Beat 2. eee. Eee 4, 16th note.
+Beat 2. and. ayy 4, 16th note.
+Beat 2. uh. see  SHARP  5, 16th note.
+Beat 3. see  SHARP  5, 16th note.
+Beat 3. eee. ayy 4, 16th note.
+Beat 3. and. Eee 4, 16th note.
+Beat 3. uh. see  SHARP  4, 16th note.
+
+Measure: 3
+Beat 1. Eee 4, Quarter note. Tie: start.
+Beat 2. Eee 4, 16th note. Tie: stop.
+Beat 2. eee. ayy 4, 16th note.
+Beat 2. and. see  SHARP  5, 16th note.
+Beat 2. uh. Eee 5, 16th note.
+Beat 3. Eee 5, 16th note.
+Beat 3. eee. see  SHARP  5, 16th note.
+Beat 3. and. ayy 4, 16th note.
+Beat 3. uh. Eee 4, 16th note.
+
+Measure: 4
+Beat 1. ayy 4, Quarter note. Tie: start.
+Beat 2. ayy 4, 16th note. Tie: stop.
+Beat 2. eee. see  SHARP  5, 16th note.
+Beat 2. and. Eee 5, 16th note.
+Beat 2. uh. ayy 5, 16th note.
+Beat 3. ayy 5, 16th note.
+Beat 3. eee. Eee 5, 16th note.
+Beat 3. and. see  SHARP  5, 16th note.
+Beat 3. uh. ayy 4, 16th note.
+
+Measure: 5
+Beat 1. eFF  SHARP  4, Quarter note. Tie: start.
+Beat 2. eFF  SHARP  4, 16th note. Tie: stop.
+Beat 2. eee. ayy 4, 16th note.
+Beat 2. and. dee 5, 16th note.
+Beat 2. uh. eFF  SHARP  5, 16th note.
+Beat 3. eFF  SHARP  5, 16th note.
+Beat 3. eee. dee 5, 16th note.
+Beat 3. and. ayy 4, 16th note.
+Beat 3. uh. eFF  SHARP  4, 16th note.
+
+Measure: 6
+Beat 1. Eee 4, Quarter note. Tie: start.
+Beat 2. Eee 4, 16th note. Tie: stop.
+Beat 2. eee. ayy 4, 16th note.
+Beat 2. and. see  SHARP  5, 16th note.
+Beat 2. uh. Eee 5, 16th note.
+Beat 3. Eee 5, 16th note.
+Beat 3. eee. see  SHARP  5, 16th note.
+Beat 3. and. ayy 4, 16th note.
+Beat 3. uh. Eee 4, 16th note.
+
+Measure: 7
+Beat 1. dee 4, Quarter note. Tie: start.
+Beat 2. dee 4, 16th note. Tie: stop.
+Beat 2. eee. gee  SHARP  4, 16th note.
+Beat 2. and. bee 4, 16th note.
+Beat 2. uh. dee 5, 16th note.
+Beat 3. dee 5, 16th note.
+Beat 3. eee. bee 4, 16th note.
+Beat 3. and. gee  SHARP  4, 16th note.
+Beat 3. uh. dee 4, 16th note.
+
+Measure: 8
+Beat 1. see  SHARP  4, Quarter note. Tie: start.
+Beat 2. see  SHARP  4, 16th note. Tie: stop.
+Beat 2. eee. Eee 4, 16th note.
+Beat 2. and. ayy 4, 16th note.
+Beat 2. uh. see  SHARP  5, 16th note.
+Beat 3. see  SHARP  5, 16th note.
+Beat 3. eee. ayy 4, 16th note.
+Beat 3. and. Eee 4, 16th note.
+Beat 3. uh. see  SHARP  4, 16th note.
+
+Measure: 9
+Beat 1. bee 3, Quarter note.
+Beat 2. bee 3, 16th note.
+Beat 2. eee. Eee 4, 16th note.
+Beat 2. and. gee  SHARP  4, 16th note.
+Beat 2. uh. bee 4, 16th note.
+Beat 3. bee 4, 16th note.
+Beat 3. eee. gee  SHARP  4, 16th note.
+Beat 3. and. Eee 4, 16th note.
+Beat 3. uh. bee 3, 16th note.
+
+Measure: 10
+Beat 1. Eee 4, Quarter note. Tie: start.
+Beat 2. Eee 4, 16th note. Tie: stop.
+Beat 2. eee. gee  SHARP  4, 16th note.
+Beat 2. and. bee 4, 16th note.
+Beat 2. uh. Eee 5, 16th note.
+Beat 3. Eee 5, 16th note.
+Beat 3. eee. bee 4, 16th note.
+Beat 3. and. gee  SHARP  4, 16th note.
+Beat 3. uh. Eee 4, 16th note.
+
+Measure: 11
+Beat 1. gee  SHARP  4, Quarter note. Tie: start.
+Beat 2. gee  SHARP  4, 16th note. Tie: stop.
+Beat 2. eee. bee 4, 16th note.
+Beat 2. and. Eee 5, 16th note.
+Beat 2. uh. gee  SHARP  5, 16th note.
+Beat 3. gee  SHARP  5, 16th note.
+Beat 3. eee. Eee 5, 16th note.
+Beat 3. and. bee 4, 16th note.
+Beat 3. uh. gee  SHARP  4, 16th note.
+
+Measure: 12
+
+Measure: 13
+Beat 1. Eee 4, Quarter note. Tie: start.
+Beat 2. Eee 4, 16th note. Tie: stop.
+Beat 2. eee. gee  SHARP  4, 16th note.
+Beat 2. and. bee 4, 16th note.
+Beat 2. uh. Eee 5, 16th note.
+Beat 3. Eee 5, 16th note.
+Beat 3. eee. bee 4, 16th note.
+Beat 3. and. gee  SHARP  4, 16th note.
+Beat 3. uh. Eee 4, 16th note.
+
+Measure: 14
+Beat 1. gee  SHARP  4, Quarter note. Tie: start.
+Beat 2. gee  SHARP  4, 16th note. Tie: stop.
+Beat 2. eee. bee 4, 16th note.
+Beat 2. and. Eee 5, 16th note.
+Beat 2. uh. gee  SHARP  5, 16th note.
+Beat 3. gee  SHARP  5, 16th note.
+Beat 3. eee. Eee 5, 16th note.
+Beat 3. and. bee 4, 16th note.
+Beat 3. uh. gee  SHARP  4, 16th note.
+
+Measure: 15
+Beat 1. bee 4, Quarter note. Tie: start.
+Beat 2. bee 4, 16th note. Tie: stop.
+Beat 2. eee. Eee 5, 16th note.
+Beat 2. and. gee  SHARP  5, 16th note.
+Beat 2. uh. bee 5, 16th note.
+Beat 3. bee 5, 16th note.
+Beat 3. eee. gee  SHARP  5, 16th note.
+Beat 3. and. Eee 5, 16th note.
+Beat 3. uh. bee 4, 16th note.
+
+Measure: 16
+Beat 1. dee 4, Quarter note. Tie: start.
+Beat 2. dee 4, 16th note. Tie: stop.
+Beat 2. eee. Eee 4, 16th note.
+Beat 2. and. gee  SHARP  4, 16th note.
+Beat 2. uh. eFF  SHARP  4, 16th note.
+Beat 3. Eee 4, 16th note.
+Beat 3. eee. dee 4, 16th note.
+Beat 3. and. see  SHARP  4, 16th note.
+Beat 3. uh. bee 3, 16th note.
+
+Measure: 17
+Beat 1. ayy 3, Quarter note. Tie: start.
+Beat 2. ayy 3, 16th note. Tie: stop.
+Beat 2. eee. see  SHARP  4, 16th note.
+Beat 2. and. Eee 4, 16th note.
+Beat 2. uh. ayy 4, 16th note.
+Beat 3. ayy 4, 16th note.
+Beat 3. eee. Eee 4, 16th note.
+Beat 3. and. see  SHARP  4, 16th note.
+Beat 3. uh. ayy 3, 16th note.
+
+Measure: 18
+Beat 1. see  SHARP  4, Quarter note. Tie: start.
+Beat 2. see  SHARP  4, 16th note. Tie: stop.
+Beat 2. eee. Eee 4, 16th note.
+Beat 2. and. ayy 4, 16th note.
+Beat 2. uh. see  SHARP  5, 16th note.
+Beat 3. see  SHARP  5, 16th note.
+Beat 3. eee. ayy 4, 16th note.
+Beat 3. and. Eee 4, 16th note.
+Beat 3. uh. see  SHARP  4, 16th note.
+
+Measure: 19
+Beat 1. Eee 4, Quarter note. Tie: start.
+Beat 2. Eee 4, 16th note. Tie: stop.
+Beat 2. eee. ayy 4, 16th note.
+Beat 2. and. see  SHARP  5, 16th note.
+Beat 2. uh. Eee 5, 16th note.
+Beat 3. Eee 5, 16th note.
+Beat 3. eee. see  SHARP  5, 16th note.
+Beat 3. and. ayy 4, 16th note.
+Beat 3. uh. Eee 4, 16th note.
+
+Measure: 20
+Beat 1. gee 4, Quarter note. Tie: start.
+Beat 2. gee 4, 16th note. Tie: stop.
+Beat 2. eee. see  SHARP  5, 16th note.
+Beat 2. and. Eee 5, 16th note.
+Beat 2. uh. gee 5, 16th note.
+Beat 3. gee 5, 16th note.
+Beat 3. eee. Eee 5, 16th note.
+Beat 3. and. see  SHARP  5, 16th note.
+Beat 3. uh. gee 4, 16th note.
+
+Measure: 21
+Beat 1. eFF  SHARP  4, Quarter note. Tie: start.
+Beat 2. eFF  SHARP  4, 16th note. Tie: stop.
+Beat 2. eee. ayy 4, 16th note.
+Beat 2. and. dee 5, 16th note.
+Beat 2. uh. eFF  SHARP  5, 16th note.
+Beat 3. eFF  SHARP  5, 16th note.
+Beat 3. eee. dee 5, 16th note.
+Beat 3. and. ayy 4, 16th note.
+Beat 3. uh. eFF  SHARP  4, 16th note.
+
+Measure: 22
+Beat 1. bee 4, Quarter note. Tie: start.
+Beat 2. bee 4, 16th note. Tie: stop.
+Beat 2. eee. dee 5, 16th note.
+Beat 2. and. eFF  SHARP  5, 16th note.
+Beat 2. uh. bee 5, 16th note.
+Beat 3. bee 5, 16th note.
+Beat 3. eee. eFF  SHARP  5, 16th note.
+Beat 3. and. dee 5, 16th note.
+Beat 3. uh. bee 4, 16th note.
+
+Measure: 23
+Beat 1. gee  SHARP  4, Quarter note. Tie: start.
+Beat 2. gee  SHARP  4, 16th note. Tie: stop.
+Beat 2. eee. bee 4, 16th note.
+Beat 2. and. Eee 5, 16th note.
+Beat 2. uh. gee  SHARP  5, 16th note.
+Beat 3. gee  SHARP  5, 16th note.
+Beat 3. eee. Eee 5, 16th note.
+Beat 3. and. bee 4, 16th note.
+Beat 3. uh. gee  SHARP  4, 16th note.
+
+Measure: 24
+Beat 1. Eee 4, Quarter note. Tie: start.
+Beat 2. Eee 4, 16th note. Tie: stop.
+Beat 2. eee. gee  SHARP  4, 16th note.
+Beat 2. and. bee 4, 16th note.
+Beat 2. uh. Eee 5, 16th note.
+Beat 3. Eee 5, 16th note.
+Beat 3. eee. bee 4, 16th note.
+Beat 3. and. gee  SHARP  4, 16th note.
+Beat 3. uh. Eee 4, 16th note.
+
+Measure: 25
+Beat 1. ayy 4, Quarter note. Tie: start.
+Beat 2. ayy 4, 16th note. Tie: stop.
+Beat 2. eee. see  SHARP  5, 16th note.
+Beat 2. and. Eee 5, 16th note.
+Beat 2. uh. ayy 5, 16th note.
+Beat 3. ayy 5, 16th note.
+Beat 3. eee. Eee 5, 16th note.
+Beat 3. and. see  SHARP  5, 16th note.
+Beat 3. uh. ayy 4, 16th note.
+
+Measure: 26
+Beat 1. gee  SHARP  4, Quarter note. Tie: start.
+Beat 2. gee  SHARP  4, 16th note. Tie: stop.
+Beat 2. eee. see  SHARP  5, 16th note.
+Beat 2. and. Eee 5, 16th note.
+Beat 2. uh. gee  SHARP  5, 16th note.
+Beat 3. gee  SHARP  5, 16th note.
+Beat 3. eee. Eee 5, 16th note.
+Beat 3. and. see  SHARP  5, 16th note.
+Beat 3. uh. gee  SHARP  4, 16th note.
+
+Measure: 27
+Beat 1. gee  SHARP  5, Half note.
+Beat 3. eFF  SHARP  4, 16th note.
+Beat 3. eee. bee 4, 16th note.
+Beat 3. and. dee 5, 16th note.
+Beat 3. uh. eFF  SHARP  5, 16th note.
+
+Measure: 28
+Beat 1. bee 4, Quarter note. Tie: start.
+Beat 2. bee 4, 16th note. Tie: stop.
+Beat 2. eee. dee 5, 16th note.
+Beat 2. and. eFF  SHARP  5, 16th note.
+Beat 2. uh. bee 5, 16th note.
+Beat 3. bee 5, 16th note.
+Beat 3. eee. eFF  SHARP  5, 16th note.
+Beat 3. and. dee 5, 16th note.
+Beat 3. uh. bee 4, 16th note.
+
+Measure: 29
+Beat 1. ayy 4, Quarter note. Tie: start.
+Beat 2. ayy 4, 16th note. Tie: stop.
+Beat 2. eee. see  SHARP  5, 16th note.
+Beat 2. and. Eee 5, 16th note.
+Beat 2. uh. ayy 5, 16th note.
+Beat 3. ayy 5, 16th note.
+Beat 3. eee. Eee 5, 16th note.
+Beat 3. and. see  SHARP  5, 16th note.
+Beat 3. uh. ayy 4, 16th note.
+
+Measure: 30
+Beat 1. gee  SHARP  4, Quarter note. Tie: start.
+Beat 2. gee  SHARP  4, 16th note. Tie: stop.
+Beat 2. eee. bee 4, 16th note.
+Beat 2. and. dee 5, 16th note.
+Beat 2. uh. gee  SHARP  5, 16th note.
+Beat 3. gee  SHARP  5, 16th note.
+Beat 3. eee. dee 5, 16th note.
+Beat 3. and. bee 4, 16th note.
+Beat 3. uh. gee  SHARP  4, 16th note.
+
+Measure: 31
+Beat 1. ayy 4, Quarter note.
+Beat 2. ayy 4, 16th note.
+Beat 2. eee. see  SHARP  5, 16th note.
+Beat 2. and. Eee 5, 16th note.
+Beat 2. uh. ayy 5, 16th note.
+Beat 3. ayy 5, 16th note.
+Beat 3. eee. Eee 5, 16th note.
+Beat 3. and. see  SHARP  5, 16th note.
+Beat 3. uh. ayy 4, 16th note.
+
+Measure: 32
+Beat 1. Eee 4, Quarter note. Tie: start.
+Beat 2. Eee 4, 16th note. Tie: stop.
+Beat 2. eee. ayy 4, 16th note.
+Beat 2. and. see  SHARP  5, 16th note.
+Beat 2. uh. Eee 5, 16th note.
+Beat 3. Eee 5, 16th note.
+Beat 3. eee. see  SHARP  5, 16th note.
+Beat 3. and. ayy 4, 16th note.
+Beat 3. uh. Eee 4, 16th note.
+
+Measure: 33
+Beat 1. eFF  SHARP  4, Quarter note. Tie: start.
+Beat 2. eFF  SHARP  4, 16th note. Tie: stop.
+Beat 2. eee. bee 4, 16th note.
+Beat 2. and. dee 5, 16th note.
+Beat 2. uh. eFF  SHARP  5, 16th note.
+Beat 3. eFF  SHARP  5, 16th note.
+Beat 3. eee. dee 5, 16th note.
+Beat 3. and. bee 4, 16th note.
+Beat 3. uh. eFF  SHARP  4, 16th note.
+
+Measure: 34
+Beat 1. gee  SHARP  4, Quarter note. Tie: start.
+Beat 2. gee  SHARP  4, 16th note. Tie: stop.
+Beat 2. eee. bee 4, 16th note.
+Beat 2. and. dee 5, 16th note.
+Beat 2. uh. gee  SHARP  5, 16th note.
+Beat 3. gee  SHARP  5, 16th note.
+Beat 3. eee. dee 5, 16th note.
+Beat 3. and. bee 4, 16th note.
+Beat 3. uh. gee  SHARP  4, 16th note.
+
+Measure: 35
+Beat 1. ayy 4, Quarter note.
+Beat 2. ayy 4, 16th note.
+Beat 2. eee. see  SHARP  5, 16th note.
+Beat 2. and. Eee 5, 16th note.
+Beat 2. uh. ayy 5, 16th note.
+Beat 3. ayy 5, 16th note.
+Beat 3. eee. Eee 5, 16th note.
+Beat 3. and. see  SHARP  5, 16th note.
+Beat 3. uh. ayy 4, 16th note.
+
+Measure: 36
+Beat 1. Eee 4, Quarter note. Tie: start.
+Beat 2. Eee 4, 16th note. Tie: stop.
+Beat 2. eee. ayy 4, 16th note.
+Beat 2. and. see  SHARP  5, 16th note.
+Beat 2. uh. Eee 5, 16th note.
+Beat 3. Eee 5, 16th note.
+Beat 3. eee. see  SHARP  5, 16th note.
+Beat 3. and. ayy 4, 16th note.
+Beat 3. uh. Eee 4, 16th note.
+
+Measure: 37
+Beat 1. eFF  SHARP  4, Quarter note. Tie: start.
+Beat 2. eFF  SHARP  4, 16th note. Tie: start.
+Beat 2. eee. bee 4, 16th note.
+Beat 2. and. dee 5, 16th note.
+Beat 2. uh. eFF  SHARP  5, 16th note.
+Beat 3. eFF  SHARP  5, 16th note.
+Beat 3. eee. dee 5, 16th note.
+Beat 3. and. bee 4, 16th note.
+Beat 3. uh. eFF  SHARP  4, 16th note.
+
+Measure: 38
+Beat 1. gee  SHARP  4, Quarter note. Tie: start.
+Beat 2. gee  SHARP  4, 16th note. Tie: stop.
+Beat 2. eee. bee 4, 16th note.
+Beat 2. and. dee 5, 16th note.
+Beat 2. uh. gee  SHARP  5, 16th note.
+Beat 3. gee  SHARP  5, 16th note.
+Beat 3. eee. dee 5, 16th note.
+Beat 3. and. bee 4, 16th note.
+Beat 3. uh. gee  SHARP  4, 16th note.
+
+Measure: 39
+Beat 1. ayy 4, Quarter note. Tie: start.
+Beat 2. ayy 4, 16th note. Tie: stop.
+Beat 2. eee. see  SHARP  5, 16th note.
+Beat 2. and. Eee 5, 16th note.
+Beat 2. uh. ayy 5, 16th note.
+Beat 3. ayy 5, 16th note.
+Beat 3. eee. Eee 5, 16th note.
+Beat 3. and. see  SHARP  5, 16th note.
+Beat 3. uh. ayy 4, 16th note.
+
+Measure: 40
+Beat 1. eFF  SHARP  4, Quarter note. Tie: start.
+Beat 2. eFF  SHARP  4, 16th note. Tie: stop.
+Beat 2. eee. ayy 4, 16th note.
+Beat 2. and. see  SHARP  5, 16th note.
+Beat 2. uh. eFF  SHARP  5, 16th note.
+Beat 3. eFF  SHARP  5, 16th note.
+Beat 3. eee. see  SHARP  5, 16th note.
+Beat 3. and. ayy 4, 16th note.
+Beat 3. uh. eFF  SHARP  4, 16th note.
+
+Measure: 41
+Beat 1. Eee 4, Quarter note. Tie: start.
+Beat 2. Eee 4, 16th note. Tie: stop.
+Beat 2. eee. ayy 4, 16th note.
+Beat 2. and. see  SHARP  5, 16th note.
+Beat 2. uh. Eee 5, 16th note.
+Beat 3. Eee 5, 16th note.
+Beat 3. eee. see  SHARP  5, 16th note.
+Beat 3. and. ayy 4, 16th note.
+Beat 3. uh. Eee 4, 16th note.
+
+Measure: 42
+Beat 1. see  SHARP  4, Quarter note. Tie: start.
+Beat 2. see  SHARP  4, 16th note. Tie: stop.
+Beat 2. eee. Eee 4, 16th note.
+Beat 2. and. ayy 4, 16th note.
+Beat 2. uh. see  SHARP  5, 16th note.
+Beat 3. see  SHARP  5, 16th note.
+Beat 3. eee. ayy 4, 16th note.
+Beat 3. and. Eee 4, 16th note.
+Beat 3. uh. see  SHARP  4, 16th note.
+
+Measure: 43
+Beat 1. ayy 3, Quarter note.
+Beat 2. ayy 3, 16th note.
+Beat 2. eee. see  SHARP  4, 16th note.
+Beat 2. and. Eee 4, 16th note.
+Beat 2. uh. ayy 4, 16th note.
+Beat 3. ayy 4, 16th note.
+Beat 3. eee. Eee 4, 16th note.
+Beat 3. and. see  SHARP  4, 16th note.
+Beat 3. uh. ayy 3, 16th note.
+
+Measure: 44
+Beat 1. eFF  SHARP  4, Quarter note. Tie: start.
+Beat 2. eFF  SHARP  4, 16th note. Tie: start.
+Beat 2. eee. ayy 4, 16th note.
+Beat 2. and. see  SHARP  5, 16th note.
+Beat 2. uh. eFF  SHARP  5, 16th note.
+Beat 3. eFF  SHARP  5, 16th note.
+Beat 3. eee. see  SHARP  5, 16th note.
+Beat 3. and. ayy 4, 16th note.
+Beat 3. uh. eFF  SHARP  4, 16th note.
+
+Measure: 45
+Beat 1. Eee 4, Quarter note. Tie: start.
+Beat 2. Eee 4, 16th note. Tie: stop.
+Beat 2. eee. ayy 4, 16th note.
+Beat 2. and. see  SHARP  5, 16th note.
+Beat 2. uh. Eee 5, 16th note.
+Beat 3. Eee 5, 16th note.
+Beat 3. eee. see  SHARP  5, 16th note.
+Beat 3. and. ayy 4, 16th note.
+Beat 3. uh. Eee 4, 16th note.
+
+Measure: 46
+Beat 1. see  SHARP  4, Quarter note. Tie: start.
+Beat 2. see  SHARP  4, 16th note. Tie: stop.
+Beat 2. eee. Eee 4, 16th note.
+Beat 2. and. ayy 4, 16th note.
+Beat 2. uh. see  SHARP  5, 16th note.
+Beat 3. see  SHARP  5, 16th note.
+Beat 3. eee. ayy 4, 16th note.
+Beat 3. and. Eee 4, 16th note.
+Beat 3. uh. see  SHARP  4, 16th note.
+
+Measure: 47
+Beat 1. ayy 3, Quarter note.
+ Rest: Quarter
+ Rest: Quarter
+
