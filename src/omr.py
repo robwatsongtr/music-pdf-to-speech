@@ -3,6 +3,7 @@ import os
 from pathlib import Path
 import shutil
 from lxml import etree
+import sys
 
 class OMR:
     """
@@ -37,7 +38,7 @@ class OMR:
             print("Audiveris processing completed successfully")
         except subprocess.CalledProcessError as e:
             print(f"Audiveris failed with exit code {e.returncode}")
-            exit(1)
+            sys.exit(1)
 
     def unzip_mxls(self) -> None:
         """
@@ -80,7 +81,7 @@ class OMR:
 
         if not self.check_for_xml_file():
             print("OMR FAILED: No .xml file produced. Check Logs.")
-            exit(1)
+            sys.exit(1)
         else:
             print("OMR Succeeded!")
 
@@ -92,6 +93,12 @@ class OMR:
         base_name = original_file.stem
         xml_file = Path(self.output_path) / f"{base_name}.xml"
 
+        if not xml_file.exists():
+            print(f'XML file not found: {xml_file}')
+            print('This is likely due to Audiveris producing multiple .mvt.xml files')
+            print('Multiple xml file concatenation not currently supported.\n')
+            sys.exit(1)
+
         return xml_file
 
     def strip_chords(self) -> None:
@@ -100,10 +107,6 @@ class OMR:
         ie, it strips <harmony> tags. These get played in playback. 
         """
         xml_to_process = self.get_xml_file()
-
-        if not xml_to_process.exists(): 
-            print(f'File not found: {xml_to_process}') 
-            return 
 
         try:
             tree = etree.parse(xml_to_process)
@@ -139,10 +142,6 @@ class OMR:
         midi instrument program to what is stored in self.midi_sound
         """
         xml_to_process = self.get_xml_file()
-
-        if not xml_to_process.exists(): 
-            print(f'File not found: {xml_to_process}') 
-            return 
 
         try:
             tree = etree.parse(xml_to_process)

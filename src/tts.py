@@ -1,5 +1,6 @@
 from TTS.api import TTS
 from pathlib import Path
+import sys
 
 class TextToSpeech:
     """
@@ -23,7 +24,7 @@ class TextToSpeech:
                 
         except Exception as e:
             print(f"Error reading file {input_file}: {e}")
-            exit(1)
+            sys.exit(1)
 
         base_name = Path(self.input_txt_path).stem
         output_file_path = Path(self.output_path) / f"{base_name}.wav"
@@ -37,6 +38,6 @@ class TextToSpeech:
             print(f'Text-to-speech WAV file saved at {output_file_path}')
         except Exception as e:
             print(f'Error in text-to-speech: {e}')
-            exit(1)
+            sys.exit(1)
 
 

@@ -1,6 +1,7 @@
 from music21 import converter
 from pathlib import Path
 import math
+import sys
 
 class Analyzer:
     """
@@ -17,7 +18,7 @@ class Analyzer:
             self.score = converter.parse(self.input_xml_path)
         except Exception as e:
             print(f"Failed to parse '{input_xml_path}' with error: {e}")
-            exit(1)
+            sys.exit(1)
 
         self.spoken_letters = {
             "C": "see",
@@ -197,5 +198,9 @@ class Analyzer:
         xml_file = Path(self.input_xml_path)
         base_name = xml_file.stem
         txt_file = Path(self.output_path) / f"{base_name}.txt"
+
+        if not txt_file.exists():
+            print(f'Text file {txt_file} not found')
+            sys.exit(1)
 
         return txt_file 

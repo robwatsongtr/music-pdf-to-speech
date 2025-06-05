@@ -31,6 +31,8 @@ class Playback:
             mxml_file.write("midi", fp=str(self.midi_file_path))
         except Music21Exception as e:
             print("music21 failed to parse or write:", e)
+
+        # todo: playback method 
    
 if __name__ == "__main__":
     if len(sys.argv) < 2:
