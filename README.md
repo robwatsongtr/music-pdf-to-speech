@@ -1,4 +1,4 @@
-# Talking Music Score
+# music-pdf-to-speech
 
 Converts a PDF of a musical score into an audio file that narrates the musical elements, by 
 way of OMR (Optical Music Recognition), Music21 analysis of MusicXML, and text-to-speech.
