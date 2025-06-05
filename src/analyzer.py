@@ -4,7 +4,7 @@ import math
 
 class Analyzer:
     """
-    This class takes a MusicXML file and extracts human readable information
+    This class takes a MusicXML file and extracts measures and notes.
     Outputs a text file 
     """
     def __init__(self, output_path: str, input_xml_path: str):
@@ -97,7 +97,7 @@ class Analyzer:
         else:
             curr_beat = str(int(integer))
             subdiv = self.spoken_subdiv.get(fractional, "?")
-            return f'{curr_beat} {subdiv}'
+            return f'{curr_beat}. {subdiv}'
 
     def extract_staff_attr_start_p1(self) -> None:
         """

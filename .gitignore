@@ -4,7 +4,7 @@ __pycache__/
 *$py.class
 
 # Virtual environment
-music-pdf-2-speech/
+/tms-venv
 
 # VS Code settings
 .vscode/
