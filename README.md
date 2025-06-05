@@ -42,16 +42,17 @@ The full source for Audiveris is included. I tried to include it as a git submod
 but that process was so painful I abandoned it. If you want, feel free to fork and try,
 it would enable tracking of the latest updates. As it stands, this project has Version 5.6.0
 
-Getting the CLI interface for Audiveris to work was quite challenging, even with the help
-of an LLM. Audiveris documentation only has flag instructions, not how to actually use it,
-which involves running a specific java class that as far as I can tell, isn't documented. 
-The GUI of Audiveris can still be built and run with Gradle.
+Getting the CLI interface for Audiveris to work was quite challenging, but I managed to figure
+it out. It involves running the .jar with a classpath that, to the best of my knowlege,
+isn't documented. The GUI of Audiveris can still be run with Gradle ( ie  ./gradlew run ).
+That being said, I am not trying to be overly critical, and I undertand that Audiveris 
+is generally run as a GUI and it works great, especially in cleaning up the OMR output.
 
 The fruit of that labor is in the shell script in the root of the project directory.
 Note that the code there that involves unarchiving isn't really necessary since that's already
 been done, but if you go the route of including Audiveris as a submodule, on first run you will
 need to unarchive the binary in order to run the shell script command.
-
+ 
 ---
 
 ## Credits
