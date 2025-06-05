@@ -11,8 +11,8 @@ Make sure Python 3.11x is installed.
 
 Clone repo.
 
-Create a virtual environment in the project directory:  
-% python3 -m venv venv 
+Create a Python 3.11 virtual environment in the project directory:  
+% python3.11 -m venv your-venv-name
 
 Activate environment: 
 % source venv/bin/activate  or Windows:  venv\Scripts\activate
