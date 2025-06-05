@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.audiveris.omr.jaxb.refs.TestRefs" tests="2" skipped="0" failures="0" errors="0" timestamp="2025-06-03T06:26:46" hostname="Robs-Fun-Shack.attlocal.net" time="0.01">
+  <properties/>
+  <testcase name="testInSequence" classname="org.audiveris.omr.jaxb.refs.TestRefs" time="0.009"/>
+  <testcase name="testDummy" classname="org.audiveris.omr.jaxb.refs.TestRefs" time="0.001"/>
+  <system-out><![CDATA[
+---
+testInSequence:
+
+org.audiveris.omr.jaxb.refs.Universe :
+   store=org.audiveris.omr.jaxb.refs.Store@55b5e331
+   basket=org.audiveris.omr.jaxb.refs.Basket@6034e75d
+
+org.audiveris.omr.jaxb.refs.Store :
+   fruits=[org.audiveris.omr.jaxb.refs.Orange@15fc442,org.audiveris.omr.jaxb.refs.Apple@3f3c7bdb,org.audiveris.omr.jaxb.refs.Apple@456abb66,org.audiveris.omr.jaxb.refs.Apple@2a3a299,org.audiveris.omr.jaxb.refs.Orange@7da10b5b,org.audiveris.omr.jaxb.refs.Orange@219f4597,org.audiveris.omr.jaxb.refs.Orange@31be6b49]
+
+org.audiveris.omr.jaxb.refs.Basket :
+   apples=[org.audiveris.omr.jaxb.refs.Apple@3f3c7bdb,org.audiveris.omr.jaxb.refs.Apple@456abb66,org.audiveris.omr.jaxb.refs.Apple@2a3a299]
+   oranges=[org.audiveris.omr.jaxb.refs.Orange@15fc442,org.audiveris.omr.jaxb.refs.Orange@7da10b5b,org.audiveris.omr.jaxb.refs.Orange@219f4597,org.audiveris.omr.jaxb.refs.Orange@31be6b49]
+Marshalling ...
+Marshalled   to   data/temp/test-refs/universe.xml
+=========================================================
+<?xml version="1.0" ?>
+<universe>
+  <store>
+    <fruits>
+      <orange name="orange 10" id="O10"/>
+      <apple name="pomme 1" id="A1"/>
+      <apple name="pomme 2" id="A2"/>
+      <apple name="pomme 30" id="A30"/>
+      <orange name="orange 1" id="O1"/>
+      <orange name="orange 2" id="O2"/>
+      <orange name="orange 3" id="O3"/>
+    </fruits>
+  </store>
+  <basket>
+    <apples>A1 A2 A30</apples>
+    <oranges>O10 O1 O2 O3</oranges>
+  </basket>
+</universe>=========================================================
+Unmarshalling ...
+Unmarshalled from data/temp/test-refs/universe.xml
+
+org.audiveris.omr.jaxb.refs.Universe :
+   store=org.audiveris.omr.jaxb.refs.Store@46b695ec
+   basket=org.audiveris.omr.jaxb.refs.Basket@408613cc
+
+org.audiveris.omr.jaxb.refs.Store :
+   fruits=[org.audiveris.omr.jaxb.refs.Orange@325f7fa9,org.audiveris.omr.jaxb.refs.Apple@11ce2e22,org.audiveris.omr.jaxb.refs.Apple@63a5d002,org.audiveris.omr.jaxb.refs.Apple@13cda7c9,org.audiveris.omr.jaxb.refs.Orange@5aa6202e,org.audiveris.omr.jaxb.refs.Orange@3af9aa66,org.audiveris.omr.jaxb.refs.Orange@771158fb]
+
+org.audiveris.omr.jaxb.refs.Basket :
+   apples=[org.audiveris.omr.jaxb.refs.Apple@11ce2e22,org.audiveris.omr.jaxb.refs.Apple@63a5d002,org.audiveris.omr.jaxb.refs.Apple@13cda7c9]
+   oranges=[org.audiveris.omr.jaxb.refs.Orange@325f7fa9,org.audiveris.omr.jaxb.refs.Orange@5aa6202e,org.audiveris.omr.jaxb.refs.Orange@3af9aa66,org.audiveris.omr.jaxb.refs.Orange@771158fb]
+==================================
+   org.audiveris.omr.jaxb.refs.Orange@325f7fa9 orange: orange 10
+==================================
+   org.audiveris.omr.jaxb.refs.Apple@11ce2e22 apple: pomme 1
+==================================
+   org.audiveris.omr.jaxb.refs.Apple@63a5d002 apple: pomme 2
+==================================
+   org.audiveris.omr.jaxb.refs.Apple@13cda7c9 apple: pomme 30
+==================================
+   org.audiveris.omr.jaxb.refs.Orange@5aa6202e orange: orange 1
+==================================
+   org.audiveris.omr.jaxb.refs.Orange@3af9aa66 orange: orange 2
+==================================
+   org.audiveris.omr.jaxb.refs.Orange@771158fb orange: orange 3
++++ End testInSequence(org.audiveris.omr.jaxb.refs.TestRefs)
+
+---
+testDummy:
++++ End testDummy(org.audiveris.omr.jaxb.refs.TestRefs)
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

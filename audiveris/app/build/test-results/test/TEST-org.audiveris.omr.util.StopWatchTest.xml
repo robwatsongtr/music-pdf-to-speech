@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.audiveris.omr.util.StopWatchTest" tests="4" skipped="0" failures="0" errors="0" timestamp="2025-06-03T06:26:58" hostname="Robs-Fun-Shack.attlocal.net" time="0.011">
+  <properties/>
+  <testcase name="testOverlap" classname="org.audiveris.omr.util.StopWatchTest" time="0.011"/>
+  <testcase name="testOne" classname="org.audiveris.omr.util.StopWatchTest" time="0.0"/>
+  <testcase name="testVoid" classname="org.audiveris.omr.util.StopWatchTest" time="0.0"/>
+  <testcase name="testSimple" classname="org.audiveris.omr.util.StopWatchTest" time="0.0"/>
+  <system-out><![CDATA[overlap
+
+StopWatch "Utility Watch"
+-----------------------------------
+   ms    % Task
+-----------------------------------
+    7  63% task #1
+    4  36% task #2
+    0   0% task #3
+-----------------------------------
+   11 100% Total
+void
+
+StopWatch "Utility Watch"
+-----------------------------------
+   ms    % Task
+-----------------------------------
+    0 100% task #1
+-----------------------------------
+    0 100% Total
+void
+
+StopWatch "Utility Watch"
+-----------------------------------
+   ms    % Task
+-----------------------------------
+-----------------------------------
+    0 100% Total
+simple
+
+StopWatch "Utility Watch"
+-----------------------------------
+   ms    % Task
+-----------------------------------
+    0 100% task #1
+    0 100% task #2
+    0 100% task #3
+-----------------------------------
+    0 100% Total
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

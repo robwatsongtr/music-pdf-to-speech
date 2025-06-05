@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - Class org.audiveris.omr.CLITest</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>Class org.audiveris.omr.CLITest</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/org.audiveris.omr.html">org.audiveris.omr</a> &gt; CLITest</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">13</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">0.083s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">testConstant</td>
+<td class="success">0.003s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testOption</td>
+<td class="success">0s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testPrintCommandLine</td>
+<td class="success">0.001s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testPrintUsage</td>
+<td class="success">0.006s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testRun</td>
+<td class="success">0.024s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testRunError</td>
+<td class="success">0s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testSheets</td>
+<td class="success">0.001s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testSheetsRange</td>
+<td class="success">0.001s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testSheetsRange2</td>
+<td class="success">0.003s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testSome</td>
+<td class="success">0.034s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testStep</td>
+<td class="success">0.002s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testStepEmpty</td>
+<td class="success">0.006s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testVoid</td>
+<td class="success">0.002s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>
++++ testRun
+23:26:44.334 [Test worker] INFO org.audiveris.omr.CLI -- CLI args: [-run, org.audiveris.omr.step.RunClass]
+
+org.audiveris.omr.CLI$Parameters :
+   helpMode=false
+   batchMode=false
+   sheets=null
+   transcribe=false
+   step=null
+   force=false
+   outputFolder=null
+   playListPath=null
+   export=false
+   print=false
+   constants=null
+   upgrade=false
+   save=false
+   swap=false
+   runClass=class org.audiveris.omr.step.RunClass
+   sample=false
+   annotate=false
+   arguments=[]
+
+org.audiveris.omr.CLI$Parameters :
+   helpMode=false
+   batchMode=false
+   sheets=null
+   transcribe=false
+   step=null
+   force=false
+   outputFolder=null
+   playListPath=null
+   export=false
+   print=false
+   constants=null
+   upgrade=false
+   save=false
+   swap=false
+   runClass=class org.audiveris.omr.step.RunClass
+   sample=false
+   annotate=false
+   arguments=[]
+
++++ testSome
+23:26:44.347 [Test worker] INFO org.audiveris.omr.CLI -- CLI args: [-help, -batch, -sheets, 2 5,  3, -step, PAGE, myScript.xml, my Input.pdf]
+
+org.audiveris.omr.CLI$Parameters :
+   helpMode=true
+   batchMode=true
+   sheets=[2,5,3]
+   transcribe=false
+   step=PAGE
+   force=false
+   outputFolder=null
+   playListPath=null
+   export=false
+   print=false
+   constants=null
+   upgrade=false
+   save=false
+   swap=false
+   runClass=null
+   sample=false
+   annotate=false
+   arguments=[myScript.xml,my Input.pdf]
+
+org.audiveris.omr.CLI$Parameters :
+   helpMode=true
+   batchMode=true
+   sheets=[2,5,3]
+   transcribe=false
+   step=PAGE
+   force=false
+   outputFolder=null
+   playListPath=null
+   export=false
+   print=false
+   constants=null
+   upgrade=false
+   save=false
+   swap=false
+   runClass=null
+   sample=false
+   annotate=false
+   arguments=[myScript.xml,my Input.pdf]
+
++++ testStep
+23:26:44.381 [Test worker] INFO org.audiveris.omr.CLI -- CLI args: [-step, PAGE]
+
+org.audiveris.omr.CLI$Parameters :
+   helpMode=false
+   batchMode=false
+   sheets=null
+   transcribe=false
+   step=PAGE
+   force=false
+   outputFolder=null
+   playListPath=null
+   export=false
+   print=false
+   constants=null
+   upgrade=false
+   save=false
+   swap=false
+   runClass=null
+   sample=false
+   annotate=false
+   arguments=[]
+
+org.audiveris.omr.CLI$Parameters :
+   helpMode=false
+   batchMode=false
+   sheets=null
+   transcribe=false
+   step=PAGE
+   force=false
+   outputFolder=null
+   playListPath=null
+   export=false
+   print=false
+   constants=null
+   upgrade=false
+   save=false
+   swap=false
+   runClass=null
+   sample=false
+   annotate=false
+   arguments=[]
+
++++ testVoid
+23:26:44.382 [Test worker] INFO org.audiveris.omr.CLI -- CLI args: []
+
+org.audiveris.omr.CLI$Parameters :
+   helpMode=false
+   batchMode=false
+   sheets=null
+   transcribe=false
+   step=null
+   force=false
+   outputFolder=null
+   playListPath=null
+   export=false
+   print=false
+   constants=null
+   upgrade=false
+   save=false
+   swap=false
+   runClass=null
+   sample=false
+   annotate=false
+   arguments=[]
+
+org.audiveris.omr.CLI$Parameters :
+   helpMode=false
+   batchMode=false
+   sheets=null
+   transcribe=false
+   step=null
+   force=false
+   outputFolder=null
+   playListPath=null
+   export=false
+   print=false
+   constants=null
+   upgrade=false
+   save=false
+   swap=false
+   runClass=null
+   sample=false
+   annotate=false
+   arguments=[]
+
++++ printUsage
+23:26:44.389 [Test worker] INFO org.audiveris.omr.CLI -- 
+AudiverisTest Version:
+   5.6.0
+
+Syntax:
+    audiveris [OPTIONS] [--] [INPUT_FILES]
+
+@file:
+    Content of file to be extended in line
+
+Options:
+ -help                                            : Display general help then stop
+ -batch                                           : Run with no graphic user interface
+ -sheets int[]                                    : Select sheet numbers and ranges (1 4-5)
+ -transcribe                                      : Transcribe whole book
+ -step [LOAD | BINARY | SCALE | GRID | HEADERS |  : Define a specific target step
+ STEM_SEEDS | BEAMS | LEDGERS | HEADS | STEMS |      
+ REDUCTION | CUE_BEAMS | TEXTS | MEASURES |          
+ CHORDS | CURVES | SYMBOLS | LINKS | RHYTHMS |       
+ PAGE]                                               
+ -force                                           : Force step/transcribe re-processing
+ -output &lt;output-folder&gt;                          : Define base output folder
+ -playlist &lt;file.xml&gt;                             : Build a compound book from playlist
+ -export                                          : Export MusicXML
+ -print                                           : Print out book
+ -constant key=value                              : Define an application constant
+ -upgrade                                         : Upgrade whole book file
+ -save                                            : In batch, save book on every successful step
+ -swap                                            : Swap out every sheet after its processing
+ -run &lt;qualified-class-name&gt;                      : (advanced) Run provided class on valid sheets
+ -sample                                          : (advanced) Sample all book symbols
+ -annotate                                        : (advanced) Annotate book symbols
+
+Input file extensions:
+    .omr        : book file  (input/output)
+    [any other] : image file (input)
+
+Sheet steps are in order:
+    LOAD       : Get the sheet gray picture
+    BINARY     : Binarize the sheet gray picture
+    SCALE      : Compute sheet line thickness, interline, beam thickness
+    GRID       : Retrieve staff lines, barlines, systems &amp; parts
+    HEADERS    : Retrieve Clef-Key-Time systems headers
+    STEM_SEEDS : Retrieve stem thickness &amp; seeds for stems
+    BEAMS      : Retrieve beams
+    LEDGERS    : Retrieve ledgers
+    HEADS      : Retrieve note heads
+    STEMS      : Retrieve stems connected to heads &amp; beams
+    REDUCTION  : Reduce conflicts in heads, stems &amp; beams
+    CUE_BEAMS  : Retrieve cue beams
+    TEXTS      : Call OCR on textual items
+    MEASURES   : Retrieve raw measures from groups of barlines
+    CHORDS     : Gather notes heads into chords
+    CURVES     : Retrieve slurs, wedges &amp; endings
+    SYMBOLS    : Retrieve fixed-shape symbols
+    LINKS      : Link and reduce symbols
+    RHYTHMS    : Handle rhythms within measures
+    PAGE       : Connect systems within page
+
+
++++ testConstant
+23:26:44.390 [Test worker] INFO org.audiveris.omr.CLI -- CLI args: [-constant, omr.toto  :  totoValue, -constant, omr.ui.tata=tataValue, -constant, keyWithNoValue, -constant, myKey : my value]
+
+org.audiveris.omr.CLI$Parameters :
+   helpMode=false
+   batchMode=false
+   sheets=null
+   transcribe=false
+   step=null
+   force=false
+   outputFolder=null
+   playListPath=null
+   export=false
+   print=false
+   constants=[omr.toto=totoValue,keyWithNoValue=,omr.ui.tata=tataValue,myKey=my value]
+   upgrade=false
+   save=false
+   swap=false
+   runClass=null
+   sample=false
+   annotate=false
+   arguments=[]
+
+org.audiveris.omr.CLI$Parameters :
+   helpMode=false
+   batchMode=false
+   sheets=null
+   transcribe=false
+   step=null
+   force=false
+   outputFolder=null
+   playListPath=null
+   export=false
+   print=false
+   constants=[omr.toto=totoValue,keyWithNoValue=,omr.ui.tata=tataValue,myKey=my value]
+   upgrade=false
+   save=false
+   swap=false
+   runClass=null
+   sample=false
+   annotate=false
+   arguments=[]
+
++++ printCommandLine
+23:26:44.393 [Test worker] INFO org.audiveris.omr.CLI -- Command line parameters: AudiverisTest null
+
++++ testSheetsRange
+23:26:44.394 [Test worker] INFO org.audiveris.omr.CLI -- CLI args: [-sheets, 1, 3-6, 10]
+
+org.audiveris.omr.CLI$Parameters :
+   helpMode=false
+   batchMode=false
+   sheets=[1,3,4,5,6,10]
+   transcribe=false
+   step=null
+   force=false
+   outputFolder=null
+   playListPath=null
+   export=false
+   print=false
+   constants=null
+   upgrade=false
+   save=false
+   swap=false
+   runClass=null
+   sample=false
+   annotate=false
+   arguments=[]
+
+org.audiveris.omr.CLI$Parameters :
+   helpMode=false
+   batchMode=false
+   sheets=[1,3,4,5,6,10]
+   transcribe=false
+   step=null
+   force=false
+   outputFolder=null
+   playListPath=null
+   export=false
+   print=false
+   constants=null
+   upgrade=false
+   save=false
+   swap=false
+   runClass=null
+   sample=false
+   annotate=false
+   arguments=[]
+
++++ testRunError
+23:26:44.396 [Test worker] INFO org.audiveris.omr.CLI -- CLI args: [-run, fooBar]
+java.lang.ClassNotFoundException: fooBar
+java.lang.ClassNotFoundException: fooBar
+
++++ testOption
+23:26:44.396 [Test worker] INFO org.audiveris.omr.CLI -- CLI args: [-option, omr.toto  :  totoValue, -option, omr.ui.tata=tataValue, -option, keyWithNoValue, -option, myKey : my value]
+
+org.audiveris.omr.CLI$Parameters :
+   helpMode=false
+   batchMode=false
+   sheets=null
+   transcribe=false
+   step=null
+   force=false
+   outputFolder=null
+   playListPath=null
+   export=false
+   print=false
+   constants=[omr.toto=totoValue,keyWithNoValue=,omr.ui.tata=tataValue,myKey=my value]
+   upgrade=false
+   save=false
+   swap=false
+   runClass=null
+   sample=false
+   annotate=false
+   arguments=[]
+
+org.audiveris.omr.CLI$Parameters :
+   helpMode=false
+   batchMode=false
+   sheets=null
+   transcribe=false
+   step=null
+   force=false
+   outputFolder=null
+   playListPath=null
+   export=false
+   print=false
+   constants=[omr.toto=totoValue,keyWithNoValue=,omr.ui.tata=tataValue,myKey=my value]
+   upgrade=false
+   save=false
+   swap=false
+   runClass=null
+   sample=false
+   annotate=false
+   arguments=[]
+
++++ testSheets
+23:26:44.397 [Test worker] INFO org.audiveris.omr.CLI -- CLI args: [-sheets, 3, 4, 6, 11 14]
+
+org.audiveris.omr.CLI$Parameters :
+   helpMode=false
+   batchMode=false
+   sheets=[3,4,6,11,14]
+   transcribe=false
+   step=null
+   force=false
+   outputFolder=null
+   playListPath=null
+   export=false
+   print=false
+   constants=null
+   upgrade=false
+   save=false
+   swap=false
+   runClass=null
+   sample=false
+   annotate=false
+   arguments=[]
+
+org.audiveris.omr.CLI$Parameters :
+   helpMode=false
+   batchMode=false
+   sheets=[3,4,6,11,14]
+   transcribe=false
+   step=null
+   force=false
+   outputFolder=null
+   playListPath=null
+   export=false
+   print=false
+   constants=null
+   upgrade=false
+   save=false
+   swap=false
+   runClass=null
+   sample=false
+   annotate=false
+   arguments=[]
+
++++ testSheetsRange2
+23:26:44.399 [Test worker] INFO org.audiveris.omr.CLI -- CLI args: [-sheets, 1, 4 - 6, 20]
+
+org.audiveris.omr.CLI$Parameters :
+   helpMode=false
+   batchMode=false
+   sheets=[1,4,5,6,20]
+   transcribe=false
+   step=null
+   force=false
+   outputFolder=null
+   playListPath=null
+   export=false
+   print=false
+   constants=null
+   upgrade=false
+   save=false
+   swap=false
+   runClass=null
+   sample=false
+   annotate=false
+   arguments=[]
+
+org.audiveris.omr.CLI$Parameters :
+   helpMode=false
+   batchMode=false
+   sheets=[1,4,5,6,20]
+   transcribe=false
+   step=null
+   force=false
+   outputFolder=null
+   playListPath=null
+   export=false
+   print=false
+   constants=null
+   upgrade=false
+   save=false
+   swap=false
+   runClass=null
+   sample=false
+   annotate=false
+   arguments=[]
+
++++ testStepEmpty
+23:26:44.401 [Test worker] INFO org.audiveris.omr.CLI -- CLI args: [-step]
+Option &quot;-step&quot; takes an operand
+Option &quot;-step&quot; takes an operand
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 8.7</a> at Jun 2, 2025, 11:26:59 PM</p>
+</div>
+</div>
+</body>
+</html>

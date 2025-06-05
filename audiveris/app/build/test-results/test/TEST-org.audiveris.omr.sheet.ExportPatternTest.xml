@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.audiveris.omr.sheet.ExportPatternTest" tests="10" skipped="0" failures="0" errors="0" timestamp="2025-06-03T06:26:47" hostname="Robs-Fun-Shack.attlocal.net" time="0.002">
+  <properties/>
+  <testcase name="testGetPathRadix_opus_xml" classname="org.audiveris.omr.sheet.ExportPatternTest" time="0.001"/>
+  <testcase name="testGetPathRadix_mxl" classname="org.audiveris.omr.sheet.ExportPatternTest" time="0.0"/>
+  <testcase name="testGetPathRadix_xml" classname="org.audiveris.omr.sheet.ExportPatternTest" time="0.0"/>
+  <testcase name="testGetPathRadix_other" classname="org.audiveris.omr.sheet.ExportPatternTest" time="0.0"/>
+  <testcase name="testGetPathRadix_xml_other" classname="org.audiveris.omr.sheet.ExportPatternTest" time="0.0"/>
+  <testcase name="testGetPathRadix_opus" classname="org.audiveris.omr.sheet.ExportPatternTest" time="0.0"/>
+  <testcase name="testGetPathRadix" classname="org.audiveris.omr.sheet.ExportPatternTest" time="0.0"/>
+  <testcase name="testGetPathRadix_mvt_mxl" classname="org.audiveris.omr.sheet.ExportPatternTest" time="0.0"/>
+  <testcase name="testGetPathRadix_mvt_xml" classname="org.audiveris.omr.sheet.ExportPatternTest" time="0.001"/>
+  <testcase name="testDummy" classname="org.audiveris.omr.sheet.ExportPatternTest" time="0.0"/>
+  <system-out><![CDATA[
+---
+testGetPathRadix_opus_xml:
+input  = toto.opus.xml
+result = toto.opus
++++ End testGetPathRadix_opus_xml(org.audiveris.omr.sheet.ExportPatternTest)
+
+---
+testGetPathRadix_mxl:
+input  = toto.mxl
+result = toto
++++ End testGetPathRadix_mxl(org.audiveris.omr.sheet.ExportPatternTest)
+
+---
+testGetPathRadix_xml:
+input  = toto.xml
+result = toto
++++ End testGetPathRadix_xml(org.audiveris.omr.sheet.ExportPatternTest)
+
+---
+testGetPathRadix_other:
+input  = toto.other
+result = toto.other
++++ End testGetPathRadix_other(org.audiveris.omr.sheet.ExportPatternTest)
+
+---
+testGetPathRadix_xml_other:
+input  = toto.xml.other
+result = toto.xml.other
++++ End testGetPathRadix_xml_other(org.audiveris.omr.sheet.ExportPatternTest)
+
+---
+testGetPathRadix_opus:
+input  = toto.opus.mxl
+result = toto
++++ End testGetPathRadix_opus(org.audiveris.omr.sheet.ExportPatternTest)
+
+---
+testGetPathRadix:
+input  = toto
+result = toto
++++ End testGetPathRadix(org.audiveris.omr.sheet.ExportPatternTest)
+
+---
+testGetPathRadix_mvt_mxl:
+input  = toto.mvt3.mxl
+result = toto
++++ End testGetPathRadix_mvt_mxl(org.audiveris.omr.sheet.ExportPatternTest)
+
+---
+testGetPathRadix_mvt_xml:
+input  = toto.mvt12.xml
+result = toto
++++ End testGetPathRadix_mvt_xml(org.audiveris.omr.sheet.ExportPatternTest)
+
+---
+testDummy:
++++ End testDummy(org.audiveris.omr.sheet.ExportPatternTest)
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

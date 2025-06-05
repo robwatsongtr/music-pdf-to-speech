@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.audiveris.omr.util.BrokenLineTest" tests="13" skipped="0" failures="0" errors="0" timestamp="2025-06-03T06:26:58" hostname="Robs-Fun-Shack.attlocal.net" time="0.002">
+  <properties/>
+  <testcase name="getSequenceString" classname="org.audiveris.omr.util.BrokenLineTest" time="0.0"/>
+  <testcase name="findSegment" classname="org.audiveris.omr.util.BrokenLineTest" time="0.001"/>
+  <testcase name="isColinear" classname="org.audiveris.omr.util.BrokenLineTest" time="0.0"/>
+  <testcase name="addPoint" classname="org.audiveris.omr.util.BrokenLineTest" time="0.0"/>
+  <testcase name="getSequence" classname="org.audiveris.omr.util.BrokenLineTest" time="0.0"/>
+  <testcase name="removePoint" classname="org.audiveris.omr.util.BrokenLineTest" time="0.0"/>
+  <testcase name="insertPoint" classname="org.audiveris.omr.util.BrokenLineTest" time="0.0"/>
+  <testcase name="findPoint" classname="org.audiveris.omr.util.BrokenLineTest" time="0.0"/>
+  <testcase name="movePoint" classname="org.audiveris.omr.util.BrokenLineTest" time="0.0"/>
+  <testcase name="addPointEmpty" classname="org.audiveris.omr.util.BrokenLineTest" time="0.0"/>
+  <testcase name="insertPointAfter" classname="org.audiveris.omr.util.BrokenLineTest" time="0.001"/>
+  <testcase name="indexOf" classname="org.audiveris.omr.util.BrokenLineTest" time="0.0"/>
+  <testcase name="getPoint" classname="org.audiveris.omr.util.BrokenLineTest" time="0.0"/>
+  <system-out><![CDATA[getSequenceString
+findSegment
+before: [(1,5) (10,5) (10,1) (1,1)]
+isColinear
+addPoint
+before: [(1,5) (10,5) (10,1) (1,1)]
+after : [(1,5) (10,5) (10,1) (1,1) (2,3)]
+getSequence
+removePoint java.awt.Point[x=10,y=1]
+before: [(1,5) (10,5) (10,1) (1,1)]
+after : [(1,5) (10,5) (1,1)]
+insertPoint 2
+before: [(1,5) (10,5) (10,1) (1,1)]
+after : [(1,5) (10,5) (5,2) (10,1) (1,1)]
+findPoint java.awt.Point[x=10,y=1]
+before: [(1,5) (10,5) (10,1) (1,1)]
+movePoint java.awt.Point[x=10,y=5]
+before: [(1,5) (10,5) (10,1) (1,1)]
+after : [(1,5) (11,6) (10,1) (1,1)]
+addPointEmpty
+before: []
+after : [(2,3)]
+insertPointAfter java.awt.Point[x=10,y=1]
+before: [(1,5) (10,5) (10,1) (1,1)]
+after : [(1,5) (10,5) (10,1) (5,2) (1,1)]
+getPoint
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.audiveris.omr.ui.symbol.MusicFontTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2025-06-03T06:26:47" hostname="Robs-Fun-Shack.attlocal.net" time="1.005">
+  <properties/>
+  <testcase name="printAllFamilies" classname="org.audiveris.omr.ui.symbol.MusicFontTest" time="1.005"/>
+  <system-out><![CDATA[family: Bravura
+family: Leland
+23:26:47.950 [Test worker] DEBUG org.audiveris.omr.ui.symbol.OmrFont -- No sizeMap for Leland
+23:26:47.950 [Test worker] DEBUG org.audiveris.omr.ui.symbol.OmrFont -- Null or empty sizeMap for Leland
+23:26:47.950 [Test worker] DEBUG org.audiveris.omr.ui.symbol.OmrFont -- Creating fontName: Leland fileName: Leland.otf size: 64
+23:26:47.950 [Test worker] DEBUG org.audiveris.omr.ui.symbol.OmrFont -- Font url=file:/Users/robertwatson/Code/talking-music-score/audiveris/app/res/Leland.otf
+23:26:47.950 [Test worker] DEBUG org.audiveris.omr.ui.symbol.OmrFont -- Found file Leland.otf
+23:26:47.951 [Test worker] DEBUG org.audiveris.omr.ui.symbol.OmrFont -- Caching font: java.awt.Font[family=Leland,name=Leland,style=plain,size=64] key:Leland
+23:26:47.951 [Test worker] DEBUG org.audiveris.omr.ui.symbol.OmrFont -- Created custom font: java.awt.Font[family=Leland,name=Leland,style=plain,size=64] added:true
+23:26:47.951 [Test worker] DEBUG org.audiveris.omr.ui.symbol.OmrFont -- Caching font: org.audiveris.omr.ui.symbol.MusicFont[family=Leland,name=Leland,style=plain,size=64] key:Leland
+family: Primus
+23:26:48.090 [Test worker] DEBUG org.audiveris.omr.ui.symbol.OmrFont -- No sizeMap for Primus
+23:26:48.090 [Test worker] DEBUG org.audiveris.omr.ui.symbol.OmrFont -- Null or empty sizeMap for Primus
+23:26:48.090 [Test worker] DEBUG org.audiveris.omr.ui.symbol.OmrFont -- Creating fontName: Primus fileName: Primus.ttf size: 64
+23:26:48.090 [Test worker] DEBUG org.audiveris.omr.ui.symbol.OmrFont -- Font url=file:/Users/robertwatson/Code/talking-music-score/audiveris/app/res/Primus.ttf
+23:26:48.090 [Test worker] DEBUG org.audiveris.omr.ui.symbol.OmrFont -- Found file Primus.ttf
+23:26:48.091 [Test worker] DEBUG org.audiveris.omr.ui.symbol.OmrFont -- Caching font: java.awt.Font[family=PriMus,name=PriMus,style=plain,size=64] key:PriMus
+23:26:48.091 [Test worker] DEBUG org.audiveris.omr.ui.symbol.OmrFont -- Created custom font: java.awt.Font[family=PriMus,name=PriMus,style=plain,size=64] added:true
+23:26:48.092 [Test worker] DEBUG org.audiveris.omr.ui.symbol.OmrFont -- Caching font: org.audiveris.omr.ui.symbol.MusicFont[family=PriMus,name=PriMus,style=plain,size=64] key:PriMus
+family: FinaleJazz
+23:26:48.134 [Test worker] DEBUG org.audiveris.omr.ui.symbol.OmrFont -- No sizeMap for FinaleJazz
+23:26:48.134 [Test worker] DEBUG org.audiveris.omr.ui.symbol.OmrFont -- Null or empty sizeMap for FinaleJazz
+23:26:48.134 [Test worker] DEBUG org.audiveris.omr.ui.symbol.OmrFont -- Creating fontName: Finale Jazz fileName: FinaleJazz.otf size: 64
+23:26:48.134 [Test worker] DEBUG org.audiveris.omr.ui.symbol.OmrFont -- Font url=file:/Users/robertwatson/Code/talking-music-score/audiveris/app/res/FinaleJazz.otf
+23:26:48.134 [Test worker] DEBUG org.audiveris.omr.ui.symbol.OmrFont -- Found file FinaleJazz.otf
+23:26:48.135 [Test worker] DEBUG org.audiveris.omr.ui.symbol.OmrFont -- Caching font: java.awt.Font[family=Finale Jazz,name=FinaleJazz,style=plain,size=64] key:FinaleJazz
+23:26:48.135 [Test worker] DEBUG org.audiveris.omr.ui.symbol.OmrFont -- Created custom font: java.awt.Font[family=Finale Jazz,name=FinaleJazz,style=plain,size=64] added:true
+23:26:48.135 [Test worker] DEBUG org.audiveris.omr.ui.symbol.OmrFont -- Caching font: org.audiveris.omr.ui.symbol.MusicFont[family=Finale Jazz,name=FinaleJazz,style=plain,size=64] key:FinaleJazz
+family: JazzPerc
+23:26:48.253 [Test worker] DEBUG org.audiveris.omr.ui.symbol.OmrFont -- No sizeMap for JazzPerc
+23:26:48.253 [Test worker] DEBUG org.audiveris.omr.ui.symbol.OmrFont -- Null or empty sizeMap for JazzPerc
+23:26:48.253 [Test worker] DEBUG org.audiveris.omr.ui.symbol.OmrFont -- Creating fontName: Jazz Perc fileName: JazzPerc.ttf size: 64
+23:26:48.253 [Test worker] DEBUG org.audiveris.omr.ui.symbol.OmrFont -- Font url=file:/Users/robertwatson/Code/talking-music-score/audiveris/app/res/JazzPerc.ttf
+23:26:48.254 [Test worker] DEBUG org.audiveris.omr.ui.symbol.OmrFont -- Found file JazzPerc.ttf
+23:26:48.254 [Test worker] DEBUG org.audiveris.omr.ui.symbol.OmrFont -- Caching font: java.awt.Font[family=JazzPerc,name=JazzPerc,style=plain,size=64] key:JazzPerc
+23:26:48.254 [Test worker] DEBUG org.audiveris.omr.ui.symbol.OmrFont -- Created custom font: java.awt.Font[family=JazzPerc,name=JazzPerc,style=plain,size=64] added:true
+23:26:48.254 [Test worker] DEBUG org.audiveris.omr.ui.symbol.OmrFont -- Caching font: org.audiveris.omr.ui.symbol.MusicFont[family=JazzPerc,name=JazzPerc,style=plain,size=64] key:JazzPerc
+family: MusicalSymbols
+23:26:48.262 [Test worker] DEBUG org.audiveris.omr.ui.symbol.OmrFont -- No sizeMap for MusicalSymbols
+23:26:48.262 [Test worker] DEBUG org.audiveris.omr.ui.symbol.OmrFont -- Null or empty sizeMap for MusicalSymbols
+23:26:48.262 [Test worker] DEBUG org.audiveris.omr.ui.symbol.OmrFont -- Creating fontName: MusicalSymbols fileName: MusicalSymbols.ttf size: 64
+23:26:48.262 [Test worker] DEBUG org.audiveris.omr.ui.symbol.OmrFont -- Font url=file:/Users/robertwatson/Code/talking-music-score/audiveris/app/res/MusicalSymbols.ttf
+23:26:48.262 [Test worker] DEBUG org.audiveris.omr.ui.symbol.OmrFont -- Found file MusicalSymbols.ttf
+23:26:48.263 [Test worker] DEBUG org.audiveris.omr.ui.symbol.OmrFont -- Caching font: java.awt.Font[family=MusicalSymbols,name=MusicalSymbols,style=plain,size=64] key:MusicalSymbols
+23:26:48.263 [Test worker] DEBUG org.audiveris.omr.ui.symbol.OmrFont -- Created custom font: java.awt.Font[family=MusicalSymbols,name=MusicalSymbols,style=plain,size=64] added:true
+23:26:48.263 [Test worker] DEBUG org.audiveris.omr.ui.symbol.OmrFont -- Caching font: org.audiveris.omr.ui.symbol.MusicFont[family=MusicalSymbols,name=MusicalSymbols,style=plain,size=64] key:MusicalSymbols
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

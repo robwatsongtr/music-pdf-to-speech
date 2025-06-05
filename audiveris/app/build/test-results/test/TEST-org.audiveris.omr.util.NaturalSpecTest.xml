@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.audiveris.omr.util.NaturalSpecTest" tests="13" skipped="0" failures="0" errors="0" timestamp="2025-06-03T06:26:58" hostname="Robs-Fun-Shack.attlocal.net" time="0.002">
+  <properties/>
+  <testcase name="testEncode1" classname="org.audiveris.omr.util.NaturalSpecTest" time="0.001"/>
+  <testcase name="testEncode2" classname="org.audiveris.omr.util.NaturalSpecTest" time="0.0"/>
+  <testcase name="testEncode3" classname="org.audiveris.omr.util.NaturalSpecTest" time="0.0"/>
+  <testcase name="testEncode4" classname="org.audiveris.omr.util.NaturalSpecTest" time="0.0"/>
+  <testcase name="testEncode5" classname="org.audiveris.omr.util.NaturalSpecTest" time="0.0"/>
+  <testcase name="testDecode0" classname="org.audiveris.omr.util.NaturalSpecTest" time="0.0"/>
+  <testcase name="testDecode1" classname="org.audiveris.omr.util.NaturalSpecTest" time="0.0"/>
+  <testcase name="testDecode2" classname="org.audiveris.omr.util.NaturalSpecTest" time="0.0"/>
+  <testcase name="testDecode3" classname="org.audiveris.omr.util.NaturalSpecTest" time="0.0"/>
+  <testcase name="testDecode4" classname="org.audiveris.omr.util.NaturalSpecTest" time="0.001"/>
+  <testcase name="testDecode5" classname="org.audiveris.omr.util.NaturalSpecTest" time="0.0"/>
+  <testcase name="testDecode6" classname="org.audiveris.omr.util.NaturalSpecTest" time="0.0"/>
+  <testcase name="testDecode7" classname="org.audiveris.omr.util.NaturalSpecTest" time="0.0"/>
+  <system-out><![CDATA[encode1
+values:[1, 2, 3, 4, 5]
+result:1-5
+encode2
+values:[5, 2, 4, 6, 7, 8, 10, 12]
+result:5,2,4,6-8,10,12
+encode3
+values:[5, 4, 3, 2]
+result:5,4,3,2
+encode4
+values:[15]
+result:15
+encode5
+values:[]
+result:
+decode0
+spec:null
+result:[]
+decode1
+spec:1 - 3 , 6
+result:[1, 2, 3, 6]
+decode2
+spec:3 6 8, 10-12
+result:[3, 6, 8, 10, 11, 12]
+decode3
+spec: 
+result:[]
+decode4
+spec:2-3,1
+decode5
+spec:2-3,1
+result:[2, 3, 1]
+decode6
+spec:3-2
+Got java.lang.IllegalArgumentException: Illegal range provided
+decode7
+spec:3-3
+result:[3]
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

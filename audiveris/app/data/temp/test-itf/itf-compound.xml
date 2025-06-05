@@ -1,0 +1,16 @@
+<?xml version="1.0" ?>
+<myCompound>
+  <topGlyph>1</topGlyph>
+  <bottomGlyph>3</bottomGlyph>
+  <leftSymbol>2</leftSymbol>
+  <rightSymbol>5</rightSymbol>
+  <index name="my-index-name" last-id="5">
+    <entities>
+      <glyph name="First" id="1"/>
+      <symbol weight="100" id="2"/>
+      <glyph name="Second" id="3"/>
+      <glyph name="Third" id="4"/>
+      <symbol weight="200" id="5"/>
+    </entities>
+  </index>
+</myCompound>

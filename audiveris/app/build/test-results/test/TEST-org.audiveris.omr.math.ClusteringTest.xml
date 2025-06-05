@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.audiveris.omr.math.ClusteringTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2025-06-03T06:26:46" hostname="Robs-Fun-Shack.attlocal.net" time="0.009">
+  <properties/>
+  <testcase name="testAlgorithmEM" classname="org.audiveris.omr.math.ClusteringTest" time="0.009"/>
+  <system-out><![CDATA[0.337740 * Gaussian (mean=3.357, sigma=1.801)
+0.432982 * Gaussian (mean=6.496, sigma=1.055)
+0.229277 * Gaussian (mean=10.756, sigma=1.524)
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

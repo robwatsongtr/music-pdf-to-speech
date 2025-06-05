@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.audiveris.omr.sig.GradesTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2025-06-03T06:26:47" hostname="Robs-Fun-Shack.attlocal.net" time="0.0">
+  <properties/>
+  <testcase name="testContextual_3args_2" classname="org.audiveris.omr.sig.GradesTest" time="0.0"/>
+  <system-out><![CDATA[contextual
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

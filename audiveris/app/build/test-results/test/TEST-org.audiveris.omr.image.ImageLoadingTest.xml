@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.audiveris.omr.image.ImageLoadingTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2025-06-03T06:26:45" hostname="Robs-Fun-Shack.attlocal.net" time="0.982">
+  <properties/>
+  <testcase name="testGetImage" classname="org.audiveris.omr.image.ImageLoadingTest" time="0.982"/>
+  <system-out><![CDATA[23:26:45.603 [Test worker] DEBUG org.audiveris.omr.image.ImageLoading -- getPdfLoader /Users/robertwatson/Code/talking-music-score/audiveris/app/build/resources/test/org/audiveris/omr/image/Dichterliebe01.pdf
+23:26:45.765 [Test worker] DEBUG org.apache.fontbox.ttf.PostScriptTable -- No PostScript name information is provided for the font HFBBBE+TimesNewRoman
+23:26:45.781 [Test worker] DEBUG org.apache.fontbox.ttf.PostScriptTable -- No PostScript name information is provided for the font HFBBCK+TimesNewRoman,Bold
+23:26:46.077 [Test worker] DEBUG org.apache.fontbox.ttf.PostScriptTable -- No PostScript name information is provided for the font HFBEBL+TimesNewRoman,Italic
+23:26:46.337 [Test worker] DEBUG org.audiveris.omr.image.ImageLoading -- getPdfLoader /Users/robertwatson/Code/talking-music-score/audiveris/app/build/resources/test/org/audiveris/omr/image/SchbAvMaSample_rotated.pdf
+23:26:46.344 [Test worker] DEBUG org.apache.fontbox.ttf.PostScriptTable -- No PostScript name information is provided for the font BPNLFI+TimesNewRoman
+23:26:46.345 [Test worker] DEBUG org.apache.fontbox.ttf.PostScriptTable -- No PostScript name information is provided for the font BPNMFP+TimesNewRoman,Bold
+23:26:46.347 [Test worker] DEBUG org.apache.fontbox.ttf.PostScriptTable -- No PostScript name information is provided for the font BPNNPB+TimesNewRoman,Italic
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

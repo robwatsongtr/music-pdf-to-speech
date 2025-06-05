@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.audiveris.omr.glyph.GlyphFactoryTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2025-06-03T06:26:44" hostname="Robs-Fun-Shack.attlocal.net" time="0.113">
+  <properties/>
+  <testcase name="testCreateGlyphs" classname="org.audiveris.omr.glyph.GlyphFactoryTest" time="0.113"/>
+  <system-out><![CDATA[createGlyphs
+23:26:44.507 [Test worker] DEBUG org.audiveris.omr.glyph.GlyphFactory -- glyphs: 3
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

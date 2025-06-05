@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.audiveris.omr.util.BaseTestCase" tests="1" skipped="0" failures="0" errors="0" timestamp="2025-06-03T06:26:58" hostname="Robs-Fun-Shack.attlocal.net" time="0.0">
+  <properties/>
+  <testcase name="testDummy" classname="org.audiveris.omr.util.BaseTestCase" time="0.0"/>
+  <system-out><![CDATA[
+---
+testDummy:
++++ End testDummy(org.audiveris.omr.util.BaseTestCase)
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

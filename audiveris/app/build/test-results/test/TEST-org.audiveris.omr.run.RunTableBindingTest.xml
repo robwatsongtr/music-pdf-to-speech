@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.audiveris.omr.run.RunTableBindingTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2025-06-03T06:26:47" hostname="Robs-Fun-Shack.attlocal.net" time="0.007">
+  <properties/>
+  <testcase name="testMarshalTable" classname="org.audiveris.omr.run.RunTableBindingTest" time="0.007"/>
+  <testcase name="testDummy" classname="org.audiveris.omr.run.RunTableBindingTest" time="0.0"/>
+  <system-out><![CDATA[
+---
+testMarshalTable:
+createHorizontalInstance:
+RunTable{HORIZONTAL 10x5}
++==========+
+|-XX--XXX--|
+|X---XX----|
+|----------|
+|XX--X---XX|
+|--XX--XXXX|
++==========+
+RunTable{HORIZONTAL 10x5}
+   0:[0, 1, 2, 2, 3]
+   1:[1, 3, 2]
+   2:null
+   3:[2, 2, 1, 3, 2]
+   4:[0, 2, 2, 2, 4]
+table: RunTable{HORIZONTAL 10x5}
++==========+
+|-XX--XXX--|
+|X---XX----|
+|----------|
+|XX--X---XX|
+|--XX--XXXX|
++==========+
+Marshalled to data/temp/runtable.xml
+===========================================
+<?xml version="1.0" ?>
+<run-table orientation="HORIZONTAL" width="10" height="5">
+  <runs>0 1 2 2 3</runs>
+  <runs>1 3 2</runs>
+  <runs/>
+  <runs>2 2 1 3 2</runs>
+  <runs>0 2 2 2 4</runs>
+</run-table>
+===========================================
+Unmarshalled from data/temp/runtable.xml
+RunTable{HORIZONTAL 10x5}
+   0:[0, 1, 2, 2, 3]
+   1:[1, 3, 2]
+   2:null
+   3:[2, 2, 1, 3, 2]
+   4:[0, 2, 2, 2, 4]
+table: RunTable{HORIZONTAL 10x5}
++==========+
+|-XX--XXX--|
+|X---XX----|
+|----------|
+|XX--X---XX|
+|--XX--XXXX|
++==========+
+RunTable{HORIZONTAL 10x5}
+   0:[0, 1, 2, 2, 3]
+   1:[1, 3, 2]
+   2:null
+   3:[2, 2, 1, 3, 2]
+   4:[0, 2, 2, 2, 4]
+newTable: RunTable{HORIZONTAL 10x5}
++==========+
+|-XX--XXX--|
+|X---XX----|
+|----------|
+|XX--X---XX|
+|--XX--XXXX|
++==========+
++++ End testMarshalTable(org.audiveris.omr.run.RunTableBindingTest)
+
+---
+testDummy:
++++ End testDummy(org.audiveris.omr.run.RunTableBindingTest)
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

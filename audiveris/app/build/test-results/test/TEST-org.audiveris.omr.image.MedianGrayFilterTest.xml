@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.audiveris.omr.image.MedianGrayFilterTest" tests="2" skipped="1" failures="0" errors="0" timestamp="2025-06-03T06:26:46" hostname="Robs-Fun-Shack.attlocal.net" time="0.001">
+  <properties/>
+  <testcase name="testProcess_ex_1" classname="org.audiveris.omr.image.MedianGrayFilterTest" time="0.001"/>
+  <testcase name="testProcess_white_1" classname="org.audiveris.omr.image.MedianGrayFilterTest" time="0.0">
+    <skipped/>
+  </testcase>
+  <system-out><![CDATA[
+process_ex_1
+initial ex:
+ 255 255 255 255 255 255 255 255
+ 255 255 255 255 255 255 255 255
+ 255 255 255   0   0 255 255 255
+ 255 255 255   0   0 255 255 255
+ 255 255 255   0 255 255 255 255
+ 255 255   0 255 255 255 255 255
+ 255 255 255 255 255 255 255 255
+ 255 255 255 255 255 255 255 255
+Expected:
+ 255 255 255 255 255 255 255 255
+ 255 255 255 255 255 255 255 255
+ 255 255 255 255 255 255 255 255
+ 255 255 255   0   0 255 255 255
+ 255 255 255 255 255 255 255 255
+ 255 255 255 255 255 255 255 255
+ 255 255 255 255 255 255 255 255
+ 255 255 255 255 255 255 255 255
+result:
+ 255 255 255 255 255 255 255 255
+ 255 255 255 255 255 255 255 255
+ 255 255 255 255 255 255 255 255
+ 255 255 255   0   0 255 255 255
+ 255 255 255 255 255 255 255 255
+ 255 255 255 255 255 255 255 255
+ 255 255 255 255 255 255 255 255
+ 255 255 255 255 255 255 255 255
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

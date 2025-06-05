@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.audiveris.omr.ui.symbol.TextFontTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2025-06-03T06:26:48" hostname="Robs-Fun-Shack.attlocal.net" time="10.454">
+  <properties/>
+  <testcase name="textPrintout" classname="org.audiveris.omr.ui.symbol.TextFontTest" time="10.454"/>
+  <system-out><![CDATA[23:26:48.282 [Test worker] DEBUG org.audiveris.omr.ui.symbol.OmrFont -- No sizeMap for JazzText
+23:26:48.282 [Test worker] DEBUG org.audiveris.omr.ui.symbol.OmrFont -- Null or empty sizeMap for JazzText
+23:26:48.282 [Test worker] DEBUG org.audiveris.omr.ui.symbol.OmrFont -- Creating fontName: Jazz Text fileName: JazzText.ttf size: 64
+23:26:48.282 [Test worker] DEBUG org.audiveris.omr.ui.symbol.OmrFont -- Font url=file:/Users/robertwatson/Code/talking-music-score/audiveris/app/res/JazzText.ttf
+23:26:48.282 [Test worker] DEBUG org.audiveris.omr.ui.symbol.OmrFont -- Could not create custom font: JazzText.ttf java.io.FileNotFoundException: /Users/robertwatson/Code/talking-music-score/audiveris/app/res/JazzText.ttf (No such file or directory)
+23:26:48.282 [Test worker] DEBUG org.audiveris.omr.ui.symbol.OmrFont -- Caching font: java.awt.Font[family=Dialog,name=Jazz Text,style=plain,size=64] key:JazzText
+23:26:48.282 [Test worker] DEBUG org.audiveris.omr.ui.symbol.OmrFont -- Using platform font: Dialog
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

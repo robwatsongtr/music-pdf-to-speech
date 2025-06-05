@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.audiveris.omr.run.RunTableTest" tests="22" skipped="0" failures="0" errors="0" timestamp="2025-06-03T06:26:47" hostname="Robs-Fun-Shack.attlocal.net" time="0.007">
+  <properties/>
+  <testcase name="testCopy_String" classname="org.audiveris.omr.run.RunTableTest" time="0.0"/>
+  <testcase name="testDumpSequences" classname="org.audiveris.omr.run.RunTableTest" time="0.001"/>
+  <testcase name="testGetRunAt" classname="org.audiveris.omr.run.RunTableTest" time="0.0"/>
+  <testcase name="testSetSequence" classname="org.audiveris.omr.run.RunTableTest" time="0.0"/>
+  <testcase name="testGetWidth" classname="org.audiveris.omr.run.RunTableTest" time="0.0"/>
+  <testcase name="testGetSequence" classname="org.audiveris.omr.run.RunTableTest" time="0.0"/>
+  <testcase name="testGet" classname="org.audiveris.omr.run.RunTableTest" time="0.0"/>
+  <testcase name="testCopy_0args" classname="org.audiveris.omr.run.RunTableTest" time="0.0"/>
+  <testcase name="testGetTotalRunCount" classname="org.audiveris.omr.run.RunTableTest" time="0.0"/>
+  <testcase name="testTrim" classname="org.audiveris.omr.run.RunTableTest" time="0.001"/>
+  <testcase name="testToString" classname="org.audiveris.omr.run.RunTableTest" time="0.0"/>
+  <testcase name="testGetSize" classname="org.audiveris.omr.run.RunTableTest" time="0.0"/>
+  <testcase name="testGetDimension" classname="org.audiveris.omr.run.RunTableTest" time="0.0"/>
+  <testcase name="testPurge_Predicate_RunTable" classname="org.audiveris.omr.run.RunTableTest" time="0.002"/>
+  <testcase name="testGetOrientation" classname="org.audiveris.omr.run.RunTableTest" time="0.0"/>
+  <testcase name="testGetBuffer" classname="org.audiveris.omr.run.RunTableTest" time="0.0"/>
+  <testcase name="testGetHeight" classname="org.audiveris.omr.run.RunTableTest" time="0.0"/>
+  <testcase name="testDumpOf" classname="org.audiveris.omr.run.RunTableTest" time="0.0"/>
+  <testcase name="testEquals" classname="org.audiveris.omr.run.RunTableTest" time="0.0"/>
+  <testcase name="testPurge_Predicate" classname="org.audiveris.omr.run.RunTableTest" time="0.0"/>
+  <testcase name="testInclude" classname="org.audiveris.omr.run.RunTableTest" time="0.002"/>
+  <testcase name="testRemoveRun" classname="org.audiveris.omr.run.RunTableTest" time="0.0"/>
+  <system-out><![CDATA[
++++ copy
+
++++ dumpSequences
+RunTable{HORIZONTAL 10x5}
+   0:[0, 1, 2, 2, 3]
+   1:[1, 3, 2]
+   2:null
+   3:[2, 2, 1, 3, 2]
+   4:[0, 2, 2, 2, 4]
+RunTable{VERTICAL 10x5}
+   0:[0, 1, 1, 1, 1]
+   1:[1, 2, 1]
+   2:[1, 3, 1]
+   3:[0, 4, 1]
+   4:[0, 1, 1, 1, 1]
+   5:[2]
+   6:[1, 3, 1]
+   7:[1, 3, 1]
+   8:[0, 3, 2]
+   9:[0, 3, 2]
+
++++ getRunAt
+
++++ setSequence
+table before:RunTable{HORIZONTAL 10x5}
++==========+
+|-XX--XXX--|
+|X---XX----|
+|----------|
+|XX--X---XX|
+|--XX--XXXX|
++==========+
+table after:RunTable{HORIZONTAL 10x5}
++==========+
+|-XX--XXX--|
+|---XXXXXXX|
+|----------|
+|XX--X---XX|
+|--XX--XXXX|
++==========+
+
++++ getWidth
+
++++ getSequence
+expResult: [1, 3, 2]
+
++++ get
+
++++ copy
+
++++ getTotalRunCount
+
++++ trim
+beforeTrim:
+RunTable{HORIZONTAL 15x8}
++===============+
+|---------------|
+|---------------|
+|-XX--XXX-------|
+|----XX---------|
+|---------------|
+|----X---XX-----|
+|--XX--XXXX-----|
+|---------------|
++===============+
+afterTrim:
+RunTable{HORIZONTAL 9x5}
++=========+
+|XX--XXX--|
+|---XX----|
+|---------|
+|---X---XX|
+|-XX--XXXX|
++=========+
+
++++ toString
+
++++ getSize
+
++++ getDimension
+
++++ purge_predicate_removed
+table before1:RunTable{HORIZONTAL 10x5}
++==========+
+|-XX--XXX--|
+|X---XX----|
+|----------|
+|XX--X---XX|
+|--XX--XXXX|
++==========+
+RunTable{HORIZONTAL 10x5}
+   0:[0, 1, 2, 2, 3]
+   1:[1, 3, 2]
+   2:null
+   3:[2, 2, 1, 3, 2]
+   4:[0, 2, 2, 2, 4]
+table after1:RunTable{HORIZONTAL 10x5}
++==========+
+|-----XXX--|
+|X---------|
+|----------|
+|----X-----|
+|------XXXX|
++==========+
+RunTable{HORIZONTAL 10x5}
+   0:[0, 5, 3]
+   1:[1]
+   2:null
+   3:[0, 4, 1]
+   4:[0, 6, 4]
+purge after1:RunTable{HORIZONTAL 10x5}
++==========+
+|-XX-------|
+|----XX----|
+|----------|
+|XX------XX|
+|--XX------|
++==========+
+RunTable{HORIZONTAL 10x5}
+   0:[0, 1, 2]
+   1:[0, 4, 2]
+   2:null
+   3:[2, 6, 2]
+   4:[0, 2, 2]
+table after2:RunTable{HORIZONTAL 10x5}
++==========+
+|-----XXX--|
+|----------|
+|----------|
+|----------|
+|------XXXX|
++==========+
+RunTable{HORIZONTAL 10x5}
+   0:[0, 5, 3]
+   1:null
+   2:null
+   3:null
+   4:[0, 6, 4]
+purge after2:RunTable{HORIZONTAL 10x5}
++==========+
+|-XX-------|
+|X---XX----|
+|----------|
+|XX--X---XX|
+|--XX------|
++==========+
+RunTable{HORIZONTAL 10x5}
+   0:[0, 1, 2]
+   1:[1, 3, 2]
+   2:null
+   3:[2, 2, 1, 3, 2]
+   4:[0, 2, 2]
+
++++ getOrientation
+
++++ getBuffer
+result: ip[width=10, height=5, bits=8, min=0.0, max=255.0]
+
++++ getHeight
+
++++ dumpOf
+RunTable{HORIZONTAL 10x5}
++==========+
+|-XX--XXX--|
+|X---XX----|
+|----------|
+|XX--X---XX|
+|--XX--XXXX|
++==========+
+RunTable{VERTICAL 10x5}
++==========+
+|-XX--XXX--|
+|X---XX----|
+|----------|
+|XX--X---XX|
+|--XX--XXXX|
++==========+
+
++++ equals
+
++++ purge_predicate
+table after1:RunTable{HORIZONTAL 10x5}
++==========+
+|-----XXX--|
+|----------|
+|----------|
+|----------|
+|------XXXX|
++==========+
+RunTable{HORIZONTAL 10x5}
+   0:[0, 5, 3]
+   1:null
+   2:null
+   3:null
+   4:[0, 6, 4]
+table after2:RunTable{HORIZONTAL 10x5}
++==========+
+|----------|
+|----------|
+|----------|
+|----------|
+|----------|
++==========+
+RunTable{HORIZONTAL 10x5}
+   0:null
+   1:null
+   2:null
+   3:null
+   4:null
+
++++ include
+initial:
+RunTable{HORIZONTAL 10x5}
++==========+
+|-XX--XXX--|
+|X---XX----|
+|----------|
+|XX--X---XX|
+|--XX--XXXX|
++==========+
+inverted:
+RunTable{HORIZONTAL 10x5}
++==========+
+|X--XX---XX|
+|-XXX--XXXX|
+|XXXXXXXXXX|
+|--XX-XXX--|
+|XX--XX----|
++==========+
+RunTable{HORIZONTAL 10x5}
+   0:[1, 2, 2, 3, 2]
+   1:[0, 1, 3, 2, 4]
+   2:[10]
+   3:[0, 2, 2, 1, 3]
+   4:[2, 2, 2]
+full:
+RunTable{HORIZONTAL 10x5}
++==========+
+|XXXXXXXXXX|
+|XXXXXXXXXX|
+|XXXXXXXXXX|
+|XXXXXXXXXX|
+|XXXXXXXXXX|
++==========+
+RunTable{HORIZONTAL 10x5}
+   0:[10]
+   1:[10]
+   2:[10]
+   3:[10]
+   4:[10]
+
++++ removeRun
+sequence before: [2, 2, 1, 3, 2]
+table before:RunTable{HORIZONTAL 10x5}
++==========+
+|-XX--XXX--|
+|X---XX----|
+|----------|
+|XX--X---XX|
+|--XX--XXXX|
++==========+
+sequence  after: [2, 6, 2]
+table after:RunTable{HORIZONTAL 10x5}
++==========+
+|-XX--XXX--|
+|X---XX----|
+|----------|
+|XX------XX|
+|--XX--XXXX|
++==========+
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

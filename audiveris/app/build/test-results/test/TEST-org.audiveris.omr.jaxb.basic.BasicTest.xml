@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.audiveris.omr.jaxb.basic.BasicTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2025-06-03T06:26:46" hostname="Robs-Fun-Shack.attlocal.net" time="0.065">
+  <properties/>
+  <testcase name="testMarshall" classname="org.audiveris.omr.jaxb.basic.BasicTest" time="0.065"/>
+  <testcase name="testDummy" classname="org.audiveris.omr.jaxb.basic.BasicTest" time="0.0"/>
+  <system-out><![CDATA[
+---
+testMarshall:
+
+org.audiveris.omr.jaxb.basic.Waiter :
+   id=456
+   mat=[[D@3e587920,[D@2ef8a8c3]
+   results=[1.0, 2.0, 4.0, 67.0]
+   firstName=Robert
+   location=java.awt.Point[x=1234,y=5678]
+   purse=org.audiveris.omr.jaxb.basic.Purse@473b3b7a
+   days=[org.audiveris.omr.jaxb.basic.Day@1734f68,org.audiveris.omr.jaxb.basic.Day@77b7ffa4]
+   path=PathToMyFile.txt
+   titles=[One,Two,Three]
+
+tips:
+1.0
+2.345
+4.5
+Marshalling ...
+getTitles
+Marshalled to data/temp/basic-data.xml
++++ End testMarshall(org.audiveris.omr.jaxb.basic.BasicTest)
+
+---
+testDummy:
++++ End testDummy(org.audiveris.omr.jaxb.basic.BasicTest)
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

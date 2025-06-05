@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.audiveris.omr.math.BasicLineCheck" tests="2" skipped="0" failures="0" errors="0" timestamp="2025-06-03T06:26:46" hostname="Robs-Fun-Shack.attlocal.net" time="0.0">
+  <properties/>
+  <testcase name="testPlaceHolder" classname="org.audiveris.omr.math.BasicLineCheck" time="0.0"/>
+  <testcase name="testDummy" classname="org.audiveris.omr.math.BasicLineCheck" time="0.0"/>
+  <system-out><![CDATA[
+---
+testPlaceHolder:
+BaseTestCase. testPlaceHolder
++++ End testPlaceHolder(org.audiveris.omr.math.BasicLineCheck)
+
+---
+testDummy:
++++ End testDummy(org.audiveris.omr.math.BasicLineCheck)
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

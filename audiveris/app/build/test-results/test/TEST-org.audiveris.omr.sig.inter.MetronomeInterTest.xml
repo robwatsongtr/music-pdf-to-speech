@@ -1,0 +1,291 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.audiveris.omr.sig.inter.MetronomeInterTest" tests="15" skipped="0" failures="0" errors="0" timestamp="2025-06-03T06:26:47" hostname="Robs-Fun-Shack.attlocal.net" time="0.016">
+  <properties/>
+  <testcase name="test_01" classname="org.audiveris.omr.sig.inter.MetronomeInterTest" time="0.008"/>
+  <testcase name="test_02" classname="org.audiveris.omr.sig.inter.MetronomeInterTest" time="0.001"/>
+  <testcase name="test_03" classname="org.audiveris.omr.sig.inter.MetronomeInterTest" time="0.0"/>
+  <testcase name="test_04" classname="org.audiveris.omr.sig.inter.MetronomeInterTest" time="0.001"/>
+  <testcase name="test_05" classname="org.audiveris.omr.sig.inter.MetronomeInterTest" time="0.0"/>
+  <testcase name="test_06" classname="org.audiveris.omr.sig.inter.MetronomeInterTest" time="0.001"/>
+  <testcase name="test_07" classname="org.audiveris.omr.sig.inter.MetronomeInterTest" time="0.0"/>
+  <testcase name="test_08" classname="org.audiveris.omr.sig.inter.MetronomeInterTest" time="0.001"/>
+  <testcase name="test_09" classname="org.audiveris.omr.sig.inter.MetronomeInterTest" time="0.001"/>
+  <testcase name="test_10" classname="org.audiveris.omr.sig.inter.MetronomeInterTest" time="0.0"/>
+  <testcase name="test_11" classname="org.audiveris.omr.sig.inter.MetronomeInterTest" time="0.001"/>
+  <testcase name="test_12" classname="org.audiveris.omr.sig.inter.MetronomeInterTest" time="0.001"/>
+  <testcase name="test_13" classname="org.audiveris.omr.sig.inter.MetronomeInterTest" time="0.001"/>
+  <testcase name="test_14" classname="org.audiveris.omr.sig.inter.MetronomeInterTest" time="0.0"/>
+  <testcase name="test_15" classname="org.audiveris.omr.sig.inter.MetronomeInterTest" time="0.0"/>
+  <system-out><![CDATA[
+method   : test_01
+input    : "J =116"
+expected : true
+
+"J =116"
+ codes['J'4a,' '20,'='3d,'1'31,'1'31,'6'36]
+        tempo 0 "" 
+     parStart 0 "" 
+         note 2 "J " null
+        equal 1 "=" 
+      bpmtext 3 "116" 
+         bpm1 3 "116" 
+       bpmext 0 "" 
+         bpm2 0 "" 
+      parStop 0 "" 
+      garbage 0 "" 
+output   : true
+
+method   : test_02
+input    : "J=116"
+expected : true
+
+"J=116"
+ codes['J'4a,'='3d,'1'31,'1'31,'6'36]
+        tempo 0 "" 
+     parStart 0 "" 
+         note 1 "J" null
+        equal 1 "=" 
+      bpmtext 3 "116" 
+         bpm1 3 "116" 
+       bpmext 0 "" 
+         bpm2 0 "" 
+      parStop 0 "" 
+      garbage 0 "" 
+output   : true
+
+method   : test_03
+input    : "Slowly J = 116"
+expected : true
+
+"Slowly J = 116"
+ codes['S'53,'l'6c,'o'6f,'w'77,'l'6c,'y'79,' '20,'J'4a,' '20,'='3d,' '20,'1'31,'1'31,'6'36]
+        tempo 7 "Slowly " 
+     parStart 0 "" 
+         note 2 "J " null
+        equal 1 "=" 
+      bpmtext 3 "116" 
+         bpm1 3 "116" 
+       bpmext 0 "" 
+         bpm2 0 "" 
+      parStop 0 "" 
+      garbage 0 "" 
+output   : true
+
+method   : test_04
+input    : "Slowly J=116 "
+expected : true
+
+"Slowly J=116 "
+ codes['S'53,'l'6c,'o'6f,'w'77,'l'6c,'y'79,' '20,'J'4a,'='3d,'1'31,'1'31,'6'36,' '20]
+        tempo 7 "Slowly " 
+     parStart 0 "" 
+         note 1 "J" null
+        equal 1 "=" 
+      bpmtext 4 "116 " 
+         bpm1 3 "116" 
+       bpmext 0 "" 
+         bpm2 0 "" 
+      parStop 0 "" 
+      garbage 0 "" 
+output   : true
+
+method   : test_05
+input    : "Slowly (J = 116)"
+expected : true
+
+"Slowly (J = 116)"
+ codes['S'53,'l'6c,'o'6f,'w'77,'l'6c,'y'79,' '20,'('28,'J'4a,' '20,'='3d,' '20,'1'31,'1'31,'6'36,')'29]
+        tempo 7 "Slowly " 
+     parStart 1 "(" 
+         note 2 "J " null
+        equal 1 "=" 
+      bpmtext 3 "116" 
+         bpm1 3 "116" 
+       bpmext 0 "" 
+         bpm2 0 "" 
+      parStop 1 ")" 
+      garbage 0 "" 
+output   : true
+
+method   : test_06
+input    : "Slowly (J = ca. 116)"
+expected : true
+
+"Slowly (J = ca. 116)"
+ codes['S'53,'l'6c,'o'6f,'w'77,'l'6c,'y'79,' '20,'('28,'J'4a,' '20,'='3d,' '20,'c'63,'a'61,'.'2e,' '20,'1'31,'1'31,'6'36,')'29]
+        tempo 7 "Slowly " 
+     parStart 1 "(" 
+         note 2 "J " null
+        equal 1 "=" 
+      bpmtext 7 "ca. 116" 
+         bpm1 3 "116" 
+       bpmext 0 "" 
+         bpm2 0 "" 
+      parStop 1 ")" 
+      garbage 0 "" 
+output   : true
+
+method   : test_07
+input    : "Slowly ( J = 116 env.)"
+expected : true
+
+"Slowly ( J = 116 env.)"
+ codes['S'53,'l'6c,'o'6f,'w'77,'l'6c,'y'79,' '20,'('28,' '20,'J'4a,' '20,'='3d,' '20,'1'31,'1'31,'6'36,' '20,'e'65,'n'6e,'v'76,'.'2e,')'29]
+        tempo 7 "Slowly " 
+     parStart 1 "(" 
+         note 2 "J " null
+        equal 1 "=" 
+      bpmtext 8 "116 env." 
+         bpm1 3 "116" 
+       bpmext 0 "" 
+         bpm2 0 "" 
+      parStop 1 ")" 
+      garbage 0 "" 
+output   : true
+
+method   : test_08
+input    : "Slowly ( J = 116-140)"
+expected : true
+
+"Slowly ( J = 116-140)"
+ codes['S'53,'l'6c,'o'6f,'w'77,'l'6c,'y'79,' '20,'('28,' '20,'J'4a,' '20,'='3d,' '20,'1'31,'1'31,'6'36,'-'2d,'1'31,'4'34,'0'30,')'29]
+        tempo 7 "Slowly " 
+     parStart 1 "(" 
+         note 2 "J " null
+        equal 1 "=" 
+      bpmtext 7 "116-140" 
+         bpm1 3 "116" 
+       bpmext 4 "-140" 
+         bpm2 3 "140" 
+      parStop 1 ")" 
+      garbage 0 "" 
+output   : true
+
+method   : test_09
+input    : "Slowly ( J = ca. 116 - 140)"
+expected : true
+
+"Slowly ( J = ca. 116 - 140)"
+ codes['S'53,'l'6c,'o'6f,'w'77,'l'6c,'y'79,' '20,'('28,' '20,'J'4a,' '20,'='3d,' '20,'c'63,'a'61,'.'2e,' '20,'1'31,'1'31,'6'36,' '20,'-'2d,' '20,'1'31,'4'34,'0'30,')'29]
+        tempo 7 "Slowly " 
+     parStart 1 "(" 
+         note 2 "J " null
+        equal 1 "=" 
+      bpmtext 13 "ca. 116 - 140" 
+         bpm1 3 "116" 
+       bpmext 5 "- 140" 
+         bpm2 3 "140" 
+      parStop 1 ")" 
+      garbage 0 "" 
+output   : true
+
+method   : test_10
+input    : "Allegretto quasi andantino (J = 69 env.)"
+expected : true
+
+"Allegretto quasi andantino (J = 69 env.)"
+ codes['A'41,'l'6c,'l'6c,'e'65,'g'67,'r'72,'e'65,'t'74,'t'74,'o'6f,' '20,'q'71,'u'75,'a'61,'s'73,'i'69,' '20,'a'61,'n'6e,'d'64,'a'61,'n'6e,'t'74,'i'69,'n'6e,'o'6f,' '20,'('28,'J'4a,' '20,'='3d,' '20,'6'36,'9'39,' '20,'e'65,'n'6e,'v'76,'.'2e,')'29]
+        tempo 27 "Allegretto quasi andantino " 
+     parStart 1 "(" 
+         note 2 "J " null
+        equal 1 "=" 
+      bpmtext 7 "69 env." 
+         bpm1 2 "69" 
+       bpmext 0 "" 
+         bpm2 0 "" 
+      parStop 1 ")" 
+      garbage 0 "" 
+output   : true
+
+method   : test_11
+input    : "Allegretto quasi andantino (J = ca. 100-120 env.)"
+expected : true
+
+"Allegretto quasi andantino (J = ca. 100-120 env.)"
+ codes['A'41,'l'6c,'l'6c,'e'65,'g'67,'r'72,'e'65,'t'74,'t'74,'o'6f,' '20,'q'71,'u'75,'a'61,'s'73,'i'69,' '20,'a'61,'n'6e,'d'64,'a'61,'n'6e,'t'74,'i'69,'n'6e,'o'6f,' '20,'('28,'J'4a,' '20,'='3d,' '20,'c'63,'a'61,'.'2e,' '20,'1'31,'0'30,'0'30,'-'2d,'1'31,'2'32,'0'30,' '20,'e'65,'n'6e,'v'76,'.'2e,')'29]
+        tempo 27 "Allegretto quasi andantino " 
+     parStart 1 "(" 
+         note 2 "J " null
+        equal 1 "=" 
+      bpmtext 16 "ca. 100-120 env." 
+         bpm1 3 "100" 
+       bpmext 4 "-120" 
+         bpm2 3 "120" 
+      parStop 1 ")" 
+      garbage 0 "" 
+output   : true
+
+method   : test_12
+input    : "Allegretto quasi andantino J = 100-120 grosso modo"
+expected : true
+
+"Allegretto quasi andantino J = 100-120 grosso modo"
+ codes['A'41,'l'6c,'l'6c,'e'65,'g'67,'r'72,'e'65,'t'74,'t'74,'o'6f,' '20,'q'71,'u'75,'a'61,'s'73,'i'69,' '20,'a'61,'n'6e,'d'64,'a'61,'n'6e,'t'74,'i'69,'n'6e,'o'6f,' '20,'J'4a,' '20,'='3d,' '20,'1'31,'0'30,'0'30,'-'2d,'1'31,'2'32,'0'30,' '20,'g'67,'r'72,'o'6f,'s'73,'s'73,'o'6f,' '20,'m'6d,'o'6f,'d'64,'o'6f]
+        tempo 27 "Allegretto quasi andantino " 
+     parStart 0 "" 
+         note 2 "J " null
+        equal 1 "=" 
+      bpmtext 19 "100-120 grosso modo" 
+         bpm1 3 "100" 
+       bpmext 4 "-120" 
+         bpm2 3 "120" 
+      parStop 0 "" 
+      garbage 0 "" 
+output   : true
+
+method   : test_13
+input    : "Allegretto quasi andantino (J = 100 env.) garbage"
+expected : true
+
+"Allegretto quasi andantino (J = 100 env.) garbage"
+ codes['A'41,'l'6c,'l'6c,'e'65,'g'67,'r'72,'e'65,'t'74,'t'74,'o'6f,' '20,'q'71,'u'75,'a'61,'s'73,'i'69,' '20,'a'61,'n'6e,'d'64,'a'61,'n'6e,'t'74,'i'69,'n'6e,'o'6f,' '20,'('28,'J'4a,' '20,'='3d,' '20,'1'31,'0'30,'0'30,' '20,'e'65,'n'6e,'v'76,'.'2e,')'29,' '20,'g'67,'a'61,'r'72,'b'62,'a'61,'g'67,'e'65]
+        tempo 27 "Allegretto quasi andantino " 
+     parStart 1 "(" 
+         note 2 "J " null
+        equal 1 "=" 
+      bpmtext 8 "100 env." 
+         bpm1 3 "100" 
+       bpmext 0 "" 
+         bpm2 0 "" 
+      parStop 1 ")" 
+      garbage 7 "garbage" 
+output   : true
+
+method   : test_14
+input    : "Adagio .h = 126"
+expected : true
+
+"Adagio .h = 126"
+ codes['A'41,'d'64,'a'61,'g'67,'i'69,'o'6f,' '20,'.'2e,'h'68,' '20,'='3d,' '20,'1'31,'2'32,'6'36]
+        tempo 7 "Adagio " 
+     parStart 0 "" 
+         note 3 ".h " null
+        equal 1 "=" 
+      bpmtext 3 "126" 
+         bpm1 3 "126" 
+       bpmext 0 "" 
+         bpm2 0 "" 
+      parStop 0 "" 
+      garbage 0 "" 
+output   : true
+
+method   : test_15
+input    : "Presto (J: 160)"
+expected : true
+
+"Presto (J: 160)"
+ codes['P'50,'r'72,'e'65,'s'73,'t'74,'o'6f,' '20,'('28,'J'4a,':'3a,' '20,'1'31,'6'36,'0'30,')'29]
+        tempo 7 "Presto " 
+     parStart 1 "(" 
+         note 1 "J" null
+        equal 1 ":" 
+      bpmtext 3 "160" 
+         bpm1 3 "160" 
+       bpmext 0 "" 
+         bpm2 0 "" 
+      parStop 1 ")" 
+      garbage 0 "" 
+output   : true
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

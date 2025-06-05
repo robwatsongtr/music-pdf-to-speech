@@ -1,0 +1,18 @@
+<?xml version="1.0" ?>
+<universe>
+  <store>
+    <fruits>
+      <orange name="orange 10" id="O10"/>
+      <apple name="pomme 1" id="A1"/>
+      <apple name="pomme 2" id="A2"/>
+      <apple name="pomme 30" id="A30"/>
+      <orange name="orange 1" id="O1"/>
+      <orange name="orange 2" id="O2"/>
+      <orange name="orange 3" id="O3"/>
+    </fruits>
+  </store>
+  <basket>
+    <apples>A1 A2 A30</apples>
+    <oranges>O10 O1 O2 O3</oranges>
+  </basket>
+</universe>

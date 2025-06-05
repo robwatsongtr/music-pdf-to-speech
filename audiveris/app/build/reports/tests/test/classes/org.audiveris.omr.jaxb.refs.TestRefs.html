@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="x-ua-compatible" content="IE=edge"/>
+<title>Test results - Class org.audiveris.omr.jaxb.refs.TestRefs</title>
+<link href="../css/base-style.css" rel="stylesheet" type="text/css"/>
+<link href="../css/style.css" rel="stylesheet" type="text/css"/>
+<script src="../js/report.js" type="text/javascript"></script>
+</head>
+<body>
+<div id="content">
+<h1>Class org.audiveris.omr.jaxb.refs.TestRefs</h1>
+<div class="breadcrumbs">
+<a href="../index.html">all</a> &gt; 
+<a href="../packages/org.audiveris.omr.jaxb.refs.html">org.audiveris.omr.jaxb.refs</a> &gt; TestRefs</div>
+<div id="summary">
+<table>
+<tr>
+<td>
+<div class="summaryGroup">
+<table>
+<tr>
+<td>
+<div class="infoBox" id="tests">
+<div class="counter">2</div>
+<p>tests</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="failures">
+<div class="counter">0</div>
+<p>failures</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="ignored">
+<div class="counter">0</div>
+<p>ignored</p>
+</div>
+</td>
+<td>
+<div class="infoBox" id="duration">
+<div class="counter">0.010s</div>
+<p>duration</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+</td>
+<td>
+<div class="infoBox success" id="successRate">
+<div class="percent">100%</div>
+<p>successful</p>
+</div>
+</td>
+</tr>
+</table>
+</div>
+<div id="tabs">
+<ul class="tabLinks">
+<li>
+<a href="#tab0">Tests</a>
+</li>
+<li>
+<a href="#tab1">Standard output</a>
+</li>
+</ul>
+<div id="tab0" class="tab">
+<h2>Tests</h2>
+<table>
+<thead>
+<tr>
+<th>Test</th>
+<th>Duration</th>
+<th>Result</th>
+</tr>
+</thead>
+<tr>
+<td class="success">testDummy</td>
+<td class="success">0.001s</td>
+<td class="success">passed</td>
+</tr>
+<tr>
+<td class="success">testInSequence</td>
+<td class="success">0.009s</td>
+<td class="success">passed</td>
+</tr>
+</table>
+</div>
+<div id="tab1" class="tab">
+<h2>Standard output</h2>
+<span class="code">
+<pre>
+---
+testInSequence:
+
+org.audiveris.omr.jaxb.refs.Universe :
+   store=org.audiveris.omr.jaxb.refs.Store@55b5e331
+   basket=org.audiveris.omr.jaxb.refs.Basket@6034e75d
+
+org.audiveris.omr.jaxb.refs.Store :
+   fruits=[org.audiveris.omr.jaxb.refs.Orange@15fc442,org.audiveris.omr.jaxb.refs.Apple@3f3c7bdb,org.audiveris.omr.jaxb.refs.Apple@456abb66,org.audiveris.omr.jaxb.refs.Apple@2a3a299,org.audiveris.omr.jaxb.refs.Orange@7da10b5b,org.audiveris.omr.jaxb.refs.Orange@219f4597,org.audiveris.omr.jaxb.refs.Orange@31be6b49]
+
+org.audiveris.omr.jaxb.refs.Basket :
+   apples=[org.audiveris.omr.jaxb.refs.Apple@3f3c7bdb,org.audiveris.omr.jaxb.refs.Apple@456abb66,org.audiveris.omr.jaxb.refs.Apple@2a3a299]
+   oranges=[org.audiveris.omr.jaxb.refs.Orange@15fc442,org.audiveris.omr.jaxb.refs.Orange@7da10b5b,org.audiveris.omr.jaxb.refs.Orange@219f4597,org.audiveris.omr.jaxb.refs.Orange@31be6b49]
+Marshalling ...
+Marshalled   to   data/temp/test-refs/universe.xml
+=========================================================
+&lt;?xml version=&quot;1.0&quot; ?&gt;
+&lt;universe&gt;
+  &lt;store&gt;
+    &lt;fruits&gt;
+      &lt;orange name=&quot;orange 10&quot; id=&quot;O10&quot;/&gt;
+      &lt;apple name=&quot;pomme 1&quot; id=&quot;A1&quot;/&gt;
+      &lt;apple name=&quot;pomme 2&quot; id=&quot;A2&quot;/&gt;
+      &lt;apple name=&quot;pomme 30&quot; id=&quot;A30&quot;/&gt;
+      &lt;orange name=&quot;orange 1&quot; id=&quot;O1&quot;/&gt;
+      &lt;orange name=&quot;orange 2&quot; id=&quot;O2&quot;/&gt;
+      &lt;orange name=&quot;orange 3&quot; id=&quot;O3&quot;/&gt;
+    &lt;/fruits&gt;
+  &lt;/store&gt;
+  &lt;basket&gt;
+    &lt;apples&gt;A1 A2 A30&lt;/apples&gt;
+    &lt;oranges&gt;O10 O1 O2 O3&lt;/oranges&gt;
+  &lt;/basket&gt;
+&lt;/universe&gt;=========================================================
+Unmarshalling ...
+Unmarshalled from data/temp/test-refs/universe.xml
+
+org.audiveris.omr.jaxb.refs.Universe :
+   store=org.audiveris.omr.jaxb.refs.Store@46b695ec
+   basket=org.audiveris.omr.jaxb.refs.Basket@408613cc
+
+org.audiveris.omr.jaxb.refs.Store :
+   fruits=[org.audiveris.omr.jaxb.refs.Orange@325f7fa9,org.audiveris.omr.jaxb.refs.Apple@11ce2e22,org.audiveris.omr.jaxb.refs.Apple@63a5d002,org.audiveris.omr.jaxb.refs.Apple@13cda7c9,org.audiveris.omr.jaxb.refs.Orange@5aa6202e,org.audiveris.omr.jaxb.refs.Orange@3af9aa66,org.audiveris.omr.jaxb.refs.Orange@771158fb]
+
+org.audiveris.omr.jaxb.refs.Basket :
+   apples=[org.audiveris.omr.jaxb.refs.Apple@11ce2e22,org.audiveris.omr.jaxb.refs.Apple@63a5d002,org.audiveris.omr.jaxb.refs.Apple@13cda7c9]
+   oranges=[org.audiveris.omr.jaxb.refs.Orange@325f7fa9,org.audiveris.omr.jaxb.refs.Orange@5aa6202e,org.audiveris.omr.jaxb.refs.Orange@3af9aa66,org.audiveris.omr.jaxb.refs.Orange@771158fb]
+==================================
+   org.audiveris.omr.jaxb.refs.Orange@325f7fa9 orange: orange 10
+==================================
+   org.audiveris.omr.jaxb.refs.Apple@11ce2e22 apple: pomme 1
+==================================
+   org.audiveris.omr.jaxb.refs.Apple@63a5d002 apple: pomme 2
+==================================
+   org.audiveris.omr.jaxb.refs.Apple@13cda7c9 apple: pomme 30
+==================================
+   org.audiveris.omr.jaxb.refs.Orange@5aa6202e orange: orange 1
+==================================
+   org.audiveris.omr.jaxb.refs.Orange@3af9aa66 orange: orange 2
+==================================
+   org.audiveris.omr.jaxb.refs.Orange@771158fb orange: orange 3
++++ End testInSequence(org.audiveris.omr.jaxb.refs.TestRefs)
+
+---
+testDummy:
++++ End testDummy(org.audiveris.omr.jaxb.refs.TestRefs)
+</pre>
+</span>
+</div>
+</div>
+<div id="footer">
+<p>
+<div>
+<label class="hidden" id="label-for-line-wrapping-toggle" for="line-wrapping-toggle">Wrap lines
+<input id="line-wrapping-toggle" type="checkbox" autocomplete="off"/>
+</label>
+</div>Generated by 
+<a href="http://www.gradle.org">Gradle 8.7</a> at Jun 2, 2025, 11:26:59 PM</p>
+</div>
+</div>
+</body>
+</html>

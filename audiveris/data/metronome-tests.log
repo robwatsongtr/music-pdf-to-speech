@@ -1,0 +1,75 @@
+
+method   : test_01
+input    : "J =116"
+expected : true
+output   : true
+
+method   : test_02
+input    : "J=116"
+expected : true
+output   : true
+
+method   : test_03
+input    : "Slowly J = 116"
+expected : true
+output   : true
+
+method   : test_04
+input    : "Slowly J=116 "
+expected : true
+output   : true
+
+method   : test_05
+input    : "Slowly (J = 116)"
+expected : true
+output   : true
+
+method   : test_06
+input    : "Slowly (J = ca. 116)"
+expected : true
+output   : true
+
+method   : test_07
+input    : "Slowly ( J = 116 env.)"
+expected : true
+output   : true
+
+method   : test_08
+input    : "Slowly ( J = 116-140)"
+expected : true
+output   : true
+
+method   : test_09
+input    : "Slowly ( J = ca. 116 - 140)"
+expected : true
+output   : true
+
+method   : test_10
+input    : "Allegretto quasi andantino (J = 69 env.)"
+expected : true
+output   : true
+
+method   : test_11
+input    : "Allegretto quasi andantino (J = ca. 100-120 env.)"
+expected : true
+output   : true
+
+method   : test_12
+input    : "Allegretto quasi andantino J = 100-120 grosso modo"
+expected : true
+output   : true
+
+method   : test_13
+input    : "Allegretto quasi andantino (J = 100 env.) garbage"
+expected : true
+output   : true
+
+method   : test_14
+input    : "Adagio .h = 126"
+expected : true
+output   : true
+
+method   : test_15
+input    : "Presto (J: 160)"
+expected : true
+output   : true

@@ -1,0 +1,15 @@
+<?xml version="1.0" ?>
+<myClass name="TheName" last-id="5">
+  <origin x="10" y="20"/>
+  <box x="2" y="3" w="40" h="50"/>
+  <entities>
+    <entry>
+      <key>560</key>
+      <value>String for 560</value>
+    </entry>
+    <entry>
+      <key>780</key>
+      <value>String for 780</value>
+    </entry>
+  </entities>
+</myClass>

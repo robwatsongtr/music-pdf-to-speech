@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.audiveris.omr.math.GeometricMomentsTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2025-06-03T06:26:46" hostname="Robs-Fun-Shack.attlocal.net" time="0.001">
+  <properties/>
+  <testcase name="testConstructor" classname="org.audiveris.omr.math.GeometricMomentsTest" time="0.001"/>
+  <testcase name="testDefaultConstructor" classname="org.audiveris.omr.math.GeometricMomentsTest" time="0.0"/>
+  <testcase name="testDummy" classname="org.audiveris.omr.math.GeometricMomentsTest" time="0.0"/>
+  <system-out><![CDATA[
+---
+testConstructor:
+{ weight=5.00000 width=5.00000 height=25.0000 n20=0.400000 n11=-0.160000 n02=13.8080 n30=0.00000 n21=-0.965981 n12=1.63144 n03=55.0867 xBar=3.00000 yBar=8.40000}
+Comparing 5.0 and 5.0
+Comparing 5.0 and 5.0
+Comparing 25.0 and 25.0
+Comparing 0.4 and 0.4
+Comparing -0.16000000000000006 and -0.16
+Comparing 13.808 and 13.808
+Comparing 0.0 and 0.0
+Comparing -0.9659813662799092 and -0.965981
+Comparing 1.631435196383847 and 1.63144
+Comparing 55.086697381055615 and 55.0867
+Comparing 3.0 and 3.0
+Comparing 8.4 and 8.4
++++ End testConstructor(org.audiveris.omr.math.GeometricMomentsTest)
+
+---
+testDefaultConstructor:
+{ weight=0.00000 width=0.00000 height=0.00000 n20=0.00000 n11=0.00000 n02=0.00000 n30=0.00000 n21=0.00000 n12=0.00000 n03=0.00000 xBar=0.00000 yBar=0.00000}
++++ End testDefaultConstructor(org.audiveris.omr.math.GeometricMomentsTest)
+
+---
+testDummy:
++++ End testDummy(org.audiveris.omr.math.GeometricMomentsTest)
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

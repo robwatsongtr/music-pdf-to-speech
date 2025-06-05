@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.audiveris.omr.math.RationalTest" tests="18" skipped="0" failures="0" errors="0" timestamp="2025-06-03T06:26:46" hostname="Robs-Fun-Shack.attlocal.net" time="0.001">
+  <properties/>
+  <testcase name="testDivides_int" classname="org.audiveris.omr.math.RationalTest" time="0.0"/>
+  <testcase name="testToDouble" classname="org.audiveris.omr.math.RationalTest" time="0.0"/>
+  <testcase name="testAbs" classname="org.audiveris.omr.math.RationalTest" time="0.0"/>
+  <testcase name="testPlus_int" classname="org.audiveris.omr.math.RationalTest" time="0.0"/>
+  <testcase name="testToString" classname="org.audiveris.omr.math.RationalTest" time="0.001"/>
+  <testcase name="testReciprocal" classname="org.audiveris.omr.math.RationalTest" time="0.0"/>
+  <testcase name="testTimes_Rational" classname="org.audiveris.omr.math.RationalTest" time="0.0"/>
+  <testcase name="testCompareTo" classname="org.audiveris.omr.math.RationalTest" time="0.0"/>
+  <testcase name="testMinus_Rational" classname="org.audiveris.omr.math.RationalTest" time="0.0"/>
+  <testcase name="testGcd_Rational_Rational" classname="org.audiveris.omr.math.RationalTest" time="0.0"/>
+  <testcase name="testPlus_Rational" classname="org.audiveris.omr.math.RationalTest" time="0.0"/>
+  <testcase name="testTimes_int" classname="org.audiveris.omr.math.RationalTest" time="0.0"/>
+  <testcase name="testHashCode" classname="org.audiveris.omr.math.RationalTest" time="0.0"/>
+  <testcase name="testGcd_RationalArr" classname="org.audiveris.omr.math.RationalTest" time="0.0"/>
+  <testcase name="testDivides_Rational" classname="org.audiveris.omr.math.RationalTest" time="0.0"/>
+  <testcase name="testEquals" classname="org.audiveris.omr.math.RationalTest" time="0.0"/>
+  <testcase name="testNegate" classname="org.audiveris.omr.math.RationalTest" time="0.0"/>
+  <testcase name="testMinus_int" classname="org.audiveris.omr.math.RationalTest" time="0.0"/>
+  <system-out><![CDATA[divides
+toDouble
+abs
+plus
+toString
+inverse
+times
+compareTo
+minus
+gcd
+plus
+times
+hashCode
+gcd
+divides
+equals
+opposite
+minus
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

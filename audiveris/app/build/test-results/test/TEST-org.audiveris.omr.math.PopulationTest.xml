@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.audiveris.omr.math.PopulationTest" tests="5" skipped="0" failures="0" errors="0" timestamp="2025-06-03T06:26:46" hostname="Robs-Fun-Shack.attlocal.net" time="0.0">
+  <properties/>
+  <testcase name="testExclude" classname="org.audiveris.omr.math.PopulationTest" time="0.0"/>
+  <testcase name="testEmpty" classname="org.audiveris.omr.math.PopulationTest" time="0.0"/>
+  <testcase name="testSingleton" classname="org.audiveris.omr.math.PopulationTest" time="0.0"/>
+  <testcase name="testInclude" classname="org.audiveris.omr.math.PopulationTest" time="0.0"/>
+  <testcase name="testDummy" classname="org.audiveris.omr.math.PopulationTest" time="0.0"/>
+  <system-out><![CDATA[
+---
+testExclude:
+Comparing 1.4142135623730951 and 1.4142135623730951
++++ End testExclude(org.audiveris.omr.math.PopulationTest)
+
+---
+testEmpty:
+Got java.lang.RuntimeException: Population is empty
+Got java.lang.RuntimeException: Population is empty
+Got java.lang.RuntimeException: Population is empty
+Got java.lang.RuntimeException: Population is empty
++++ End testEmpty(org.audiveris.omr.math.PopulationTest)
+
+---
+testSingleton:
++++ End testSingleton(org.audiveris.omr.math.PopulationTest)
+
+---
+testInclude:
+Comparing 3.33333 and 3.3333333333333335
+Comparing 1.8257409454793962 and 1.8257418583505538
++++ End testInclude(org.audiveris.omr.math.PopulationTest)
+
+---
+testDummy:
++++ End testDummy(org.audiveris.omr.math.PopulationTest)
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

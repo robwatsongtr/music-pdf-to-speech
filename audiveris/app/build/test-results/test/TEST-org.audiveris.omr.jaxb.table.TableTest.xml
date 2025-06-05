@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.audiveris.omr.jaxb.table.TableTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2025-06-03T06:26:46" hostname="Robs-Fun-Shack.attlocal.net" time="0.006">
+  <properties/>
+  <testcase name="testInSequence" classname="org.audiveris.omr.jaxb.table.TableTest" time="0.005"/>
+  <testcase name="testDummy" classname="org.audiveris.omr.jaxb.table.TableTest" time="0.001"/>
+  <system-out><![CDATA[
+---
+testInSequence:
+
+org.audiveris.omr.jaxb.table.Table :
+   width=3
+   height=5
+   sequences=[ 0 2 5 4, 10 3 5,, 20 3 30]
+Marshalling ...
+Marshalled   to   data/temp/table/table.xml
+=========================================================
+<?xml version="1.0" ?>
+<run-table width="3" height="5">
+  <runs>0 2 5 4</runs>
+  <runs>10 3 5</runs>
+  <runs/>
+  <runs>20 3 30</runs>
+</run-table>=========================================================
+Unmarshalling ...
+Unmarshalled from data/temp/table/table.xml
+
+org.audiveris.omr.jaxb.table.Table :
+   width=3
+   height=5
+   sequences=[ 0 2 5 4, 10 3 5,, 20 3 30]
++++ End testInSequence(org.audiveris.omr.jaxb.table.TableTest)
+
+---
+testDummy:
++++ End testDummy(org.audiveris.omr.jaxb.table.TableTest)
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

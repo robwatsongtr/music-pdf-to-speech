@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.audiveris.omr.image.MaskTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2025-06-03T06:26:46" hostname="Robs-Fun-Shack.attlocal.net" time="0.001">
+  <properties/>
+  <testcase name="testGetPointCount" classname="org.audiveris.omr.image.MaskTest" time="0.0"/>
+  <testcase name="testApply" classname="org.audiveris.omr.image.MaskTest" time="0.001"/>
+  <system-out><![CDATA[getPointCount
+apply
+x:10 y:20
+x:11 y:20
+x:12 y:20
+x:10 y:21
+x:11 y:21
+x:12 y:21
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

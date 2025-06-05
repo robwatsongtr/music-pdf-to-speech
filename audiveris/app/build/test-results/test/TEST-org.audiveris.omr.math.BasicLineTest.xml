@@ -1,0 +1,331 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.audiveris.omr.math.BasicLineTest" tests="34" skipped="0" failures="0" errors="0" timestamp="2025-06-03T06:26:46" hostname="Robs-Fun-Shack.attlocal.net" time="0.01">
+  <properties/>
+  <testcase name="testVerticalPoints" classname="org.audiveris.omr.math.BasicLineTest" time="0.001"/>
+  <testcase name="testXAt" classname="org.audiveris.omr.math.BasicLineTest" time="0.0"/>
+  <testcase name="testYAt" classname="org.audiveris.omr.math.BasicLineTest" time="0.0"/>
+  <testcase name="testGetMeanDistance" classname="org.audiveris.omr.math.BasicLineTest" time="0.002"/>
+  <testcase name="testReset" classname="org.audiveris.omr.math.BasicLineTest" time="0.0"/>
+  <testcase name="testSingularPoints" classname="org.audiveris.omr.math.BasicLineTest" time="0.0"/>
+  <testcase name="testIncludeOther2" classname="org.audiveris.omr.math.BasicLineTest" time="0.0"/>
+  <testcase name="testDifferentPoints" classname="org.audiveris.omr.math.BasicLineTest" time="0.0"/>
+  <testcase name="testTangent1" classname="org.audiveris.omr.math.BasicLineTest" time="0.001"/>
+  <testcase name="testTangent2" classname="org.audiveris.omr.math.BasicLineTest" time="0.001"/>
+  <testcase name="testTangent3" classname="org.audiveris.omr.math.BasicLineTest" time="0.001"/>
+  <testcase name="testShortPoints" classname="org.audiveris.omr.math.BasicLineTest" time="0.0"/>
+  <testcase name="testPointsLineA" classname="org.audiveris.omr.math.BasicLineTest" time="0.0"/>
+  <testcase name="testPointsLineB" classname="org.audiveris.omr.math.BasicLineTest" time="0.0"/>
+  <testcase name="testPointsLineC" classname="org.audiveris.omr.math.BasicLineTest" time="0.0"/>
+  <testcase name="testNoDistanceOf" classname="org.audiveris.omr.math.BasicLineTest" time="0.001"/>
+  <testcase name="testNoArgLine" classname="org.audiveris.omr.math.BasicLineTest" time="0.0"/>
+  <testcase name="testTangent10" classname="org.audiveris.omr.math.BasicLineTest" time="0.0"/>
+  <testcase name="testObliquePoints" classname="org.audiveris.omr.math.BasicLineTest" time="0.0"/>
+  <testcase name="testSingularMeanDistance" classname="org.audiveris.omr.math.BasicLineTest" time="0.0"/>
+  <testcase name="testIncludeOther" classname="org.audiveris.omr.math.BasicLineTest" time="0.0"/>
+  <testcase name="testNullPoints" classname="org.audiveris.omr.math.BasicLineTest" time="0.0"/>
+  <testcase name="testVerticalXAt" classname="org.audiveris.omr.math.BasicLineTest" time="0.0"/>
+  <testcase name="testVerticalYAt" classname="org.audiveris.omr.math.BasicLineTest" time="0.0"/>
+  <testcase name="testInclude" classname="org.audiveris.omr.math.BasicLineTest" time="0.0"/>
+  <testcase name="testHorizontalPoints" classname="org.audiveris.omr.math.BasicLineTest" time="0.0"/>
+  <testcase name="testDistanceOf" classname="org.audiveris.omr.math.BasicLineTest" time="0.001"/>
+  <testcase name="testSingleInclude" classname="org.audiveris.omr.math.BasicLineTest" time="0.0"/>
+  <testcase name="testHorizontalXAt" classname="org.audiveris.omr.math.BasicLineTest" time="0.0"/>
+  <testcase name="testHorizontalYAt" classname="org.audiveris.omr.math.BasicLineTest" time="0.0"/>
+  <testcase name="testXAtInt" classname="org.audiveris.omr.math.BasicLineTest" time="0.0"/>
+  <testcase name="testYAtInt" classname="org.audiveris.omr.math.BasicLineTest" time="0.0"/>
+  <testcase name="testPointsLineNb" classname="org.audiveris.omr.math.BasicLineTest" time="0.0"/>
+  <testcase name="testDummy" classname="org.audiveris.omr.math.BasicLineTest" time="0.001"/>
+  <system-out><![CDATA[BasicLineTest setUp() called.
+
+---
+testVerticalPoints:
+{VLine -1.0*x +0.0*y +1.0}
++++ End testVerticalPoints(org.audiveris.omr.math.BasicLineTest)
+BasicLineTest setUp() called.
+
+---
+testXAt:
+{HLine  0.70710677*x -0.70710677*y +1.4142135}
+Comparing -2.0 and -2.0
+Comparing 0.0 and -0.0
++++ End testXAt(org.audiveris.omr.math.BasicLineTest)
+BasicLineTest setUp() called.
+
+---
+testYAt:
+{HLine  0.70710677*x -0.70710677*y +1.4142135}
+Comparing 0.0 and -0.0
+Comparing 2.0 and 2.0
++++ End testYAt(org.audiveris.omr.math.BasicLineTest)
+BasicLineTest setUp() called.
+
+---
+testGetMeanDistance:
+{VLine -0.9805807*x +0.19611613*y +0.19611613}
+ md=2.3084779657169682E-8
+Comparing 0.0 and 2.3084779657169682E-8
++++ End testGetMeanDistance(org.audiveris.omr.math.BasicLineTest)
+BasicLineTest setUp() called.
+
+---
+testReset:
+Got org.audiveris.omr.math.Line$UndefinedLineException: Line parameters not properly set
+Got org.audiveris.omr.math.Line$UndefinedLineException: Line parameters not properly set
+Got org.audiveris.omr.math.Line$UndefinedLineException: Line parameters not properly set
++++ End testReset(org.audiveris.omr.math.BasicLineTest)
+BasicLineTest setUp() called.
+
+---
+testSingularPoints:
+Got org.audiveris.omr.math.Line$UndefinedLineException: Line parameters not properly set
++++ End testSingularPoints(org.audiveris.omr.math.BasicLineTest)
+BasicLineTest setUp() called.
+
+---
+testIncludeOther2:
+{HLine  0.0*x -1.0*y -1.0}
+{HLine  0.0*x -1.0*y +1.0}
+{HLine  0.0*x -1.0*y +0.0}
+Comparing 0.0 and 0.0
+Comparing -1.0 and -1.0
+Comparing 0.0 and 0.0
++++ End testIncludeOther2(org.audiveris.omr.math.BasicLineTest)
+BasicLineTest setUp() called.
+
+---
+testDifferentPoints:
+Got java.lang.IllegalArgumentException: Provided arrays have different lengths
++++ End testDifferentPoints(org.audiveris.omr.math.BasicLineTest)
+BasicLineTest setUp() called.
+
+---
+testTangent1:
+{VLine -0.95782626*x +0.28734788*y +25.957092}
+x=214.29999999999998, y=624.0
+Comparing 214.3 and 214.29999999999998
+x=214.6, y=625.0
+Comparing 214.6 and 214.6
+x=214.9, y=626.0
+Comparing 214.9 and 214.9
+x=215.20000000000002, y=627.0
+Comparing 215.2 and 215.20000000000002
++++ End testTangent1(org.audiveris.omr.math.BasicLineTest)
+BasicLineTest setUp() called.
+
+---
+testTangent2:
+{VLine -0.95782626*x +0.28734788*y +25.957092}
+x=214.29999999999998, y=624.0
+Comparing 214.3 and 214.29999999999998
+x=214.6, y=625.0
+Comparing 214.6 and 214.6
+x=214.9, y=626.0
+Comparing 214.9 and 214.9
+x=215.20000000000002, y=627.0
+Comparing 215.2 and 215.20000000000002
+x=215.5, y=628.0
+Comparing 215.5 and 215.5
+
+x=215.79999999999998, y=629.0
+Comparing 215.8 and 215.79999999999998
+x=216.1, y=630.0
+Comparing 216.1 and 216.1
+x=216.39999999999998, y=631.0
+Comparing 216.4 and 216.39999999999998
++++ End testTangent2(org.audiveris.omr.math.BasicLineTest)
+BasicLineTest setUp() called.
+
+---
+testTangent3:
+{VLine -0.95782626*x +0.28734788*y +32.661877}
+x=221.29999999999998, y=624.0
+Comparing 221.3 and 221.29999999999998
+x=221.6, y=625.0
+Comparing 221.6 and 221.6
+x=221.9, y=626.0
+Comparing 221.9 and 221.9
+x=222.20000000000002, y=627.0
+Comparing 222.2 and 222.20000000000002
+x=222.5, y=628.0
+Comparing 222.5 and 222.5
+
+x=222.79999999999998, y=629.0
+Comparing 222.8 and 222.79999999999998
+x=223.1, y=630.0
+Comparing 223.1 and 223.1
+x=223.39999999999998, y=631.0
+Comparing 223.4 and 223.39999999999998
++++ End testTangent3(org.audiveris.omr.math.BasicLineTest)
+BasicLineTest setUp() called.
+
+---
+testShortPoints:
+Got java.lang.IllegalArgumentException: Provided arrays are too short
++++ End testShortPoints(org.audiveris.omr.math.BasicLineTest)
+BasicLineTest setUp() called.
+
+---
+testPointsLineA:
+{VLine -0.9805807*x +0.19611613*y +0.19611613}
++++ End testPointsLineA(org.audiveris.omr.math.BasicLineTest)
+BasicLineTest setUp() called.
+
+---
+testPointsLineB:
+{VLine -0.9805807*x +0.19611613*y +0.19611613}
+Comparing 0.19611613513818377 and 0.19611613513818402
++++ End testPointsLineB(org.audiveris.omr.math.BasicLineTest)
+BasicLineTest setUp() called.
+
+---
+testPointsLineC:
+{VLine -0.9805807*x +0.19611613*y +0.19611613}
+Comparing 0.1961161351381877 and 0.19611613513818402
++++ End testPointsLineC(org.audiveris.omr.math.BasicLineTest)
+BasicLineTest setUp() called.
+
+---
+testNoDistanceOf:
+Got org.audiveris.omr.math.Line$UndefinedLineException: Line parameters not properly set
++++ End testNoDistanceOf(org.audiveris.omr.math.BasicLineTest)
+BasicLineTest setUp() called.
+
+---
+testNoArgLine:
+Got org.audiveris.omr.math.Line$UndefinedLineException: Line parameters not properly set
+Got org.audiveris.omr.math.Line$UndefinedLineException: Line parameters not properly set
+Got org.audiveris.omr.math.Line$UndefinedLineException: Line parameters not properly set
++++ End testNoArgLine(org.audiveris.omr.math.BasicLineTest)
+BasicLineTest setUp() called.
+
+---
+testTangent10:
+{VLine -0.95782626*x +0.28734788*y -1.81987}
+x=-0.7000000000000002, y=4.0
+Comparing -0.7 and -0.7000000000000002
+x=-0.40000000000000013, y=5.0
+Comparing -0.4 and -0.40000000000000013
+x=-0.10000000000000014, y=6.0
+Comparing -0.1 and -0.10000000000000014
+x=0.20000000000000007, y=7.0
+Comparing 0.2 and 0.20000000000000007
++++ End testTangent10(org.audiveris.omr.math.BasicLineTest)
+BasicLineTest setUp() called.
+
+---
+testObliquePoints:
+{HLine  0.70710677*x -0.70710677*y +0.0}
++++ End testObliquePoints(org.audiveris.omr.math.BasicLineTest)
+BasicLineTest setUp() called.
+
+---
+testSingularMeanDistance:
+Got org.audiveris.omr.math.Line$UndefinedLineException: Line parameters not properly set
++++ End testSingularMeanDistance(org.audiveris.omr.math.BasicLineTest)
+BasicLineTest setUp() called.
+
+---
+testIncludeOther:
+{HLine  0.0*x -1.0*y -1.0}
+{HLine  0.0*x -1.0*y +1.0}
+{HLine  0.009998834*x -0.99995*y +0.0}
+Comparing 0.01 and 0.009998833515245864
+Comparing -1.0 and -0.9999500104146879
+Comparing 0.0 and 0.0
++++ End testIncludeOther(org.audiveris.omr.math.BasicLineTest)
+BasicLineTest setUp() called.
+
+---
+testNullPoints:
+Got java.lang.IllegalArgumentException: Provided arrays may not be null
++++ End testNullPoints(org.audiveris.omr.math.BasicLineTest)
+BasicLineTest setUp() called.
+
+---
+testVerticalXAt:
+Comparing 0.0 and 0.0
++++ End testVerticalXAt(org.audiveris.omr.math.BasicLineTest)
+BasicLineTest setUp() called.
+
+---
+testVerticalYAt:
+Got org.audiveris.omr.math.Line$NonInvertibleLineException: Line is vertical
++++ End testVerticalYAt(org.audiveris.omr.math.BasicLineTest)
+BasicLineTest setUp() called.
+
+---
+testInclude:
+{HLine  0.70710677*x -0.70710677*y +1.4142135}
+Comparing 0.7071067811865476 and 0.7071067811865475
+Comparing -0.7071067811865476 and -0.7071067811865475
+Comparing 1.4142135623730951 and 1.414213562373095
++++ End testInclude(org.audiveris.omr.math.BasicLineTest)
+BasicLineTest setUp() called.
+
+---
+testHorizontalPoints:
+{HLine  0.0*x -1.0*y +1.0}
++++ End testHorizontalPoints(org.audiveris.omr.math.BasicLineTest)
+BasicLineTest setUp() called.
+
+---
+testDistanceOf:
+{VLine -0.9805807*x +0.19611613*y +0.19611613}
+Distance of origin: 0.19611613513818402
+Comparing 0.19611613513818404 and 0.19611613513818402
+Distance of (1,0): -0.7844645405527361
+Comparing -0.7844645405527361 and -0.7844645405527361
+Distance of (1,10): 1.176696810829104
+Comparing 1.176696810829104 and 1.176696810829104
+ll Distance of (0.0): 0.8834522085987723
+Comparing 0.8834522085987723 and 0.8834522085987723
+h Distance of (0.0): 1.2649110640673515
+Comparing 1.2649110640673515 and 1.2649110640673515
++++ End testDistanceOf(org.audiveris.omr.math.BasicLineTest)
+BasicLineTest setUp() called.
+
+---
+testSingleInclude:
+INVALID LINE
+Got org.audiveris.omr.math.Line$UndefinedLineException: Line parameters not properly set
++++ End testSingleInclude(org.audiveris.omr.math.BasicLineTest)
+BasicLineTest setUp() called.
+
+---
+testHorizontalXAt:
+{HLine  0.0*x -1.0*y +0.0}
+Got org.audiveris.omr.math.Line$NonInvertibleLineException: Line is horizontal
++++ End testHorizontalXAt(org.audiveris.omr.math.BasicLineTest)
+BasicLineTest setUp() called.
+
+---
+testHorizontalYAt:
+{HLine  0.0*x -1.0*y +0.0}
+at x=0, y=0.0
++++ End testHorizontalYAt(org.audiveris.omr.math.BasicLineTest)
+BasicLineTest setUp() called.
+
+---
+testXAtInt:
+{VLine -0.9284767*x +0.37139067*y +0.0}
++++ End testXAtInt(org.audiveris.omr.math.BasicLineTest)
+BasicLineTest setUp() called.
+
+---
+testYAtInt:
+{HLine  0.37139067*x -0.9284767*y +0.0}
++++ End testYAtInt(org.audiveris.omr.math.BasicLineTest)
+BasicLineTest setUp() called.
+
+---
+testPointsLineNb:
+{VLine -0.9805807*x +0.19611613*y +0.19611613}
++++ End testPointsLineNb(org.audiveris.omr.math.BasicLineTest)
+BasicLineTest setUp() called.
+
+---
+testDummy:
++++ End testDummy(org.audiveris.omr.math.BasicLineTest)
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>

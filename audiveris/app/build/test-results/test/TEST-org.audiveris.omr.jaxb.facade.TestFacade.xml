@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="org.audiveris.omr.jaxb.facade.TestFacade" tests="2" skipped="0" failures="0" errors="0" timestamp="2025-06-03T06:26:46" hostname="Robs-Fun-Shack.attlocal.net" time="0.03">
+  <properties/>
+  <testcase name="testInSequence" classname="org.audiveris.omr.jaxb.facade.TestFacade" time="0.029"/>
+  <testcase name="testDummy" classname="org.audiveris.omr.jaxb.facade.TestFacade" time="0.001"/>
+  <system-out><![CDATA[
+---
+testInSequence:
+
+org.audiveris.omr.jaxb.facade.MyClass :
+   name=TheName
+   origin=java.awt.Point[x=10,y=20]
+   box=java.awt.Rectangle[x=2,y=3,width=40,height=50]
+   lastId=5
+   allEntities=[560=String for 560,780=String for 780]
+Marshalling ...
+Marshalled   to   data/temp/test-facade/facade-data.xml
+<?xml version="1.0" ?>
+<myClass name="TheName" last-id="5">
+  <origin x="10" y="20"/>
+  <box x="2" y="3" w="40" h="50"/>
+  <entities>
+    <entry>
+      <key>560</key>
+      <value>String for 560</value>
+    </entry>
+    <entry>
+      <key>780</key>
+      <value>String for 780</value>
+    </entry>
+  </entities>
+</myClass>================================================================
+Unmarshalling ...
+Unmarshalled from data/temp/test-facade/facade-data.xml
+
+org.audiveris.omr.jaxb.facade.MyClass :
+   name=TheName
+   origin=java.awt.Point[x=10,y=20]
+   box=java.awt.Rectangle[x=2,y=3,width=40,height=50]
+   lastId=5
+   allEntities=[560=String for 560,780=String for 780]
+Map class: class java.util.concurrent.ConcurrentHashMap
++++ End testInSequence(org.audiveris.omr.jaxb.facade.TestFacade)
+
+---
+testDummy:
++++ End testDummy(org.audiveris.omr.jaxb.facade.TestFacade)
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
