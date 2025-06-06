@@ -1,0 +1,54 @@
+2025-06-05 14:47:32,572 INFO [brahamsWaltz]                 Book.java:562  | 1 sheet in /Users/robertwatson/Code/music-pdf-to-speech/src/../score_processing/pdf/brahamsWaltz.pdf
+2025-06-05 14:47:32,659 INFO []                 Book.java:2531 | Stored /book.xml
+2025-06-05 14:47:32,659 INFO []                 Book.java:2491 | Book stored as ../score_processing/MusicXML/brahamsWaltz.omr
+2025-06-05 14:47:32,663 INFO []                 Book.java:1933 | Book reaching PAGE on sheets:[#1]
+2025-06-05 14:47:32,664 INFO [brahamsWaltz]       StepMonitoring.java:98   | LOAD
+2025-06-05 14:47:33,005 INFO [brahamsWaltz]            SheetStub.java:1268 | Loaded image #1 2481x3245 from /Users/robertwatson/Code/music-pdf-to-speech/src/../score_processing/pdf/brahamsWaltz.pdf
+2025-06-05 14:47:33,007 INFO [brahamsWaltz]       StepMonitoring.java:98   | BINARY
+2025-06-05 14:47:33,252 INFO [brahamsWaltz]       StepMonitoring.java:98   | SCALE
+2025-06-05 14:47:33,266 INFO [brahamsWaltz]         ScaleBuilder.java:241  | Beam  guessed height: 13 -- 0.50 of 26 interline
+2025-06-05 14:47:33,267 INFO [brahamsWaltz]         ScaleBuilder.java:264  | Beam measured height: 15 -- 0.42 of [7..26] range at 132% of needed quorum
+2025-06-05 14:47:33,267 INFO [brahamsWaltz]            ScaleStep.java:65   | Scale{ interline(24,26,26) line(5,6,7) beam(15)}
+2025-06-05 14:47:33,267 INFO [brahamsWaltz]       StepMonitoring.java:98   | GRID
+2025-06-05 14:47:33,628 INFO [brahamsWaltz]       LinesRetriever.java:1500 | Global slope: 0.00675
+2025-06-05 14:47:33,639 INFO [brahamsWaltz]    ClustersRetriever.java:328  | Retrieved raw line clusters: 7 of sizes [5] with interline(24,26,26)
+2025-06-05 14:47:33,705 INFO [brahamsWaltz]            PeakGraph.java:310  | Systems: #1[1] #2[2] #3[3] #4[4] #5[5] #6[6] #7[7]
+2025-06-05 14:47:33,871 INFO [brahamsWaltz]        SystemManager.java:779  | 1 part along 7 systems
+2025-06-05 14:47:33,871 INFO [brahamsWaltz]                 Book.java:545  | Created scores: [{Score 1}]
+2025-06-05 14:47:33,872 INFO [brahamsWaltz]       StepMonitoring.java:98   | HEADERS
+2025-06-05 14:47:34,008 INFO [brahamsWaltz]      BasicClassifier.java:277  | Classifier loaded XML norms.
+2025-06-05 14:47:34,010 INFO [brahamsWaltz]   AbstractClassifier.java:396  | Classifier data loaded from default uri jar:file:/Users/robertwatson/Code/music-pdf-to-speech/audiveris/app/build/distributions/app-5.6.0/lib/audiveris.jar!/res/basic-classifier.zip
+2025-06-05 14:47:34,399 INFO [brahamsWaltz]       StepMonitoring.java:98   | STEM_SEEDS
+2025-06-05 14:47:34,430 INFO [brahamsWaltz]        StemSeedsStep.java:86   | stem(5 max:6)
+2025-06-05 14:47:34,457 INFO [brahamsWaltz]       StepMonitoring.java:98   | BEAMS
+2025-06-05 14:47:37,998 INFO [brahamsWaltz]       StepMonitoring.java:98   | LEDGERS
+2025-06-05 14:47:38,074 INFO [brahamsWaltz]       StepMonitoring.java:98   | HEADS
+2025-06-05 14:47:41,848 INFO [brahamsWaltz]        HeadSeedTally.java:235  | Scale information: HeadSeeds{NOTEHEAD_BLACK[L:0.0,R:-2.3]}
+2025-06-05 14:47:41,849 INFO [brahamsWaltz]       StepMonitoring.java:98   | STEMS
+2025-06-05 14:47:42,011 INFO [brahamsWaltz]       StepMonitoring.java:98   | REDUCTION
+2025-06-05 14:47:42,046 INFO [brahamsWaltz]        ReductionStep.java:105  | Stems free length median value: 91 pixels, 3.5 interlines
+2025-06-05 14:47:42,048 INFO [brahamsWaltz]       StepMonitoring.java:98   | CUE_BEAMS
+2025-06-05 14:47:42,049 INFO [brahamsWaltz]         CueBeamsStep.java:81   | Step CUE_BEAMS is skipped because small heads switch is off
+2025-06-05 14:47:42,049 INFO [brahamsWaltz]       StepMonitoring.java:98   | TEXTS
+2025-06-05 14:47:42,461 INFO [brahamsWaltz]       StepMonitoring.java:98   | MEASURES
+2025-06-05 14:47:42,466 INFO [brahamsWaltz]                 Page.java:307  | 30 raw measures: [4 in system#1, 4 in system#2, 4 in system#3, 4 in system#4, 4 in system#5, 5 in system#6, 5 in system#7]
+2025-06-05 14:47:42,467 INFO [brahamsWaltz]       StepMonitoring.java:98   | CHORDS
+2025-06-05 14:47:42,472 INFO [brahamsWaltz]       StepMonitoring.java:98   | CURVES
+2025-06-05 14:47:43,249 INFO [brahamsWaltz]         SlursBuilder.java:240  | Slurs: 1
+2025-06-05 14:47:43,253 INFO [brahamsWaltz]      SegmentsBuilder.java:155  | Segments: 2
+2025-06-05 14:47:43,255 INFO [brahamsWaltz]       StepMonitoring.java:98   | SYMBOLS
+2025-06-05 14:47:43,483 INFO [brahamsWaltz]       StepMonitoring.java:98   | LINKS
+2025-06-05 14:47:43,502 INFO [brahamsWaltz]       StepMonitoring.java:98   | RHYTHMS
+2025-06-05 14:47:43,522 INFO [brahamsWaltz]       StepMonitoring.java:98   | PAGE
+2025-06-05 14:47:43,526 INFO [brahamsWaltz]                 Book.java:2550 | Book{brahamsWaltz} storing
+2025-06-05 14:47:43,555 INFO [brahamsWaltz]                 Book.java:2531 | Stored /book.xml
+2025-06-05 14:47:43,645 INFO [brahamsWaltz]           DataHolder.java:348  | Stored /sheet#1/BINARY.png
+2025-06-05 14:47:43,997 INFO [brahamsWaltz]                Sheet.java:1562 | Stored /sheet#1/sheet#1.xml
+2025-06-05 14:47:43,997 INFO [brahamsWaltz]                 Book.java:2491 | Book stored as ../score_processing/MusicXML/brahamsWaltz.omr
+2025-06-05 14:47:43,998 INFO [brahamsWaltz]            SheetStub.java:1644 | Disposed sheet
+2025-06-05 14:47:44,029 INFO [brahamsWaltz]                 Book.java:2018 | End of Stub#1 memory: 38,315,560
+2025-06-05 14:47:44,029 INFO [brahamsWaltz]                 Book.java:2025 | Book processed.
+2025-06-05 14:47:44,198 INFO [brahamsWaltz]            SheetStub.java:995  | Loaded /sheet#1/sheet#1.xml
+2025-06-05 14:47:44,352 INFO [brahamsWaltz]      PartwiseBuilder.java:2661 | Exporting sheet(s): [#1]
+2025-06-05 14:47:44,382 INFO [brahamsWaltz]        ScoreExporter.java:164  | Score brahamsWaltz exported to ../score_processing/MusicXML/brahamsWaltz.mxl
+2025-06-05 14:47:44,404 INFO [brahamsWaltz]                Score.java:181  | Closing {Score 1}
