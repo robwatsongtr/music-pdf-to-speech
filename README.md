@@ -1,7 +1,8 @@
 # music-pdf-to-speech
 
-Converts a PDF of a musical score into an audio file that narrates the musical elements, by 
-way of OMR (Optical Music Recognition), Music21 analysis of MusicXML, and text-to-speech.
+Converts a bitmap PDF or any other bitmap format of a musical score into an audio file that narrates 
+the musical elements, by way of OMR (Optical Music Recognition), Music21 analysis of MusicXML, 
+and text-to-speech.
 
 Requires Python 3.11.x for Coqui TTS. 
 
@@ -47,11 +48,9 @@ The full source for Audiveris is included. I tried to include it as a git submod
 but that process was so painful I abandoned it. If you want, feel free to fork and try,
 it would enable tracking of the latest updates. As it stands, this project has Version 5.6.0
 
-Getting the CLI interface for Audiveris to work was quite challenging, but I managed to figure
-it out. It involves running the .jar with a classpath that, to the best of my knowlege,
-isn't documented. The GUI of Audiveris can still be run with Gradle ( ie  ./gradlew run ).
-That being said, I am not trying to be overly critical, and I undertand that Audiveris 
-is generally run as a GUI and it works great, especially in cleaning up the OMR output.
+Getting the CLI interface for Audiveris to work was quite challenging. It involves running a 
+classpath that, to the best of my knowlege, isn't documented. The GUI of Audiveris can still 
+be run with Gradle ( ie  ./gradlew run ).
 
 The fruit of that labor is in the shell script in the root of the project directory.
 Note that the code there that involves unarchiving isn't really necessary since that's already
@@ -59,17 +58,17 @@ been done, but if you go the route of including Audiveris as a submodule, on fir
 need to unarchive the binary in order to run the shell script command.
 
 Optical Music Recognition is necessarily imprecise, you need a clean, aligned, well spaced score. 
-I have included examples that seem to work out of the box, but often there will be errors. 
+There are examples that seem to work out of the box, but often there will be errors. 
 Erros can be fixed in the Audiveris GUI or in a program like MuseScore. Sometimes Audiveris 
-will produce a multi file xml output, currently my code does not concatenate these so the pipeline
+will produce a multi file xml output, currently the code does not concatenate these so the pipeline
 will stop after Audiveris. 
 
 Currently my parsing algorithm can only handle one-part non-contrapuntal (single voice) scores. 
-I will work on this over time, As my initial impetus for this project was to help a classical guitar
+This will work on this over time, As the initial impetus for this project was to help a classical guitar
 student who is in the process of losing his sight, and classical guitar music is generally contrapuntal. 
 
 Text-to-speech libraries have a harder time dealing with speaking single letters like "C";
-screen readers do this better. My work-around is to spell spoken letters phonetically.
+screen readers do this better. The work-around is to spell spoken letters phonetically.
  
 ---
 
@@ -86,6 +85,10 @@ under the GNU GPL v3 license.
 Thanks to MIT for the fantastic Music21 library for analysis.
 
 ---
+
+
+Email me at: [rwatso [at] gmail [dot] com](mailto:rwatso@gmail.com)
+
 
 ## License
 
