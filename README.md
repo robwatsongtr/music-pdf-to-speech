@@ -7,9 +7,11 @@ Requires Python 3.11.x for Coqui TTS.
 
 ## Installation:
 
-Make sure Python 3.11x is installed. 
+Make sure Python 3.11x is installed. If not, install it. 
 
-Clone repo. cd into repo. 
+Clone repo. 
+
+cd into repo. 
 
 Create a Python 3.11 virtual environment in the project directory:   
 
@@ -57,9 +59,12 @@ been done, but if you go the route of including Audiveris as a submodule, on fir
 need to unarchive the binary in order to run the shell script command.
 
 Optical Music Recognition is necessarily imprecise, you need a clean, aligned, well spaced score. 
-I have included examples that seem to work out of the box, but most of the time there will be erros. 
+I have included examples that seem to work out of the box, but often there will be errors. 
+Erros can be fixed in the Audiveris GUI or in a program like MuseScore. Sometimes Audiveris 
+will produce a multi file xml output, currently my code does not concatenate these so the pipeline
+will stop after Audiveris. 
 
-Currently my parsing algorithm can only handle one part non contrapuntal (single voice) scores. 
+Currently my parsing algorithm can only handle one-part non-contrapuntal (single voice) scores. 
 I will work on this over time, As my initial impetus for this project was to help a classical guitar
 student who is in the process of losing his sight, and classical guitar music is generally contrapuntal. 
 
