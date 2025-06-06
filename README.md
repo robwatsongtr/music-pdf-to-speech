@@ -9,15 +9,18 @@ Requires Python 3.11.x for Coqui TTS.
 
 Make sure Python 3.11x is installed. 
 
-Clone repo.
+Clone repo. cd into repo. 
 
-Create a Python 3.11 virtual environment in the project directory:  
+Create a Python 3.11 virtual environment in the project directory:   
+
 % python3.11 -m venv your-venv-name
 
-Activate environment: 
+Activate environment:   
+
 % source venv/bin/activate  or Windows:  venv\Scripts\activate
 
-Install Dependencies:  
+Install Dependencies:    
+
 % pip install -r requirements.txt
 
 ## Running the Pipeline:
@@ -52,6 +55,16 @@ The fruit of that labor is in the shell script in the root of the project direct
 Note that the code there that involves unarchiving isn't really necessary since that's already
 been done, but if you go the route of including Audiveris as a submodule, on first run you will
 need to unarchive the binary in order to run the shell script command.
+
+Optical Music Recognition is necessarily imprecise, you need a clean, aligned, well spaced score. 
+I have included examples that seem to work out of the box, but most of the time there will be erros. 
+
+Currently my parsing algorithm can only handle one part non contrapuntal (single voice) scores. 
+I will work on this over time, As my initial impetus for this project was to help a classical guitar
+student who is in the process of losing his sight, and classical guitar music is generally contrapuntal. 
+
+Text-to-speech libraries have a harder time dealing with speaking single letters like "C";
+screen readers do this better. My work-around is to spell spoken letters phonetically.
  
 ---
 
