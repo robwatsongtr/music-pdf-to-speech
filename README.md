@@ -42,7 +42,7 @@ Example:
 
 python3 main.py ../score_processing/pdf/OnTopOfOldSmoky.pdf Marimba
 
-## Technical Notes:
+## Notes:
 
 The full source for Audiveris is included. I tried to include it as a git submodule,
 but that process was so painful I abandoned it. If you want, feel free to fork and try,
@@ -57,7 +57,7 @@ Note that the code there that involves unarchiving isn't really necessary since 
 been done, but if you go the route of including Audiveris as a submodule, on first run you will
 need to unarchive the binary in order to run the shell script command.
 
-Optical Music Recognition is necessarily imprecise, you need a clean, aligned, well spaced score. 
+Optical Music Recognition is imprecise, you need a clean, aligned, well spaced score. 
 There are examples that seem to work out of the box, but often there will be errors. 
 Erros can be fixed in the Audiveris GUI or in a program like MuseScore. Sometimes Audiveris 
 will produce a multi file xml output, currently the code does not concatenate these so the pipeline
@@ -69,6 +69,10 @@ student who is in the process of losing his sight, and classical guitar music is
 
 Text-to-speech libraries have a harder time dealing with speaking single letters like "C";
 screen readers do this better. The work-around is to spell spoken letters phonetically.
+
+Questions or ideas,
+
+Email me at: [rwatso [at] gmail [dot] com](mailto:rwatso@gmail.com)
  
 ---
 
@@ -85,10 +89,6 @@ under the GNU GPL v3 license.
 Thanks to MIT for the fantastic Music21 library for analysis.
 
 ---
-
-
-Email me at: [rwatso [at] gmail [dot] com](mailto:rwatso@gmail.com)
-
 
 ## License
 
