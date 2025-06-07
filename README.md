@@ -4,21 +4,29 @@ Converts a bitmap PDF or any other bitmap format of a musical score into an audi
 the musical elements, by way of OMR (Optical Music Recognition), Music21 analysis of MusicXML, 
 and text-to-speech.
 
-Requires Python 3.11.x for Coqui TTS. 
+Requires Python 3.11.x for Coqui TTS and Java for Audiveris.  
 
 ## Installation:
 
-Make sure Python 3.11x is installed. If not, install it. 
+--Make sure Python 3.11x is installed. If not, install it. 
 
-Clone repo. 
+% brew install python@3.11
 
-cd into repo. 
+-Make sure Java is installed:
 
-Create a Python 3.11 virtual environment in the project directory:   
+% java -version
+
+-If not, you can install it with:
+
+% brew install temurin 
+
+-Clone repo and cd into repo.  
+
+-Create a Python 3.11 virtual environment in the project directory:   
 
 % python3.11 -m venv your-venv-name
 
-Activate environment:   
+-Activate environment:   
 
 % source venv/bin/activate  or Windows:  venv\Scripts\activate
 
