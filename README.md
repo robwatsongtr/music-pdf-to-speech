@@ -82,8 +82,8 @@ need to unarchive the binary in order to run the shell script command.
 
 Optical Music Recognition is imprecise, you need a clean, aligned, well spaced score. 
 There are examples that seem to work out of the box, but often there will be errors. 
-Erros can be fixed in the Audiveris GUI or in a program like MuseScore. Sometimes Audiveris 
-will produce a multi file xml output, currently the code does not concatenate these so the pipeline
+Errors can be fixed in the Audiveris GUI or in a program like MuseScore. Sometimes Audiveris 
+will produce a multi-file xml output, currently the code does not concatenate these so the pipeline
 will stop after Audiveris. 
 
 Currently my parsing algorithm can only handle one-part non-contrapuntal (single voice) scores. 
