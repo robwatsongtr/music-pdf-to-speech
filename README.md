@@ -20,6 +20,19 @@ If not, you can install it with:
 
 % brew install temurin 
 
+(
+
+Windows:
+
+Download Temurin JDK from:
+https://adoptium.net/en-GB/temurin/releases/
+
+Download the .msi installer for your system (e.g., 64-bit JDK 21)
+
+Install it and make sure the "Add to PATH" option is selected
+
+)
+
 Clone repo and cd into repo.  
 
 Create a Python 3.11 virtual environment in the project directory:   
@@ -28,7 +41,15 @@ Create a Python 3.11 virtual environment in the project directory:
 
 Activate environment:   
 
-% source venv/bin/activate  or Windows:  venv\Scripts\activate
+% source venv/bin/activate  
+
+(
+
+Windows:
+
+>venv\Scripts\activate
+
+)
 
 Install Dependencies:    
 
