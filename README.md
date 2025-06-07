@@ -85,9 +85,6 @@ This project includes **Audiveris**, an open-source Optical Music Recognition (O
 - Audiveris repository: [https://github.com/Audiveris/audiveris](https://github.com/Audiveris/audiveris)
 - Audiveris Author: Hervé Bitteur and contributors
 
-We thank the Audiveris team for their outstanding work and for making the project available 
-under the GNU GPL v3 license.
-
 Thanks to MIT for the fantastic Music21 library for analysis.
 
 ---
