@@ -8,25 +8,25 @@ Requires Python 3.11.x for Coqui TTS and Java for Audiveris.
 
 ## Installation:
 
---Make sure Python 3.11x is installed. If not, install it. 
+Make sure Python 3.11x is installed. If not, install it. 
 
 % brew install python@3.11
 
--Make sure Java is installed:
+Make sure Java is installed:
 
 % java -version
 
--If not, you can install it with:
+If not, you can install it with:
 
 % brew install temurin 
 
--Clone repo and cd into repo.  
+Clone repo and cd into repo.  
 
--Create a Python 3.11 virtual environment in the project directory:   
+Create a Python 3.11 virtual environment in the project directory:   
 
 % python3.11 -m venv your-venv-name
 
--Activate environment:   
+Activate environment:   
 
 % source venv/bin/activate  or Windows:  venv\Scripts\activate
 
