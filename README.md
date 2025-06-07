@@ -44,7 +44,7 @@ python3 main.py ../score_processing/pdf/OnTopOfOldSmoky.pdf Marimba
 
 ## Notes:
 
-The full source for Audiveris is included. I tried to include it as a git submodule,
+The full source for Audiveris (OMR app) is included. I tried to include it as a git submodule,
 but that process was so painful I abandoned it. If you want, feel free to fork and try,
 it would enable tracking of the latest updates. As it stands, this project has Version 5.6.0.
 Audiveris is unique in that it is all in Java, not Python. 
