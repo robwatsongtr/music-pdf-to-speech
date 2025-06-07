@@ -20,18 +20,16 @@ If not, you can install it with:
 
 % brew install temurin 
 
-(
+( Windows:
 
-Windows:
+    Download Temurin JDK from:
+        https://adoptium.net/en-GB/temurin/releases/
 
-Download Temurin JDK from:
-https://adoptium.net/en-GB/temurin/releases/
+    Download the .msi installer for your system (e.g., 64-bit JDK 21)
 
-Download the .msi installer for your system (e.g., 64-bit JDK 21)
+    Install it and make sure the "Add to PATH" option is selected  ) 
 
-Install it and make sure the "Add to PATH" option is selected
 
-)
 
 Clone repo and cd into repo.  
 
@@ -43,13 +41,9 @@ Activate environment:
 
 % source venv/bin/activate  
 
-(
+( Windows:
 
-Windows:
-
->venv\Scripts\activate
-
-)
+    venv\Scripts\activate )
 
 Install Dependencies:    
 
