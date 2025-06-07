@@ -14,7 +14,7 @@ Make sure Python 3.11x is installed. If not, install it.
 
 Make sure Java is installed:
 
-    Java -version
+    java -version
 
 If not, you can install it with:
 
@@ -54,7 +54,7 @@ cd to src
 
 Syntax:
 
-python3 main.py path/to/pdf midi_instrument   (Piano, Marimba, Guitar for midi_instrument)
+    python3 main.py path/to/pdf midi_instrument   (Piano, Marimba, Guitar for midi_instrument)
 
 The purpose of choosing an instrument is that the output of Audiveris always seems to 
 default to Voice 'ooos' for Part 1 of the MusicXML, so my code changes that. For now I give a few 
@@ -62,7 +62,7 @@ other General MIDI choices that have a more distinct attack, which I like.
 
 Example:
 
-python3 main.py ../score_processing/pdf/OnTopOfOldSmoky.pdf Marimba
+    python3 main.py ../score_processing/pdf/OnTopOfOldSmoky.pdf Marimba
 
 ## Notes:
 
