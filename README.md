@@ -46,11 +46,12 @@ python3 main.py ../score_processing/pdf/OnTopOfOldSmoky.pdf Marimba
 
 The full source for Audiveris is included. I tried to include it as a git submodule,
 but that process was so painful I abandoned it. If you want, feel free to fork and try,
-it would enable tracking of the latest updates. As it stands, this project has Version 5.6.0
+it would enable tracking of the latest updates. As it stands, this project has Version 5.6.0.
+Audiveris is unique in that it is all in Java, not Python. 
 
 Getting the CLI interface for Audiveris to work was quite challenging. It involves running a 
 classpath that, to the best of my knowlege, isn't documented. The GUI of Audiveris can still 
-be run with Gradle ( ie  ./gradlew run ).
+be run with Gradle ( ie  ./gradlew run ). 
 
 The fruit of that labor is in the shell script in the root of the project directory.
 Note that the code there that involves unarchiving isn't really necessary since that's already
@@ -64,8 +65,9 @@ will produce a multi file xml output, currently the code does not concatenate th
 will stop after Audiveris. 
 
 Currently my parsing algorithm can only handle one-part non-contrapuntal (single voice) scores. 
-This will work on this over time, As the initial impetus for this project was to help a classical guitar
-student who is in the process of losing his sight, and classical guitar music is generally contrapuntal. 
+Contrapuntal detection will come, hopefully soon, as the initial impetus for this project was to 
+help a classical guitar student who is in the process of losing his sight, and classical guitar music 
+is generally contrapuntal. Multi-part might be added as well, but contrapuntal first. 
 
 Text-to-speech libraries have a harder time dealing with speaking single letters like "C";
 screen readers do this better. The work-around is to spell spoken letters phonetically.
