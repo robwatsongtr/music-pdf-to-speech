@@ -32,7 +32,6 @@ class TextToSpeech:
         try:
             tts.tts_to_file(
                 text=text, 
-                speed=0.7, 
                 file_path=output_file_path
             )
             print(f'Text-to-speech WAV file saved at {output_file_path}')

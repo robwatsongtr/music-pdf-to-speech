@@ -1,7 +1,7 @@
 from music21 import converter
 from pathlib import Path
-import math
 import sys
+from fractions import Fraction
 
 class Analyzer:
     """
@@ -30,11 +30,12 @@ class Analyzer:
             "B": "bee"
         }
 
-        # todo: add spoken subdivisions for triplets 
         self.spoken_subdiv = {
-            0.25 : "eee",
-            0.5 : "and",
-            0.75 : "uh"
+            Fraction(1, 4): "eee",
+            Fraction(1, 2): "and",
+            Fraction(3, 4): "uh",
+            Fraction(1, 3): "trip",
+            Fraction(2, 3): "let",
         }
 
     def spoken_key(self, key: str) -> str:
@@ -65,7 +66,7 @@ class Analyzer:
         Spells note names phonetically and writes out sharp or flat for speaking.
 
         Notes without sharps or flats will be len 2, else with accidental len 3
-        *nput must be music21 note.nameWithOctave for this to be valid
+        Input must be music21 note.nameWithOctave for this to be valid
         """
         if not note or len(note) < 2 or len(note) > 3:
             return "unknown note"
@@ -86,18 +87,17 @@ class Analyzer:
     def spoken_beat(self, beat: float) -> str:
         """"
         Converts floating point beat numbers to spoken beat number and subdivision.
-
-        todo: logic to handle triplet (0.33333, etc) subdivisions 
-        Complication is, need to work with pure fractions not floats 
+        Uses rational fractions instead of floats for precision. 
         """
-        fractional, integer = math.modf(beat)
-        fractional = round(fractional, 2)  # mitigate float precision issues
+        frac_beat = Fraction(beat).limit_denominator(1000)
+        integer = int(frac_beat)  # whole number part of the beat
+        fraction = frac_beat - integer  # exact fractional part
 
-        if fractional == 0.0:
+        if fraction == 0:
             return str(int(integer))
         else:
             curr_beat = str(int(integer))
-            subdiv = self.spoken_subdiv.get(fractional, "?")
+            subdiv = self.spoken_subdiv.get(fraction, "?")
             return f'{curr_beat}. {subdiv}'
 
     def extract_staff_attr_start_p1(self) -> None:
