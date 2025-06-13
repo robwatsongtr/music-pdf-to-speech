@@ -1,6 +1,8 @@
 from TTS.api import TTS
 from pathlib import Path
+import os
 import sys
+from pydub import AudioSegment
 
 class TextToSpeech:
     """
@@ -39,4 +41,35 @@ class TextToSpeech:
             print(f'Error in text-to-speech: {e}')
             sys.exit(1)
 
+    def get_wav_file(self) -> str:
+        txt_file = Path(self.input_txt_path)
+        base_name = txt_file.stem
+        wav_file = Path(self.output_path) / f"{base_name}.wav"
 
+        if not wav_file.exists():
+            print(f'Wav file {wav_file} not found')
+            sys.exit(1)
+
+        return wav_file 
+
+    def convert_wav_to_mp3_delete_wav(self) -> None:
+        wav_file_path = self.get_wav_file()
+
+        if not wav_file_path.exists():
+            print(f'WAV file {wav_file_path} not found.')
+            return
+
+        output_mp3_path = wav_file_path.with_suffix(".mp3")
+
+        try:
+            sound_file = AudioSegment.from_wav(wav_file_path)
+            sound_file.export(output_mp3_path, format="mp3", bitrate="128k")
+            print(f'mp3 file written to {output_mp3_path}')
+        except Exception as e:
+            print(f'Error converting file {wav_file_path} to mp3: {e}')
+
+        if output_mp3_path.exists():
+            os.remove(wav_file_path)
+            print(f'wav file {wav_file_path} deleted.')
+        else:
+            print(f'wav file {wav_file_path} not found')

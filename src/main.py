@@ -46,5 +46,6 @@ if __name__ == "__main__":
     output_path_audio = "../score_processing/tts_audio"
     txt_to_tts = TextToSpeech(output_path_audio, xml_to_txt_file)
     txt_to_tts.output_tts()
+    txt_to_tts.convert_wav_to_mp3_delete_wav()
     
 
