@@ -14,6 +14,11 @@ class OMR:
     def __init__(self, output_path: str, input_pdf_path: str, midi_sound: str):
         self.input_pdf_path = input_pdf_path
         self.output_path = output_path
+
+        working_dir = Path(self.output_path)
+        if not working_dir.exists():
+            working_dir.mkdir(parents=True, exist_ok=True)
+
         self.midi_sound = midi_sound
         self.midi_sound_map = {
             "Piano" : "0",

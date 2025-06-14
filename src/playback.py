@@ -14,6 +14,10 @@ class Playback:
         self.midi_output_path = output_path
         self.midi_file_path = ""
 
+        working_dir = Path(self.midi_output_path)
+        if not working_dir.exists():
+            working_dir.mkdir(parents=True, exist_ok=True)
+
     def convert_mxml_to_MIDI(self):
         """
         Convert MusicXML to a MIDI file using music21

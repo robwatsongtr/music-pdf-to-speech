@@ -13,6 +13,11 @@ class TextToSpeech:
         self.input_txt_path = input_txt_path
         self.output_path = output_path
 
+        # check if output path directory exists, if not make it.
+        working_dir = Path(self.output_path)
+        if not working_dir.exists():
+            working_dir.mkdir(parents=True, exist_ok=True)
+
     def output_tts(self) -> None:
         tts = TTS(model_name="tts_models/en/ljspeech/glow-tts")
         input_file = Path(self.input_txt_path)

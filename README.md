@@ -48,7 +48,7 @@ Install Dependencies:
 
     pip install -r requirements.txt
 
-## Running the Pipeline:
+## Running the CLI Pipeline:
 
 cd to src 
 
@@ -63,6 +63,10 @@ other General MIDI choices that have a more distinct attack, which I like.
 Example:
 
     python3 main.py ../score_processing/pdf/OnTopOfOldSmoky.pdf Marimba
+
+## Running a server and using a Web API
+
+Coming soon!
 
 ## Notes:
 

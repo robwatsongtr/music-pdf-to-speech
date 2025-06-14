@@ -11,6 +11,11 @@ class Analyzer:
     def __init__(self, output_path: str, input_xml_path: str):
         self.input_xml_path = input_xml_path
         self.output_path = output_path
+
+        working_dir = Path(self.output_path)
+        if not working_dir.exists():
+            working_dir.mkdir(parents=True, exist_ok=True)
+
         self.staff_attr = []
         self.measure_data = []
 
