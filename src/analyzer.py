@@ -181,7 +181,7 @@ class Analyzer:
 
     def write_to_txt(self) -> None:
         """
-        Writes the staff attribe and measure contents into a text file. 
+        Writes the staff attribute and measure contents into a text file. 
         """
         base_name = Path(self.input_xml_path).stem
         output_file_path = Path(self.output_path) / f"{base_name}.txt"

@@ -138,8 +138,6 @@ class OMR:
         except Exception as e:
             print(f'Error writing xml file: {e}')
 
-        
-
     def change_part_1_sound(self) -> None:
         """
         In MusicXML file: 
