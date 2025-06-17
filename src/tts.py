@@ -48,7 +48,7 @@ class TextToSpeech:
             print(f'Error in text-to-speech: {e}')
             sys.exit(1)
 
-    def get_wav_file(self) -> str:
+    def get_wav_file(self) -> Path:
         txt_file = Path(self.input_txt_path)
         base_name = txt_file.stem
         wav_file = Path(self.output_path) / f"{base_name}.wav"

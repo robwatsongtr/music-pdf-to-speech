@@ -90,7 +90,7 @@ class OMR:
         else:
             print("OMR Succeeded!")
 
-    def get_xml_file(self) -> str:
+    def get_xml_file(self) -> Path:
         """
         Returns full path to MusicXML file after OMR.
         """
