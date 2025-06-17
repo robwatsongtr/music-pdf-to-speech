@@ -59,7 +59,7 @@ class TextToSpeech:
 
         return wav_file 
 
-    def convert_wav_to_mp3_delete_wav(self) -> None:
+    def convert_wav_to_mp3_delete_wav(self) -> Path | None:
         wav_file_path = self.get_wav_file()
 
         if not wav_file_path.exists():
@@ -78,5 +78,7 @@ class TextToSpeech:
         if output_mp3_path.exists():
             os.remove(wav_file_path)
             print(f'wav file {wav_file_path} deleted.')
+            return output_mp3_path
         else:
             print(f'wav file {wav_file_path} not found')
+            return None 
