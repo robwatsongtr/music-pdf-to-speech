@@ -16,8 +16,7 @@ class Playback:
         self.midi_file_path: Optional[Path] = None 
 
         working_dir = Path(self.midi_output_path)
-        if not working_dir.exists():
-            working_dir.mkdir(parents=True, exist_ok=True)
+        working_dir.mkdir(parents=True, exist_ok=True)
 
     def convert_mxml_to_MIDI(self):
         """

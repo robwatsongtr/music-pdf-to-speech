@@ -14,8 +14,7 @@ class TextToSpeech:
         self.output_path = output_path
 
         working_dir = Path(self.output_path)
-        if not working_dir.exists():
-            working_dir.mkdir(parents=True, exist_ok=True)
+        working_dir.mkdir(parents=True, exist_ok=True)
 
     def output_tts(self) -> None:
         """
