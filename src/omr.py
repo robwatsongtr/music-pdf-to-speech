@@ -29,7 +29,7 @@ class OMR:
         """
         Run Audiveris CLI to convert a PDF score into a MusicXML file.
         """
-        script_path = "../audiveris-cli.sh"
+        script_path = Path(__file__).resolve().parent.parent / "audiveris-cli.sh"
         cmd = [
             script_path, 
             "-batch", 

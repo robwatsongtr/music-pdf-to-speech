@@ -43,7 +43,6 @@ def run_pipeline(input_path: Path) -> Path:
 
     txt_to_tts = TextToSpeech(PROCESSED_DIR, xml_to_txt_file)
     txt_to_tts.output_tts()
-    txt_to_tts.convert_wav_to_mp3_delete_wav()
     mp3_path = txt_to_tts.convert_wav_to_mp3_delete_wav()
 
     return mp3_path

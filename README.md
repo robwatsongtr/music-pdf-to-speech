@@ -62,11 +62,20 @@ other General MIDI choices that have a more distinct attack, which I like.
 
 Example:
 
-    python3 main.py ../score_processing/pdf/OnTopOfOldSmoky.pdf Marimba
+    python3 main.py ../examples/OnTopOfOldSmoky.pdf Marimba
 
-## Running a server and using a Web API
+## Running a server and using a Web API (FastAPI)
 
-Coming soon!
+From project root:
+
+    python3 -m uvicorn app.server:app
+
+Then navigate your browser to:
+
+    http://localhost:8000/
+
+Note: As of 6/17/2025 The file picker is not opening on Chrome, beware. You can stil try. Might
+be safer to try Safari or Firefox. Currently the web api chooses Piano as the MIDI instrument.
 
 ## Notes:
 
