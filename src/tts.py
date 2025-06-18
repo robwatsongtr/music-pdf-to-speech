@@ -14,8 +14,7 @@ class TextToSpeech:
         self.output_path = output_path
 
         working_dir = Path(self.output_path)
-        if not working_dir.exists():
-            working_dir.mkdir(parents=True, exist_ok=True)
+        working_dir.mkdir(parents=True, exist_ok=True)
 
     def output_tts(self) -> None:
         """
@@ -48,7 +47,7 @@ class TextToSpeech:
             print(f'Error in text-to-speech: {e}')
             sys.exit(1)
 
-    def get_wav_file(self) -> str:
+    def get_wav_file(self) -> Path:
         txt_file = Path(self.input_txt_path)
         base_name = txt_file.stem
         wav_file = Path(self.output_path) / f"{base_name}.wav"
@@ -59,7 +58,7 @@ class TextToSpeech:
 
         return wav_file 
 
-    def convert_wav_to_mp3_delete_wav(self) -> None:
+    def convert_wav_to_mp3_delete_wav(self) -> Path | None:
         wav_file_path = self.get_wav_file()
 
         if not wav_file_path.exists():
@@ -78,5 +77,7 @@ class TextToSpeech:
         if output_mp3_path.exists():
             os.remove(wav_file_path)
             print(f'wav file {wav_file_path} deleted.')
+            return output_mp3_path
         else:
             print(f'wav file {wav_file_path} not found')
+            return None 

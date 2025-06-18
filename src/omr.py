@@ -16,8 +16,7 @@ class OMR:
         self.output_path = output_path
 
         working_dir = Path(self.output_path)
-        if not working_dir.exists():
-            working_dir.mkdir(parents=True, exist_ok=True)
+        working_dir.mkdir(parents=True, exist_ok=True)
 
         self.midi_sound = midi_sound
         self.midi_sound_map = {
@@ -30,7 +29,7 @@ class OMR:
         """
         Run Audiveris CLI to convert a PDF score into a MusicXML file.
         """
-        script_path = "../audiveris-cli.sh"
+        script_path = Path(__file__).resolve().parent.parent / "audiveris-cli.sh"
         cmd = [
             script_path, 
             "-batch", 
@@ -90,7 +89,7 @@ class OMR:
         else:
             print("OMR Succeeded!")
 
-    def get_xml_file(self) -> str:
+    def get_xml_file(self) -> Path:
         """
         Returns full path to MusicXML file after OMR.
         """

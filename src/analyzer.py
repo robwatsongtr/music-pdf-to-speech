@@ -1,26 +1,31 @@
-from music21 import converter
+from music21 import converter, stream
 from pathlib import Path
 import sys
 from fractions import Fraction
+from typing import List, cast
 
 class Analyzer:
     """
     This class takes a MusicXML file and extracts measures and notes.
     Outputs a text file 
     """
+
+    staff_attr: List[str]
+    measure_data: List[str]
+
     def __init__(self, output_path: str, input_xml_path: str):
         self.input_xml_path = input_xml_path
         self.output_path = output_path
 
         working_dir = Path(self.output_path)
-        if not working_dir.exists():
-            working_dir.mkdir(parents=True, exist_ok=True)
+        working_dir.mkdir(parents=True, exist_ok=True)
 
         self.staff_attr = []
         self.measure_data = []
 
         try:
-            self.score = converter.parse(self.input_xml_path)
+            raw_score = converter.parse(self.input_xml_path)
+            self.score: stream.Score = cast(stream.Score, raw_score)
         except Exception as e:
             print(f"Failed to parse '{input_xml_path}' with error: {e}")
             sys.exit(1)
@@ -66,6 +71,8 @@ class Analyzer:
                 spoken_key_name = self.spoken_letters.get(key[0], key[0]) + ' flat ' + key[3:]
                 return spoken_key_name
             
+        return 'unknown key'
+            
     def spoken_note(self, note: str) -> str:
         """
         Spells note names phonetically and writes out sharp or flat for speaking.
@@ -88,6 +95,8 @@ class Analyzer:
             elif note[1] == "b":
                 spoken_note = self.spoken_letters.get(note[0], note[0]) + '  FLAT  ' + note[2] 
                 return spoken_note
+            
+        return 'unknown note'
             
     def spoken_beat(self, beat: float) -> str:
         """"
@@ -196,7 +205,7 @@ class Analyzer:
         except Exception as e:
             print(f'Error writing file: {e}')
     
-    def get_txt_file(self) -> str:
+    def get_txt_file(self) -> Path:
         """
         Returns full path to written text file.
         """
