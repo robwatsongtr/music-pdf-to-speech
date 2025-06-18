@@ -20,7 +20,7 @@ midi_sound = 'Piano' # hardcode this for now
 
 def save_upload(file_data: bytes, file_name: str) -> Path:
     path = UPLOAD_DIR / file_name
-    path.write_bytes(file_data) # write_bytes is a pathlib method
+    path.write_bytes(file_data) 
 
     return path
 
