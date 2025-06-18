@@ -1,7 +1,7 @@
 from pathlib import Path
-from omr import OMR
-from analyzer import Analyzer
-from tts import TextToSpeech
+from src.omr import OMR
+from src.analyzer import Analyzer
+from src.tts import TextToSpeech
 
 BASE_DIR = Path(__file__).resolve().parent    
 ROOT_DIR = BASE_DIR.parent                   

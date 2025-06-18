@@ -18,7 +18,7 @@ async def upload_file(file: UploadFile = File(...)) -> models.FileProcessRespons
 @router.get("/download/{filename}")
 def download_file(filename: str) -> FileResponse:
     file_path = services.PROCESSED_DIR / filename
-    
+
     return FileResponse(
         path=file_path, filename=filename, media_type="application/octet-stream"
     )
