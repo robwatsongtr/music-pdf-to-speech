@@ -74,8 +74,6 @@ Then navigate your browser to:
 
     http://localhost:8000/
 
-Note: As of 6/17/2025 The file picker is not opening on Chrome, beware. You can stil try. Might
-be safer to try Safari or Firefox. Currently the web api chooses Piano as the MIDI instrument.
 
 ## Notes:
 
